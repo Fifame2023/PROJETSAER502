@@ -1,0 +1,4 @@
+WARN  2024-05-03 10:03:24 unity.iconloader IconLoader.cpp:756 Unable to load icon file:/// at size -1x22: Impossible d'ouvrir le répertoire
+
+(unity-control-center:2936): GLib-CRITICAL **: Source ID 153 was not found when attempting to remove it
+WARN  2024-05-03 10:05:06 unity.shell.compiz unityshell.cpp:3271 Animation plugin not found. Can't set minimize speed.

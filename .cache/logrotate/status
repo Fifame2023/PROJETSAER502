@@ -1,0 +1,22 @@
+logrotate state -- version 2
+"/home/projet/.cache/upstart/update-notifier-crash-_var_crash__lib_systemd_systemd-logind.0.crash.log" 2024-5-3-10:3:16
+"/home/projet/.cache/upstart/unity-panel-service.log" 2024-5-3-10:3:16
+"/home/projet/.cache/upstart/ssh-agent.log" 2024-5-3-10:3:16
+"/home/projet/.cache/upstart/indicator-power.log" 2024-4-27-22:46:45
+"/home/projet/.cache/upstart/gnome-keyring-ssh.log" 2024-5-3-10:3:16
+"/home/projet/.cache/upstart/indicator-sound.log" 2024-5-3-10:3:16
+"/home/projet/.cache/upstart/gpg-agent.log" 2024-5-3-10:3:16
+"/home/projet/.cache/upstart/update-notifier-release.log" 2024-4-27-22:46:45
+"/home/projet/.cache/upstart/upstart-event-bridge.log" 2024-5-3-10:3:16
+"/home/projet/.cache/upstart/gnome-session-Unity.log" 2024-4-27-22:46:45
+"/home/projet/.cache/upstart/window-stack-bridge.log" 2024-5-3-10:3:16
+"/home/projet/.cache/upstart/update-notifier-crash-_var_crash__lib_systemd_systemd-udevd.0.crash.log" 2024-5-3-10:3:16
+"/home/projet/.cache/upstart/im-config.log" 2024-4-27-22:46:45
+"/home/projet/.cache/upstart/indicator-printers.log" 2024-4-27-22:46:45
+"/home/projet/.cache/upstart/unity-settings-daemon.log" 2024-5-3-10:3:16
+"/home/projet/.cache/upstart/hud.log" 2024-5-3-10:3:16
+"/home/projet/.cache/upstart/gnome-keyring.log" 2024-5-3-10:3:16
+"/home/projet/.cache/upstart/unity7.log" 2024-5-3-10:3:16
+"/home/projet/.cache/upstart/dbus.log" 2024-5-3-10:3:16
+"/home/projet/.cache/upstart/gnome-keyring-gpg.log" 2024-4-27-22:46:45
+"/home/projet/.cache/upstart/indicator-bluetooth.log" 2024-4-27-22:46:45

@@ -1,0 +1,4 @@
+openConnection: connect: Aucun fichier ou dossier de ce type
+cannot connect to brltty at :0
+upstart: Le processus update-notifier-crash (/var/crash/_lib_systemd_systemd-logind.0.crash) main (1096) s'est achevé avec l'état 1
+upstart: Le processus update-notifier-crash (/var/crash/_lib_systemd_systemd-udevd.0.crash) main (1103) s'est achevé avec l'état 1

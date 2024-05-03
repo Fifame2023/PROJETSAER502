@@ -1,0 +1,21 @@
+---
+
+- name: Creation ticket
+  hosts: localhost
+  tasks:
+    - name: Creation ticket
+      uri:
+        url: https://projetfifame.myfreshworks.com
+        method: POST
+        headers:
+          Authorization: "Basic bUrhim9luMIjAg0ufZRu"
+          Content-Type: application/json
+        body_format: json
+        body: '{"description": "Host localhost est indisponible.", "subject": "Nagios Alert - Host Unreacheable", "email": support@projet.freshdesk.com, "priority":1}'
+      register: response
+
+
+    - name: Debug Freshdesk Response
+      debug:
+       var: response.json
+

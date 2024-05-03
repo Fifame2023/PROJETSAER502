@@ -1,0 +1,3634 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head id="head">
+      <link rel="preconnect" href="https://website-assets-fd.freshworks.com">
+      <link rel="dns-prefetch" href="https://website-assets-fd.freshworks.com">
+    <link rel="preconnect" href="https://use.typekit.net">
+    <link rel="dns-prefetch" href="https://use.typekit.net">
+    <link rel="preconnect" href="https://cdn.optimizely.com">
+    <link rel="dns-prefetch" href="https://cdn.optimizely.com">
+
+    <link rel="dns-prefetch" href="https://accounts.freshworks.com">
+
+    <link rel="dns-prefetch" href="https://cdn-ukwest.onetrust.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="preload" as="font" crossorigin type="font/woff" href="https://use.typekit.net/af/160664/00000000000000007735bb32/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3">
+    <link rel="preload" as="font" crossorigin type="font/woff" href="https://use.typekit.net/af/384d9b/00000000000000007735bb6a/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3">
+    <link rel="preload" as="font" crossorigin type="font/woff" href="https://use.typekit.net/af/0230dd/00000000000000007735bb33/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3">
+    <link rel="preload" as="font" crossorigin type="font/woff" href="https://use.typekit.net/af/153042/00000000000000007735bb62/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3">
+    <link rel="preload" as="style" href="https://use.typekit.net/pjk5ugs.css">
+    <link rel="stylesheet" href="https://use.typekit.net/pjk5ugs.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://use.typekit.net/pjk5ugs.css"></noscript>
+      <link rel="preload" as="style" href="/static-assets/css/site.css?0f2275e68218cde4adf81dbda3ce475e">
+      <link rel="stylesheet" href="/static-assets/css/site.css?0f2275e68218cde4adf81dbda3ce475e">
+        <script src="https://cdn.optimizely.com/public/20976504213/s/freshdesk.js"></script>
+        <script defer src="https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-document-language="true" data-domain-script="2a76c653-4097-454f-9172-b4ab95061efd"></script>
+      <script type="text/javascript" defer src="/static-assets/js/freshworks.js?ea4963dbd898707c90c36b4602c09108"></script>
+
+    <script type="text/javascript">
+      function OptanonWrapper() {
+        FW.onLoad(function () {
+          window.OldOnetrustActiveGroups = OnetrustActiveGroups;
+        });
+        OneTrust.InsertScript('/static-assets/js/websiteAnalytics.js?8d56c40df1ea583ed95b9fb30604cfae', 'head', null, null, 'C0001');
+      }
+    </script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Logiciel Helpdesk Gratuit - Freshdesk | Freshworks</title>
+      <meta name="description" content="Avec le logiciel helpdesk gratuit de Freshdesk, lancez votre support client dès aujourd’hui ! Boostez votre croissance grâce à notre helpdesk gratuit.">
+      <meta name="keywords" content="&quot;helpdesk gratuit
+ outil helpdesk gratuit
+ logiciel d assistance gratuit
+ freshdesk free
+ freshdesk free version
+ helpdesk system free&quot;">
+        <link rel="icon" size="16x16" type="image/png" href="/static-assets/images/favicon/fworks.png"/>
+        <link rel="icon" size="96x96" type="image/png" href="/static-assets/images/favicon/fworks.png"/>
+        <link rel="icon" size="32x32" type="image/png" href="/static-assets/images/favicon/fworks.png"/>
+        <link rel="icon" size="192x192" type="image/png" href="/static-assets/images/favicon/fworks.png"/>
+        <link rel="apple-touch-icon" size="16x16" type="image/png" href="/static-assets/images/favicon/fworks.png"/>
+        <link rel="apple-touch-icon" size="96x96" type="image/png" href="/static-assets/images/favicon/fworks.png"/>
+        <link rel="apple-touch-icon" size="32x32" type="image/png" href="/static-assets/images/favicon/fworks.png"/>
+        <link rel="apple-touch-icon" size="192x192" type="image/png" href="/static-assets/images/favicon/fworks.png"/>
+
+      <meta content="IE=edge" http-equiv="X-UA-Compatible">
+      <meta content="on" http-equiv="cleartype"/>
+
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Logiciel Helpdesk Gratuit - Freshdesk | Freshworks">
+      <meta property="og:description" content="Avec le logiciel helpdesk gratuit de Freshdesk, lancez votre support client dès aujourd’hui ! Boostez votre croissance grâce à notre helpdesk gratuit.">
+          <meta property="og:url" content="https://www.freshworks.com/fr/freshdesk/tarification/logiciel-helpdesk-gratuit/">
+          <link rel="canonical" href="https://www.freshworks.com/fr/freshdesk/tarification/logiciel-helpdesk-gratuit/">
+
+      <meta property="og:image" content="" />
+      <meta name="og:image" content="" />
+
+      <meta name="twitter:title" content="Logiciel Helpdesk Gratuit - Freshdesk | Freshworks" />
+      <meta name="twitter:description" content="Avec le logiciel helpdesk gratuit de Freshdesk, lancez votre support client dès aujourd’hui ! Boostez votre croissance grâce à notre helpdesk gratuit." />
+      <meta property="twitter:image" content="" />
+      <meta content="true" name="HandheldFriendly"/>
+      <meta content="320" name="MobileOptimized"/>
+      <meta content="yes" name="apple-mobile-web-app-capable"/>
+      <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
+      <meta content="telephone=no" name="format-detection"/>
+      <meta content="address=no" name="format-detection"/>
+    <script>
+      try {
+        // url sanitize -- update current search after removing vulnerable params in the url
+
+        var currentSearch = (function sanitizeQueryParams (queryString) {
+          if (!queryString) return '';
+          var decoded;
+          try { // handle malformed URL with lone '%' char
+            decoded = decodeURIComponent(queryString);
+          } catch (e) {
+            decoded = queryString.replace(/%/g, '')
+          }
+          if (decoded.indexOf('%') > -1) {
+            return sanitizeQueryParams(decoded);
+          }
+          var queryParams = decoded.slice(1).split('&').map(function (param) {
+            var pair = param.replace(/[<>()]/g, '').split('=');
+            // handle broken query param before encoding
+            if(pair.length < 2) return pair; 
+            return pair[0] + '=' + encodeURIComponent(pair[1]);
+          }).join('&');
+          return queryParams;
+        })(window.location.search);
+
+
+        if (currentSearch) {
+          var queryParams = currentSearch.split('&');
+          var blackListedQueryParams = /(first_name|first-name|last-name|last_name|email|company|domain-|phone).*/gi
+
+          var cleanQueryParams = '?'    
+          queryParams.forEach(function(query) {
+            // Handling emails
+            if (query.indexOf('@') !== -1 ) {
+              return;
+            };
+            // Handle cases that match regex
+            var queryLeft = query.trim().split('=')[0]
+            if (blackListedQueryParams.test(queryLeft)) return;
+            cleanQueryParams += `${query}&`
+          });
+          // Remove any trailing &
+          cleanQueryParams = cleanQueryParams.replace(/&$/, '');
+          // Change the params if there is a mismatch
+          if (window.location.search !== cleanQueryParams) {
+            window.history.replaceState(null, null, cleanQueryParams);
+          }    
+        }
+      } catch (e) {
+        console.log(e);
+      }
+    </script>
+    <script type="text/plain" class="optanon-category-C0003">
+      document.cookie = 'cssVersion=0f2275e68218cde4adf81dbda3ce475e; path=/; domain='+window.location.hostname+'; max-age=' + 60*60*24*365;
+    </script>
+    <script type="text/javascript">
+      window.FW = {
+        cbQueue: [],
+        onLoad: function(){
+          this.cbQueue.push(arguments)
+        }
+      };
+    </script>
+      
+            <link
+              rel="alternate"
+              hreflang= "x-default"
+              href="https://www.freshworks.com/freshdesk/pricing/free-helpdesk-software/"
+            />
+              <link
+                rel="alternate"
+                hreflang= "en-US"
+                href="https://www.freshworks.com/freshdesk/pricing/free-helpdesk-software/"
+              />
+              <link
+                rel="alternate"
+                hreflang= "de"
+                href="https://www.freshworks.com/de/freshdesk/pricing/free-helpdesk-software/"
+              />
+              <link
+                rel="alternate"
+                hreflang= "nl"
+                href="https://www.freshworks.com/nl/freshdesk/pricing/free-helpdesk-software/"
+              />
+              <link
+                rel="alternate"
+                hreflang= "fr"
+                href="https://www.freshworks.com/fr/freshdesk/tarification/logiciel-helpdesk-gratuit/"
+              />
+              <link
+                rel="alternate"
+                hreflang= "sv"
+                href="https://www.freshworks.com/se/freshdesk/pricing/free-helpdesk-software/"
+              />
+              <link
+                rel="alternate"
+                hreflang= "es-ES"
+                href="https://www.freshworks.com/es/freshdesk/pricing/free-helpdesk-software/"
+              />
+              <link
+                rel="alternate"
+                hreflang= "es-MX"
+                href="https://www.freshworks.com/latam/freshdesk/pricing/free-helpdesk-software/"
+              />
+              <link
+                rel="alternate"
+                hreflang= "es-CO"
+                href="https://www.freshworks.com/latam/freshdesk/pricing/free-helpdesk-software/"
+              />
+              <link
+                rel="alternate"
+                hreflang= "es-AR"
+                href="https://www.freshworks.com/latam/freshdesk/pricing/free-helpdesk-software/"
+              />
+              <link
+                rel="alternate"
+                hreflang= "pt-BR"
+                href="https://www.freshworks.com/br/freshdesk/pricing/free-helpdesk-software/"
+              />
+              <link
+                rel="alternate"
+                hreflang= "th"
+                href="https://www.freshworks.com/th/freshdesk/pricing/free-support-software-duplicate/"
+              />
+      
+
+  <link rel="prefetch" href="https://fast.wistia.com/assets/external/E-v1.js" />
+
+
+
+  </head>
+  
+  <body  class=" nav-transparent-secondary    " data-product-name="fdesk" data-lang=fr >
+      
+      <input class='hide' id='page-category-tag' aria-label="page category tag" aria-hidden="true" value='help_desk' />
+    <header>
+      <nav class="nav-scroll nav-light-bg has-secondary  ">
+            
+      
+<div class="nav-super-wrapper nav-wrapper-border dark ">
+  <div class="nav-super l-page clearfix-lg">
+    <span class="nav-super-item home-link">
+      <a href="#main-content" class="skip-to-main-content" role="button" rel="nofollow, noindex">Skip to main content</a>
+        <a class="super-logo" href="https://www.freshworks.com/fr/">
+          
+    <img 
+        class="logo logo-fworks nav-super-logo"
+        src="/static-assets/images/common/company/logos/logo-fworks-black.svg"
+        alt="Freshworks"
+    />
+        </a>
+    </span>
+
+    <ul class="l-nav-list nav-super-menu" style="">
+        <li class="nav-super-item  card-nav has-sub-menu    "
+        >
+              <a class="nav-super-label" href="#" role="button" aria-haspopup="true" aria-expanded="false">Produits</a>
+              <i class="icon-arrow-down nav-sub-toggle" aria-hidden="true"></i>
+              
+  <div class="l-nav-list nav-sub-menu persona-product-wrapper persona-product-wrapper-v2">
+    <div class="nav-persona-product-row">
+          <div class="nav-persona-product-column">
+            <ul class="persona-column-inner">
+                <li class="nav-sub-item nav-logo-tagline">
+                  <a  rel=" " href="https://www.freshworks.com/fr/freshdesk/" class="nav-sub-label" tabindex="-1">
+                    <div class="persona-product-card">
+                          
+    <img src="https://website-assets-fd.freshworks.com/attachments/ckrykid1b07w5fxg0mcihkydx-fdesk.svg" class="icon" alt="">
+                      <h2 class="nav-sub-item-text product-heading">Freshdesk</h2>
+                      <span class="desc">Une plateforme unique pour offrir le meilleur service client omnicanal.</span>
+                      <span class="label">Une plateforme unique pour offrir le meilleur service client omnicanal.</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-sub-item nav-logo-tagline">
+                  <a  rel=" " href="https://www.freshworks.com/fr/crm/sales/?source=fdesk&amp;medium=referral&amp;campaign=fdesk_corp_nav" class="nav-sub-label" tabindex="-1">
+                    <div class="persona-product-card">
+                          
+    <img src="https://website-assets-fd.freshworks.com/attachments/ckrykid1501uet0g0x5dcnce1-fsales.svg" class="icon" alt="">
+                      <h2 class="nav-sub-item-text product-heading">Freshsales</h2>
+                      <span class="desc">Augmentez rapidement vos revenus à l&#39;aide des ventes contextuelles.</span>
+                      <span class="label">Augmentez rapidement vos revenus à l&#39;aide des ventes contextuelles.</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-sub-item nav-logo-tagline">
+                  <a  rel=" " href="https://www.freshworks.com/fr/crm/marketing/?source=fdesk&amp;medium=referral&amp;campaign=fdesk_corp_nav" class="nav-sub-label" tabindex="-1">
+                    <div class="persona-product-card">
+                          
+    <img src="https://website-assets-fd.freshworks.com/attachments/ckrykid10083kglg0kxf15xcs-fmarketer.svg" class="icon" alt="">
+                      <h2 class="nav-sub-item-text product-heading">Freshmarketer</h2>
+                      <span class="desc">Personnalisez votre marketing à l&#39;aide d&#39;automatismes simples et puissants.</span>
+                      <span class="label">Personnalisez votre marketing à l&#39;aide d&#39;automatismes simples et puissants.</span>
+                    </div>
+                  </a>
+                </li>
+            </ul>
+          </div>
+          <div class="nav-persona-product-column">
+            <ul class="persona-column-inner">
+                <li class="nav-sub-item nav-logo-tagline">
+                  <a  rel=" " href="https://www.freshworks.com/fr/live-chat-software/?source=fdesk&amp;medium=referral&amp;campaign=fdesk_corp_nav" class="nav-sub-label" tabindex="-1">
+                    <div class="persona-product-card">
+                          
+    <img src="https://website-assets-fd.freshworks.com/attachments/cl3xx8wtq06uintfnrtzf2y5b-freshchat-logo.svg" class="icon" alt="">
+                      <h2 class="nav-sub-item-text product-heading">Freshchat</h2>
+                      <span class="desc">Support via messagerie et Chatbot privilégié en premier pour le client numérique d&#39;aujourd&#39;hui</span>
+                      <span class="label">Messaging</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-sub-item nav-logo-tagline">
+                  <a  rel=" " href="https://www.freshworks.com/fr/freshservice/?source=fdesk&amp;medium=referral&amp;campaign=fdesk_corp_nav" class="nav-sub-label" tabindex="-1">
+                    <div class="persona-product-card">
+                          
+    <img src="https://website-assets-fd.freshworks.com/attachments/ckrykid1d07r3eefztiz664dl-fservicce.svg" class="icon" alt="">
+                      <h2 class="nav-sub-item-text product-heading">Freshservice</h2>
+                      <span class="desc">Adaptez la gestion de votre service informatique à vos besoins.</span>
+                      <span class="label">Adaptez la gestion de votre service informatique à vos besoins.</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-sub-item nav-logo-tagline">
+                  <a  rel=" " href="https://www.freshworks.com/fr/hrms/?source=fdesk&amp;medium=referral&amp;campaign=fdesk_corp_nav" class="nav-sub-label" tabindex="-1">
+                    <div class="persona-product-card">
+                          
+    <img src="https://website-assets-fd.freshworks.com/attachments/ckrykid0o07yod7fzzlpqxsk7-fteam.svg" class="icon" alt="">
+                      <h2 class="nav-sub-item-text product-heading">Freshteam</h2>
+                      <span class="desc">Modernisez les RH à l&#39;aide d&#39;une expérience numérique unifiée.</span>
+                      <span class="label">Modernisez les RH à l&#39;aide d&#39;une expérience numérique unifiée.</span>
+                    </div>
+                  </a>
+                </li>
+            </ul>
+          </div>
+    </div>
+      <div class="bottom-pane">
+        <a rel=" " href="https://www.freshworks.com/fr/products/"  tabindex="-1">
+          <div class="nav-sub-item nav-logo-tagline bottom-pane-link fworks-bg align-center">
+            <span class="forward--link forward--link--label">
+              Voir tous les produits
+              <span class="forward--link--icon" aria-hidden="true"></span>
+            </span>
+          </div>
+        </a>
+      </div>
+  </div>
+        </li>
+        <li class="nav-super-item  card-nav has-sub-menu    "
+        >
+              <a class="nav-super-label" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plateforme</a>
+              <i class="icon-arrow-down nav-sub-toggle" aria-hidden="true"></i>
+              
+<div class="l-hav-list has-platform-menu nav-sub-menu">
+  <div class="platform-card">
+    <div class="row">
+      <div class="col-md-4">
+              <div class="card-width">
+                  <div class="nav-main-item-list">
+                      <div class="platform-nav-main-item">
+                          
+    <img src="https://website-assets-fd.freshworks.com/attachments/ckgtczgef004xhag1792l2lvs-pri2.svg" class="icon" alt="">
+                          <h2 class="nav-main-item-title">Fonctionnalités</h2>
+                      </div>
+                      <ul class="nav-main-item-list">
+                            <li class="nav-main-item-link">
+                              <a rel=" " href="https://www.freshworks.com/fr/platform/analytics/" class="sub-nav-link"  tabindex="-1">
+                                Analytics
+                              </a>
+                            </li>
+                            <li class="nav-main-item-link">
+                              <a rel=" " href="https://www.freshworks.com/fr/platform/neo-admin-center/" class="sub-nav-link"  tabindex="-1">
+                                Centre d&#39;administration Neo
+                              </a>
+                            </li>
+                            <li class="nav-main-item-link">
+                              <a rel=" " href="https://www.freshworks.com/fr/platform/events-and-notifications/" class="sub-nav-link"  tabindex="-1">
+                                Collaboration
+                              </a>
+                            </li>
+                            <li class="nav-main-item-link">
+                              <a rel=" " href="https://www.freshworks.com/fr/platform/events-and-notifications/" class="sub-nav-link"  tabindex="-1">
+                                Évènements et Notifications
+                              </a>
+                            </li>
+                            <li class="nav-main-item-link">
+                              <a rel=" " href="https://www.freshworks.com/fr/platform/unified-customer-record/" class="sub-nav-link"  tabindex="-1">
+                                Dossier client unifié
+                              </a>
+                            </li>
+                      </ul>
+                    </div>
+              </div>
+      </div>
+        <div class="col-md-4">
+                    <div class="card-width">
+                        <div class="nav-main-item-list">
+                            <div class="platform-nav-main-item">
+                                
+    <img src="https://website-assets-fd.freshworks.com/attachments/ckgtd0l4p008hhag1ab7uk6l7-pri3.svg" class="icon" alt="">
+                                <h2 class="nav-main-item-title">IA Freddy</h2>
+                            </div>
+                                <ul class="nav-main-item-list">  
+                                      <li class="nav-main-item-link">
+                                        <a rel=" " href="https://www.freshworks.com/fr/freddy-ai/freddy-ai-skills/" class="sub-nav-link"  tabindex="-1">
+                                          Compétences de l’IA Freddy
+                                        </a>
+                                      </li>
+                                </ul>
+                        </div>
+                    </div>
+            <div class="card-width">
+              <div class="nav-main-item-list">
+                  <a rel=" " href="https://www.freshworks.com/fr/platform/"  tabindex="-1">
+                      
+    <img src="https://website-assets-fd.freshworks.com/attachments/ckgtc9pmu008vhgg1jid69lbv-freshworks-neo-dew.full.png" class="feature-product-logo" alt="">
+                      <div><p class="nav-title">Freshworks Neo</p>
+
+<p class="feature-product-description">Exploitez une plateforme d'entreprise de bout en bout, flexible et optimisée par l'intelligence artificielle pour unifier les expériences client</p>
+</div>
+                  </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+              <div class="nav-sub-item-link">
+                <a rel=" " href="https://www.freshworks.com/apps/" class="partner-nav-sub-item card-width"  tabindex="-1">
+                  
+    <img src="https://website-assets-fd.freshworks.com/attachments/ckgtd1ydj00h7hgg1udfpy9wc-sub1.svg" class="icon" alt="">
+                  <p class="nav-sub-item-text">Marketplace</p>    
+                </a>
+              </div>
+              <div class="nav-sub-item-link">
+                <a rel=" " href="https://developer.freshworks.com/" class="partner-nav-sub-item card-width"  tabindex="-1">
+                  
+    <img src="https://website-assets-fd.freshworks.com/attachments/ckgtd2n5100kghgg1f99vyxoh-sub2.svg" class="icon" alt="">
+                  <p class="nav-sub-item-text">Portail des développeurs</p>    
+                </a>
+              </div>
+              <div class="nav-sub-item-link">
+                <a rel=" " href="https://www.freshworks.com/fr/platform/technology-alliances/" class="partner-nav-sub-item card-width"  tabindex="-1">
+                  
+    <img src="https://website-assets-fd.freshworks.com/attachments/ckgtdabsg00c3hag1x7sppnni-sub3.svg" class="icon" alt="">
+                  <p class="nav-sub-item-text">Alliances technologiques</p>    
+                </a>
+              </div>
+        </div>
+    </div>
+  </div>
+</div>
+        </li>
+        <li class="nav-super-item has-sub-menu     "
+        >
+            <a class="nav-super-label" href="#" role="button" aria-haspopup="true" aria-expanded="false">Société</a>
+            <i class="icon-arrow-down nav-sub-toggle" aria-hidden="true"></i>
+            <ul class="l-nav-list nav-sub-menu">
+                  <li class="nav-sub-item">
+                    <a tabindex="-1"
+                      class="nav-sub-label"
+                      href="https://www.freshworks.com/fr/entreprise/apropos/"
+                      rel="  noopener"
+                      target=&quot;blank&quot;
+                    >
+                      <span class="label">
+                        À propos
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-sub-item">
+                    <a tabindex="-1"
+                      class="nav-sub-label"
+                      href="https://www.freshworks.com/fr/entreprise/leadership/"
+                      rel="  noopener"
+                      target=&quot;blank&quot;
+                    >
+                      <span class="label">
+                        Comité de direction
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-sub-item">
+                    <a tabindex="-1"
+                      class="nav-sub-label"
+                      href="https://www.freshworks.com/fr/entreprise/comite/"
+                      rel="  noopener"
+                      target=&quot;blank&quot;
+                    >
+                      <span class="label">
+                        Conseil d&#39;administration
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-sub-item">
+                    <a tabindex="-1"
+                      class="nav-sub-label"
+                      href="https://www.freshworks.com/fr/entreprise/investisseurs/"
+                      rel="  noopener"
+                      target=&quot;blank&quot;
+                    >
+                      <span class="label">
+                        Investisseurs
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-sub-item">
+                    <a tabindex="-1"
+                      class="nav-sub-label"
+                      href="https://www.freshworks.com/fr/company/affiliate-partner/"
+                      rel=" "
+                      
+                    >
+                      <span class="label">
+                        Affiliés
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-sub-item">
+                    <a tabindex="-1"
+                      class="nav-sub-label"
+                      href="https://www.freshworks.com/fr/company/partners/"
+                      rel=" "
+                      
+                    >
+                      <span class="label">
+                        Partenaires
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-sub-item">
+                    <a tabindex="-1"
+                      class="nav-sub-label"
+                      href="https://www.freshworks.com/fr/company/careers/"
+                      rel=" "
+                      
+                    >
+                      <span class="label">
+                        Carrières
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-sub-item">
+                    <a tabindex="-1"
+                      class="nav-sub-label"
+                      href="https://www.freshworks.com/fr/contact/"
+                      rel=" "
+                      
+                    >
+                      <span class="label">
+                        Contactez-nous
+                      </span>
+                    </a>
+                  </li>
+            </ul>
+        </li>
+        <li class="nav-super-item      "
+        >
+            <a
+              class="nav-super-label"
+              href="https://www.freshworks.com/fr/freshdesk/customers/"
+              rel=" "
+              
+            >Clients</a>
+        </li>
+        <li class="nav-super-item     hide-in-mobile "
+        >
+            <a
+              class="nav-super-label"
+              href="https://support.freshdesk.com"
+              rel="nofollow  noopener"
+              target=&quot;blank&quot;
+            >Support</a>
+        </li>
+        
+    <li class="language-selector nav-super-item has-sub-menu hide-in-mobile">
+      <a class = "fw-flag-globe" href="#" title="Globe icon"  role="button" aria-label="language selector" aria-haspopup="true" aria-expanded="false"></a>
+      <div class= "language-selector-card--v2">
+        
+  <ul class="row navigation-language-selector">
+    
+
+  <li class="nav-sub-item active nav-lang-option">
+    <a aria-current="page" class="nav-sub-label" tabindex="-1" lang="fr">
+        Français
+    </a>
+  </li>
+        <li class="nav-sub-item nav-lang-option">
+          <a class="nav-sub-label" href="https://www.freshworks.com/freshdesk/pricing/free-helpdesk-software/" lang="en-us" tabindex="-1"> 
+              English
+          </a>
+        </li>
+        <li class="nav-sub-item nav-lang-option">
+          <a class="nav-sub-label" href="https://www.freshworks.com/de/freshdesk/pricing/free-helpdesk-software/" lang="de-de" tabindex="-1"> 
+              Deutsch
+          </a>
+        </li>
+        <li class="nav-sub-item nav-lang-option">
+          <a class="nav-sub-label" href="https://www.freshworks.com/nl/freshdesk/pricing/free-helpdesk-software/" lang="nl" tabindex="-1"> 
+              Nederlands
+          </a>
+        </li>
+        <li class="nav-sub-item nav-lang-option">
+          <a class="nav-sub-label" href="https://www.freshworks.com/se/freshdesk/pricing/free-helpdesk-software/" lang="sv-SE" tabindex="-1"> 
+              Svenska
+          </a>
+        </li>
+        <li class="nav-sub-item nav-lang-option">
+          <a class="nav-sub-label" href="https://www.freshworks.com/es/freshdesk/pricing/free-helpdesk-software/" lang="es" tabindex="-1"> 
+              Español (España)
+          </a>
+        </li>
+        <li class="nav-sub-item nav-lang-option">
+          <a class="nav-sub-label" href="https://www.freshworks.com/latam/freshdesk/pricing/free-helpdesk-software/" lang="es-latam" tabindex="-1"> 
+              Español (América Latina)
+          </a>
+        </li>
+        <li class="nav-sub-item nav-lang-option">
+          <a class="nav-sub-label" href="https://www.freshworks.com/br/freshdesk/pricing/free-helpdesk-software/" lang="pt-br" tabindex="-1"> 
+              Português (Brasil)
+          </a>
+        </li>
+        <li class="nav-sub-item nav-lang-option">
+          <a class="nav-sub-label" href="https://www.freshworks.com/jp/freshdesk/" lang="ja" tabindex="-1"> 
+              日本語
+          </a>
+        </li>
+        <li class="nav-sub-item nav-lang-option">
+          <a class="nav-sub-label" href="https://www.freshworks.com/ko/freshdesk/" lang="ko" tabindex="-1"> 
+              한국어
+          </a>
+        </li>
+        <li class="nav-sub-item nav-lang-option">
+          <a class="nav-sub-label" href="https://www.freshworks.com/it/freshdesk/" lang="it" tabindex="-1"> 
+              Italiano
+          </a>
+        </li>
+        <li class="nav-sub-item nav-lang-option">
+          <a class="nav-sub-label" href="https://www.freshworks.com/cn/freshdesk/" lang="zh-CN" tabindex="-1"> 
+              简体中文
+          </a>
+        </li>
+        <li class="nav-sub-item nav-lang-option">
+          <a class="nav-sub-label" href="https://www.freshworks.com/th/freshdesk/pricing/free-support-software-duplicate/" lang="th" tabindex="-1"> 
+              ภาษาไทย
+          </a>
+        </li>
+        <li class="nav-sub-item nav-lang-option">
+          <a class="nav-sub-label" href="https://www.freshworks.com/vi/freshdesk/" lang="vi" tabindex="-1"> 
+              Tiếng Việt
+          </a>
+        </li>
+        <li class="nav-sub-item nav-lang-option">
+          <a class="nav-sub-label" href="https://www.freshworks.com/pl/freshdesk/" lang="pl" tabindex="-1"> 
+              Polski
+          </a>
+        </li>
+        <li class="nav-sub-item nav-lang-option">
+          <a class="nav-sub-label" href="https://www.freshworks.com/hk/freshdesk/" lang="zh-HK" tabindex="-1"> 
+              繁體中文
+          </a>
+        </li>
+        <li class="nav-sub-item nav-lang-option">
+          <a class="nav-sub-label" href="https://www.freshworks.com/tr/freshdesk/" lang="tr" tabindex="-1"> 
+              Türkçe
+          </a>
+        </li>
+  </ul>
+      </div>
+    </li>
+    </ul>
+  </div>
+</div>
+
+
+
+            
+      
+
+<div class="nav-primary-wrapper" tabindex="-1">
+  <div class="nav-primary l-page">
+    
+    <div class="nav-logo-wrapper">
+        <div class="product-logo-wrap">
+          <a href="https://www.freshworks.com/fr/freshdesk/" class="product-logo-icon">
+            <img src="https://website-assets-fd.freshworks.com/attachments/ckrykid1b07w5fxg0mcihkydx-fdesk.svg" class="icon product-logo-dew" alt="Freshdesk">
+            <img src="https://website-assets-fd.freshworks.com/attachments/ckrykid1b07w5fxg0mcihkydx-fdesk.svg" class="icon sub-product-logo-dew" alt="">
+            Freshdesk
+          </a>
+        </div>
+      <a href="#" class="nav-burger" title="Burger Navigation icon" role="button" aria-haspopup="true" aria-expanded="false">
+        <span class="nav-burger-icon"></span>
+      </a>
+    </div>
+    <ul class="l-nav-list nav-main-menu" >
+        <li class="nav-main-item sub-product-card has-sub-menu      "
+        >
+            <a class="nav-label" href="#" role="button" aria-haspopup="true" aria-expanded="false">Produits</a>
+            <i class="icon-arrow-down nav-sub-toggle" aria-hidden="true"></i>
+            <ul class="l-nav-list nav-sub-menu sub-product-wrapper">
+                <li class="nav-sub-item nav-sub-item-sub-product">
+                  <a href="https://www.freshworks.com/fr/freshdesk/" rel=" "  class="nav-sub-label" tabindex="-1" role="button" aria-haspopup="true" aria-expanded="false">
+                  <div class="sub-product-card">
+                    
+    <img src="https://website-assets-fd.freshworks.com/attachments/cks4mbyjx0387mbg0v33b8xbp-01-omnichannel-brand-mark-1.svg" class="icon" alt="">
+                    <h2 class="nav-sub-item-text product-heading">Omnichannel Suite</h2>
+                    <span class="description">Comblez vos clients avec un service omnicanal à la portée de tous</span>
+                  </div>
+                </a>
+                </li>
+                <li class="nav-sub-item nav-sub-item-sub-product">
+                  <a href="https://www.freshworks.com/fr/freshdesk/support-desk/" rel=" "  class="nav-sub-label" tabindex="-1" role="button" aria-haspopup="true" aria-expanded="false">
+                  <div class="sub-product-card">
+                    
+    <img src="https://website-assets-fd.freshworks.com/attachments/ckrykid1b07w5fxg0mcihkydx-fdesk.svg" class="icon" alt="">
+                    <h2 class="nav-sub-item-text product-heading">Support Desk</h2>
+                    <span class="description">Un service d’assistance complet pour un service client exceptionnel</span>
+                  </div>
+                </a>
+                </li>
+                <li class="nav-sub-item nav-sub-item-sub-product">
+                  <a href="https://www.freshworks.com/fr/freshcaller-cloud-pbx/" rel=" "  class="nav-sub-label" tabindex="-1" role="button" aria-haspopup="true" aria-expanded="false">
+                  <div class="sub-product-card">
+                    
+    <img src="https://website-assets-fd.freshworks.com/attachments/cks4mezzy00ii1ofzjta5dhki-01-contact-center-brand-mark.svg" class="icon" alt="">
+                    <h2 class="nav-sub-item-text product-heading">Contact Center</h2>
+                    <span class="description">Une solution de centre d&#39;appels fiable et intelligente à la fois pour une expérience client simplissime</span>
+                  </div>
+                </a>
+                </li>
+                <li class="nav-sub-item nav-sub-item-sub-product">
+                  <a href="https://www.freshworks.com/customer-success-software/" rel=" "  class="nav-sub-label" tabindex="-1" role="button" aria-haspopup="true" aria-expanded="false">
+                  <div class="sub-product-card">
+                    
+    <img src="https://website-assets-fd.freshworks.com/attachments/cks4mgokj03ac6wfzots93c3b-01-customer-success-brand-mark.svg" class="icon" alt="">
+                    <h2 class="nav-sub-item-text product-heading">Customer Success</h2>
+                    <span class="description">Protégez votre chiffre d&#39;affaires, augmentez la valeur client à vie, et renforcez les relations client.</span>
+                  </div>
+                </a>
+                </li>
+            </ul>  
+        </li>
+        <li class="nav-main-item caps-heading-12 has-sub-menu     "
+        >
+            <a aria-haspopup="true" role="button" aria-expanded="false"   class="nav-label" href="#">Fonctionnalités</a>
+            <i class="icon-arrow-down nav-sub-toggle" aria-hidden="true"></i>
+            <ul class="l-nav-list nav-sub-menu">
+                  <li class="nav-sub-item">
+                    <a tabindex="-1"
+                      class="nav-sub-label"
+                      href="https://www.freshworks.com/fr/freshdesk/systeme-de-ticketing/"
+                      
+                      rel="   "
+                    >
+                      <span class="label">
+                        Gestion des tickets
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-sub-item">
+                    <a tabindex="-1"
+                      class="nav-sub-label"
+                      href="https://www.freshworks.com/fr/freshdesk/collaboration/"
+                      
+                      rel="   "
+                    >
+                      <span class="label">
+                        Collaboration
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-sub-item">
+                    <a tabindex="-1"
+                      class="nav-sub-label"
+                      href="https://www.freshworks.com/fr/freshdesk/automatisations/"
+                      
+                      rel="   "
+                    >
+                      <span class="label">
+                        Automatisations
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-sub-item">
+                    <a tabindex="-1"
+                      class="nav-sub-label"
+                      href="https://www.freshworks.com/fr/freshdesk/"
+                      
+                      rel="   "
+                    >
+                      <span class="label">
+                        Widget d&#39;aide
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-sub-item">
+                    <a tabindex="-1"
+                      class="nav-sub-label"
+                      href="https://www.freshworks.com/fr/freshdesk/rapport/"
+                      
+                      rel="   "
+                    >
+                      <span class="label">
+                        Reporting &amp; Analytics
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-sub-item">
+                    <a tabindex="-1"
+                      class="nav-sub-label"
+                      href="https://www.freshworks.com/fr/freshdesk/secure-helpdesk/"
+                      
+                      rel="   "
+                    >
+                      <span class="label">
+                        Sécurité
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-sub-item">
+                    <a tabindex="-1"
+                      class="nav-sub-label"
+                      href="https://www.freshworks.com/apps/freshdesk/"
+                      
+                      rel="   "
+                    >
+                      <span class="label">
+                        intégration
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-sub-item">
+                    <a tabindex="-1"
+                      class="nav-sub-label"
+                      href="https://www.freshworks.com/fr/freshdesk/new-features/"
+                      
+                      rel="   "
+                    >
+                      <span class="label">
+                        Nouvelles fonctionnalités
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-sub-item nav-sub-item-with-button">
+                    <a href="https://www.freshworks.com/fr/freshdesk/fonctionnalites/" rel="" class="nav-sub-label" tabindex="-1">
+                      <span class="button button--ghost button--small link forward--link forward--link--label">
+                        Toutes les fonctionnalités
+                        <span class="forward--link--icon" aria-hidden="true"></span>
+                      </span>
+                    </a>
+                  </li>
+            </ul>  
+        </li>
+        <li class="nav-main-item caps-heading-12      "
+        >
+            <a
+              class="nav-label"
+              href="https://www.freshworks.com/fr/freshdesk/tarifs/"
+              rel=" "
+              
+            >Tarifs</a>  
+        </li>
+        <li class="nav-main-item caps-heading-12 has-sub-menu     "
+        >
+            <a class="nav-label" href="#" role="button" aria-haspopup="true" aria-expanded="false">Solutions</a>
+            <i class="icon-arrow-down nav-sub-toggle" aria-hidden="true"></i>
+            <div class="nav-sub-menu nav-sub-menu-with-parts">
+              <ul class="l-nav-list">
+                  <li class="nav-sub-item nav-sub-item-header">
+                    <hr class="nav-sub-item-header-hr">
+                    <p class="nav-sub-item-header-label">Par taille</p>
+                  </li>
+                      <li class="nav-sub-item">
+                        <a tabindex="-1"
+                          class="nav-sub-label"
+                          href="https://www.freshworks.com/fr/freshdesk/entreprise/"
+                          
+                          rel="  "
+                        >
+                          <span class="label">
+                            Entreprise
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-sub-item">
+                        <a tabindex="-1"
+                          class="nav-sub-label"
+                          href="https://www.freshworks.com/fr/freshdesk/solutions/pme/"
+                          
+                          rel="  "
+                        >
+                          <span class="label">
+                            PME
+                          </span>
+                        </a>
+                      </li>
+                  <li class="nav-sub-item nav-sub-item-header">
+                    <hr class="nav-sub-item-header-hr">
+                    <p class="nav-sub-item-header-label">Par étude de cas</p>
+                  </li>
+                      <li class="nav-sub-item">
+                        <a tabindex="-1"
+                          class="nav-sub-label"
+                          href="https://www.freshworks.com/fr/freshdesk/helpdesk-omnicanal/"
+                          
+                          rel="  "
+                        >
+                          <span class="label">
+                            Omnichannel
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-sub-item">
+                        <a tabindex="-1"
+                          class="nav-sub-label"
+                          href="https://www.freshworks.com/fr/freshdesk/freddy-ai-for-cx/"
+                          
+                          rel="  "
+                        >
+                          <span class="label">
+                            IA
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-sub-item">
+                        <a tabindex="-1"
+                          class="nav-sub-label"
+                          href="https://www.freshworks.com/fr/freshdesk/libre-service/"
+                          
+                          rel="  "
+                        >
+                          <span class="label">
+                            Libre-Service
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-sub-item">
+                        <a tabindex="-1"
+                          class="nav-sub-label"
+                          href="https://www.freshworks.com/fr/freshdesk/fsm/"
+                          
+                          rel="  "
+                        >
+                          <span class="label">
+                            Service après-vente
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-sub-item">
+                        <a tabindex="-1"
+                          class="nav-sub-label"
+                          href="https://www.freshworks.com/fr/freshdesk/remote-customer-service/"
+                          
+                          rel="  "
+                        >
+                          <span class="label">
+                            Service client à distance
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-sub-item">
+                        <a tabindex="-1"
+                          class="nav-sub-label"
+                          href="https://www.freshworks.com/freshdesk/freshdesk-freshsuccess-proactive-support/"
+                          
+                          rel="  "
+                        >
+                          <span class="label">
+                            Support client proactif
+                          </span>
+                        </a>
+                      </li>
+                  <li class="nav-sub-item nav-sub-item-header">
+                    <hr class="nav-sub-item-header-hr">
+                    <p class="nav-sub-item-header-label">Par secteur d&#39;activité</p>
+                  </li>
+                      <li class="nav-sub-item">
+                        <a tabindex="-1"
+                          class="nav-sub-label"
+                          href="https://www.freshworks.com/fr/freshdesk/industries/retail-e-commerce/"
+                          
+                          rel="  "
+                        >
+                          <span class="label">
+                            Vente au détail &amp; e-commerce
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-sub-item">
+                        <a tabindex="-1"
+                          class="nav-sub-label"
+                          href="https://www.freshworks.com/fr/freshdesk/industries/travel-hospitality/"
+                          
+                          rel="  "
+                        >
+                          <span class="label">
+                            Tourisme &amp; Hôtellerie
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-sub-item">
+                        <a tabindex="-1"
+                          class="nav-sub-label"
+                          href="https://www.freshworks.com/fr/freshdesk/industries/software-information-technology/"
+                          
+                          rel="  "
+                        >
+                          <span class="label">
+                            Logiciels &amp; IT
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-sub-item">
+                        <a tabindex="-1"
+                          class="nav-sub-label"
+                          href="https://www.freshworks.com/fr/freshdesk/industries/societes-pure-player/"
+                          
+                          rel="  "
+                        >
+                          <span class="label">
+                            Entreprises digitales
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-sub-item">
+                        <a tabindex="-1"
+                          class="nav-sub-label"
+                          href="https://www.freshworks.com/fr/freshdesk/industries/manufacturing-customer-service/"
+                          
+                          rel="  "
+                        >
+                          <span class="label">
+                            Secteur industriel
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-sub-item">
+                        <a tabindex="-1"
+                          class="nav-sub-label"
+                          href="https://www.freshworks.com/fr/freshdesk/industries/helpdesk-software-healthcare/"
+                          
+                          rel="  "
+                        >
+                          <span class="label">
+                            Santé
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-sub-item">
+                        <a tabindex="-1"
+                          class="nav-sub-label"
+                          href="https://www.freshworks.com/fr/freshdesk/industries/helpdesk-software-education/"
+                          
+                          rel="  "
+                        >
+                          <span class="label">
+                            Éducation
+                          </span>
+                        </a>
+                      </li>
+              </ul>
+            <div>  
+        </li>
+        <li class="nav-main-item caps-heading-12 has-sub-menu     "
+        >
+            <a aria-haspopup="true" role="button" aria-expanded="false"   class="nav-label" href="#">Ressources</a>
+            <i class="icon-arrow-down nav-sub-toggle" aria-hidden="true"></i>
+            <ul class="l-nav-list nav-sub-menu">
+                  <li class="nav-sub-item">
+                    <a tabindex="-1"
+                      class="nav-sub-label"
+                      href="https://www.freshworks.com/fr/freshdesk/resources/remote-support/"
+                      
+                      rel="   "
+                    >
+                      <span class="label">
+                        Support à distance <span class="tag tag-new">NOUVEAU</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-sub-item">
+                    <a tabindex="-1"
+                      class="nav-sub-label"
+                      href="https://www.freshworks.com/fr/freshdesk/customers/"
+                      
+                      rel="   "
+                    >
+                      <span class="label">
+                        Témoignages clients
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-sub-item">
+                    <a tabindex="-1"
+                      class="nav-sub-label"
+                      href="https://www.freshworks.com/fr/freshdesk/resources/"
+                      
+                      rel="   "
+                    >
+                      <span class="label">
+                        Bibliothèque de ressources
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-sub-item">
+                    <a tabindex="-1"
+                      class="nav-sub-label"
+                      href="https://www.freshworks.com/freshdesk/webinars/"
+                      
+                      rel="   "
+                    >
+                      <span class="label">
+                        Webinaires
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-sub-item">
+                    <a tabindex="-1"
+                      class="nav-sub-label"
+                      href="https://www.freshworks.com/fr/freshdesk/free-tools/"
+                      
+                      rel="   "
+                    >
+                      <span class="label">
+                        Outils gratuits
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-sub-item">
+                    <a tabindex="-1"
+                      class="nav-sub-label"
+                      href="https://www.freshworks.com/fr/freshdesk/academy/"
+                      
+                      rel="   "
+                    >
+                      <span class="label">
+                        Académie
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-sub-item">
+                    <a tabindex="-1"
+                      class="nav-sub-label"
+                      href="https://www.freshworks.com/fr/freshdesk/blog/articles/"
+                      
+                      rel="   "
+                    >
+                      <span class="label">
+                        Blog
+                      </span>
+                    </a>
+                  </li>
+            </ul>  
+        </li>
+        <li class="nav-main-item caps-heading-12      "
+        >
+            <a
+              class="nav-label"
+              href="https://www.freshworks.com/fr/freshdesk/login/"
+              rel=" "
+              
+            >Connexion</a>  
+        </li>
+          
+  <li class="nav-main-item caps-heading-12 lang-selector fworks-language-selector hide-in-desktop">
+    <form id="lang-switch" action="">
+      <label for="language-selector-mobile" class="sr-only">Language:</label>
+      <select id="language-selector-mobile" class="lang-options">
+                  <option value="Français"
+                    lang="fr"
+                    data-link="
+  ">
+                    Français
+                  </option>
+              <option value="English"
+                lang="en-us"
+                data-link="
+  /pricing/free-helpdesk-software">
+                English
+              </option>
+              <option value="Deutsch"
+                lang="de-de"
+                data-link="
+  /de/pricing/free-helpdesk-software">
+                Deutsch
+              </option>
+              <option value="Nederlands"
+                lang="nl"
+                data-link="
+  /nl/pricing/free-helpdesk-software">
+                Nederlands
+              </option>
+              <option value="Svenska"
+                lang="sv-SE"
+                data-link="
+  /se/pricing/free-helpdesk-software">
+                Svenska
+              </option>
+              <option value="Español (España)"
+                lang="es"
+                data-link="
+  /es/pricing/free-helpdesk-software">
+                Español (España)
+              </option>
+              <option value="Español (América Latina)"
+                lang="es-latam"
+                data-link="
+  /latam/pricing/free-helpdesk-software">
+                Español (América Latina)
+              </option>
+              <option value="Português (Brasil)"
+                lang="pt-br"
+                data-link="
+  /br/pricing/free-helpdesk-software">
+                Português (Brasil)
+              </option>
+              <option value="日本語"
+                lang="ja"
+                data-link="
+  /jp">
+                日本語
+              </option>
+              <option value="한국어"
+                lang="ko"
+                data-link="
+  /ko">
+                한국어
+              </option>
+              <option value="Italiano"
+                lang="it"
+                data-link="
+  /it">
+                Italiano
+              </option>
+              <option value="简体中文"
+                lang="zh-CN"
+                data-link="
+  /cn">
+                简体中文
+              </option>
+              <option value="ภาษาไทย"
+                lang="th"
+                data-link="
+  /th/pricing/free-support-software-duplicate">
+                ภาษาไทย
+              </option>
+              <option value="Tiếng Việt"
+                lang="vi"
+                data-link="
+  /vi">
+                Tiếng Việt
+              </option>
+              <option value="Polski"
+                lang="pl"
+                data-link="
+  /pl">
+                Polski
+              </option>
+              <option value="繁體中文"
+                lang="zh-HK"
+                data-link="
+  /hk">
+                繁體中文
+              </option>
+              <option value="Türkçe"
+                lang="tr"
+                data-link="
+  /tr">
+                Türkçe
+              </option>
+          <option value="Polski" data-link="https://freshdesk.com.pl">Polski</option>
+          <option value="Italiano" data-link="https://freshdesk.it">Italiano</option>
+          <option value="中文" data-link="https://freshdesk.hk">中文</option>
+          <option value="中文简" data-link="https://cn.freshdesk.com">中文简</option>
+          <option value="Pусский" data-link="https://freshdesk.ru">Pусский</option>
+          <option value="日本語" data-link="https://freshdesk.jp">日本語</option>
+          <option value="العربية" data-link="https://freshdesk.ae">العربية</option>
+      </select>
+    </form>
+    <!--
+        <span class="nav-label lang-choice" data-lang="">Français</span>
+        <i class="icon-arrow-down"></i> -->
+  </li>
+        <li class="nav-main-item caps-heading-12  nav-main-item-button    "
+        >
+            
+      
+  <a title="" class="button button--solid " rel="" role="button" target="_self" href="https://www.freshworks.com/fr/freshdesk/signup/"> ESSAI GRATUIT</a>
+
+
+ <input type="hidden" class="go-to-dashboard" value="Aller sur Compte" aria-label="go to dashboard"/>  
+        </li>
+    </ul>
+      <ul class="l-nav-list nav-company-menu">
+        <li class="nav-main-item caps-heading-12 home-link">
+          <span class="nav-sub-item nav-company-logo">
+            <a tabindex="-1" href="https://www.freshworks.com/fr/">
+              
+    <img 
+        class="logo logo-fworks "
+        src="/static-assets/images/common/company/logos/logo-fworks-white.svg"
+        alt="Freshworks"
+    />
+            </a>
+          </span>
+        </li>
+          <li class="nav-main-item caps-heading-12   "
+          >
+          </li>
+          <li class="nav-main-item caps-heading-12   "
+          >
+          </li>
+          <li class="nav-main-item caps-heading-12 has-sub-menu  "
+          >
+              <a  class="nav-label" href="#" role="button" aria-haspopup="true" aria-expanded="false">Société</a>
+              <i class="icon-arrow-down nav-sub-toggle" aria-hidden="true"></i>
+              <ul class="l-nav-list nav-sub-menu">
+                    <li class="nav-sub-item">
+                      <a tabindex="-1"
+                        class="nav-sub-label"
+                        href="https://www.freshworks.com/fr/entreprise/apropos/"
+                        target=&quot;blank&quot;
+                        rel="  noopener"
+                      >
+                        <span class="label">
+                          À propos
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-sub-item">
+                      <a tabindex="-1"
+                        class="nav-sub-label"
+                        href="https://www.freshworks.com/fr/entreprise/leadership/"
+                        target=&quot;blank&quot;
+                        rel="  noopener"
+                      >
+                        <span class="label">
+                          Comité de direction
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-sub-item">
+                      <a tabindex="-1"
+                        class="nav-sub-label"
+                        href="https://www.freshworks.com/fr/entreprise/comite/"
+                        target=&quot;blank&quot;
+                        rel="  noopener"
+                      >
+                        <span class="label">
+                          Conseil d&#39;administration
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-sub-item">
+                      <a tabindex="-1"
+                        class="nav-sub-label"
+                        href="https://www.freshworks.com/fr/entreprise/investisseurs/"
+                        target=&quot;blank&quot;
+                        rel="  noopener"
+                      >
+                        <span class="label">
+                          Investisseurs
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-sub-item">
+                      <a tabindex="-1"
+                        class="nav-sub-label"
+                        href="https://www.freshworks.com/fr/company/affiliate-partner/"
+                        
+                        rel=" "
+                      >
+                        <span class="label">
+                          Affiliés
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-sub-item">
+                      <a tabindex="-1"
+                        class="nav-sub-label"
+                        href="https://www.freshworks.com/fr/company/partners/"
+                        
+                        rel=" "
+                      >
+                        <span class="label">
+                          Partenaires
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-sub-item">
+                      <a tabindex="-1"
+                        class="nav-sub-label"
+                        href="https://www.freshworks.com/fr/company/careers/"
+                        
+                        rel=" "
+                      >
+                        <span class="label">
+                          Carrières
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-sub-item">
+                      <a tabindex="-1"
+                        class="nav-sub-label"
+                        href="https://www.freshworks.com/fr/contact/"
+                        
+                        rel=" "
+                      >
+                        <span class="label">
+                          Contactez-nous
+                        </span>
+                      </a>
+                    </li>
+              </ul>
+          </li>
+          <li class="nav-main-item caps-heading-12   "
+          >
+              <a 
+                class="nav-label"
+                href="https://www.freshworks.com/fr/freshdesk/customers/"
+                
+                rel="  "
+              >Clients</a>
+          </li>
+          <li class="nav-main-item caps-heading-12   hide-in-mobile"
+          >
+              <a 
+                class="nav-label"
+                href="https://support.freshdesk.com"
+                target=&quot;blank&quot;
+                rel="   noopener"
+              >Support</a>
+          </li>
+          
+  <li class="nav-main-item caps-heading-12 lang-selector fworks-language-selector hide-in-desktop">
+    <form id="lang-switch" action="">
+      <label for="language-selector-mobile" class="sr-only">Language:</label>
+      <select id="language-selector-mobile" class="lang-options">
+                  <option value="Français"
+                    lang="fr"
+                    data-link="
+  ">
+                    Français
+                  </option>
+              <option value="English"
+                lang="en-us"
+                data-link="
+  /pricing/free-helpdesk-software">
+                English
+              </option>
+              <option value="Deutsch"
+                lang="de-de"
+                data-link="
+  /de/pricing/free-helpdesk-software">
+                Deutsch
+              </option>
+              <option value="Nederlands"
+                lang="nl"
+                data-link="
+  /nl/pricing/free-helpdesk-software">
+                Nederlands
+              </option>
+              <option value="Svenska"
+                lang="sv-SE"
+                data-link="
+  /se/pricing/free-helpdesk-software">
+                Svenska
+              </option>
+              <option value="Español (España)"
+                lang="es"
+                data-link="
+  /es/pricing/free-helpdesk-software">
+                Español (España)
+              </option>
+              <option value="Español (América Latina)"
+                lang="es-latam"
+                data-link="
+  /latam/pricing/free-helpdesk-software">
+                Español (América Latina)
+              </option>
+              <option value="Português (Brasil)"
+                lang="pt-br"
+                data-link="
+  /br/pricing/free-helpdesk-software">
+                Português (Brasil)
+              </option>
+              <option value="日本語"
+                lang="ja"
+                data-link="
+  /jp">
+                日本語
+              </option>
+              <option value="한국어"
+                lang="ko"
+                data-link="
+  /ko">
+                한국어
+              </option>
+              <option value="Italiano"
+                lang="it"
+                data-link="
+  /it">
+                Italiano
+              </option>
+              <option value="简体中文"
+                lang="zh-CN"
+                data-link="
+  /cn">
+                简体中文
+              </option>
+              <option value="ภาษาไทย"
+                lang="th"
+                data-link="
+  /th/pricing/free-support-software-duplicate">
+                ภาษาไทย
+              </option>
+              <option value="Tiếng Việt"
+                lang="vi"
+                data-link="
+  /vi">
+                Tiếng Việt
+              </option>
+              <option value="Polski"
+                lang="pl"
+                data-link="
+  /pl">
+                Polski
+              </option>
+              <option value="繁體中文"
+                lang="zh-HK"
+                data-link="
+  /hk">
+                繁體中文
+              </option>
+              <option value="Türkçe"
+                lang="tr"
+                data-link="
+  /tr">
+                Türkçe
+              </option>
+          <option value="Polski" data-link="https://freshdesk.com.pl">Polski</option>
+          <option value="Italiano" data-link="https://freshdesk.it">Italiano</option>
+          <option value="中文" data-link="https://freshdesk.hk">中文</option>
+          <option value="中文简" data-link="https://cn.freshdesk.com">中文简</option>
+          <option value="Pусский" data-link="https://freshdesk.ru">Pусский</option>
+          <option value="日本語" data-link="https://freshdesk.jp">日本語</option>
+          <option value="العربية" data-link="https://freshdesk.ae">العربية</option>
+      </select>
+    </form>
+    <!--
+        <span class="nav-label lang-choice" data-lang="">Français</span>
+        <i class="icon-arrow-down"></i> -->
+  </li>
+      </ul>
+  </div>
+</div>
+<script type="text/javascript">
+  FW.onLoad(function () {
+    if (window.innerWidth <= 960) {
+      FW.$('.nav-label:not(.nav-secondary-item .nav-label), .hide-in-mobile a, .lang-selector select, .nav-secondary-item .nav-sub-label').attr('tabindex', -1);
+    };
+  });
+</script>
+
+
+
+            
+      
+<div class="nav-secondary-wrapper">
+  <div class="nav-secondary l-page">
+    <div class="nav-secondary-item caps-heading-12 has-sub-menu">
+      <div class="nav-secondary-label nav-secondary-buckets ">
+        <a href="#" class="nav-label" role="button" aria-expanded="false" aria-haspopup="true" tabindex="0">Menu</a>
+        <span class="nav-sub-toggle icon-arrow-down" aria-hidden="true"></span>
+        <span class="nav-sub-label"></span>
+      </div>
+      <ul class="l-nav-list nav-sub-menu ">
+        <li class="menu-line" role="none"></li>
+          <li class="nav-sub-item scroll-link ">
+            <a
+              class="nav-sub-label  scroll-anchor"
+                href="#advantages"
+                data-scroll-link="advantages"
+                data-accordion-link=""
+            >
+              <span>Advantages</span>
+            </a>
+          </li>
+          <li class="nav-sub-item scroll-link ">
+            <a
+              class="nav-sub-label  scroll-anchor"
+                href="#features"
+                data-scroll-link="features"
+                data-accordion-link=""
+            >
+              <span>Essential features</span>
+            </a>
+          </li>
+          <li class="nav-sub-item scroll-link ">
+            <a
+              class="nav-sub-label  scroll-anchor"
+                href="#why freshdesk"
+                data-scroll-link="why freshdesk"
+                data-accordion-link=""
+            >
+              <span>Freshdesk free plan features</span>
+            </a>
+          </li>
+          <li class="nav-sub-item scroll-link ">
+            <a
+              class="nav-sub-label  scroll-anchor"
+                href="#best free help desk software"
+                data-scroll-link="best free help desk software"
+                data-accordion-link=""
+            >
+              <span>6 Best free help desk software</span>
+            </a>
+          </li>
+          <li class="nav-sub-item scroll-link ">
+            <a
+              class="nav-sub-label  scroll-anchor"
+                href="#why"
+                data-scroll-link="why"
+                data-accordion-link=""
+            >
+              <span>Why Freshdesk</span>
+            </a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+      </nav>
+
+      <script type="text/javascript">
+        // Activate the navigation elements
+        FW.onLoad(function () {
+          FW.navigation.navLoader();
+        });
+      </script>
+    </header>
+
+    <a class="main__anchor" id="main-content"></a>
+  
+      
+<section id="" data-text-list="[]" data-scroll-target="#" class="first-fold align-center pattern-gradient-light has-animation    banner-default" >
+  <div class="container  banner-content l-banner " data-scroll-target="">
+    
+      
+  <h1>Logiciel helpdesk gratuit : découvrez l'outil helpdesk gratuit de Freshdesk</h1>
+
+<p>Augmentez l'efficacité de votre support client avec un logiciel d'assistance gratuit et puissant. Commencez dès aujourd'hui et contentez vos clients !</p>
+
+
+      <div class="align-center pt-md pb-xs">
+
+      
+  <a title="" class="button button--solid " rel="" role="button" target="_self" href="https://www.freshworks.com/fr/freshdesk/signup/"> Essayer le logiciel helpdesk gratuit</a>
+
+
+      
+  <a title="" class="button button--ghost " rel="" role="button" target="_self" href="https://www.freshworks.com/fr/freshdesk/demande-demo/"> Planifier une démo</a>
+
+
+</div>
+
+
+  </div>
+    <script>
+      var typed_library_script = document.getElementById('typed-script')
+      if ((document.getElementById('typed-script') === null)) {
+        var script = document.createElement('script')
+        script.setAttribute('type', 'text/javascript')
+        script.setAttribute('id', 'typed-script')
+        script.setAttribute('src', 'https://cdn.jsdelivr.net/npm/typed.js@2.0.11')
+        document.currentScript.parentNode.appendChild(script)
+        script.onload = function () {
+          var event = new CustomEvent('execute')
+          document.dispatchEvent(event)
+        }
+      }
+    </script>
+    <script>
+      document.addEventListener('execute', (function (currentScript) {
+        return function () {
+          var parent = currentScript.parentNode
+          var original_list = JSON.parse(parent.getAttribute('data-text-list').replace(/'/g, '"'))
+          var original_text = parent.querySelector('.animated-text').textContent
+          parent.querySelector('.animated-text').innerHTML = ""
+          var text_list = []
+          for (var i = 0; i < original_list.length; i++) {
+            text_list[i] = '^1000' + original_list[i].animatable_text + '^1500'
+          }
+          text_list.unshift(original_text)
+          var options = {
+            strings: text_list,
+            stringsElement: null,
+            typeSpeed: 70,
+            backSpeed: 70,
+            loop: true,
+            loopCount: Infinity,
+            smartBackspace: true
+          };
+
+          var typed = new Typed(parent.querySelector('.animated-text'), options);
+        }
+      })(document.currentScript))
+    </script>
+</section>
+
+
+
+
+  
+      
+
+<section id="advantages" class="section-bucket section-text-media l-section  " data-scroll-target="advantages">
+  
+      
+<div class="feature-screenshot-right ">
+  <div class="l-page container">
+    <div class="row ">
+      <div id="feature-content-73728205816542" class=" feature-screenshot-right__content col-md-7">
+        
+      
+  <h2 class="feature-heading">Quels sont les avantages d'un logiciel d'assistance gratuit pour les petites entreprises et les startups ?</h2>
+
+<p>En tant que propriétaire d'une petite entreprise ou d'une startup, vous tâchez d'entretenir les relations avec vos clients afin de les capturer et de les fidéliser ? Vous devez être à l'écoute de votre clientèle grandissante lorsqu'elle rencontre des questions et des problèmes liés à l'utilisation de votre produit ou de vos services. Cependant, il arrive que ces demandes de renseignements de la part des clients passent inaperçues. Il peut arriver que vous trouviez une demande quelques heures après qu'un client vous ait contacté.</p>
+
+<p>Nous concédons qu'il peut être difficile de gérer les problèmes de vos clients et de rester constamment en contact avec eux. L'accès au capital et aux ressources étant une contrainte majeure pour les PME et les startups. L'adoption d'un logiciel d'assistance gratuit basé sur le Cloud comme Freshdesk vous aidera à suivre et à répondre à toutes vos conversations avec vos clients à partir d'un seul et même écran.</p>
+
+<p>Votre équipe du service client pourra facilement envoyer des réponses rapides et personnalisées à chaque client. Cela contribuera à fournir un expérience d’assistance exceptionnelle pour une plus grande satisfaction de la clientèle.</p>
+
+
+
+      </div>
+
+      <div class="feature-screenshot-right__media feature-screenshot__media-container col-md-5">
+          
+      
+
+<div class="lazy-image-wrapper    " style="">
+    <img
+      class="lazy-image "
+      data-src="https://website-assets-fd.freshworks.com/attachments/clncwmc3z01hg5zfnu6o6bn3t-cl16bca7901j29tfnmum03ah0-unify-all-queries-in-a-single-screen-full.one-half.png"
+      data-srcset="https://website-assets-fd.freshworks.com/attachments/clncwmc3z01hg5zfnu6o6bn3t-cl16bca7901j29tfnmum03ah0-unify-all-queries-in-a-single-screen-full.full.png 2x"
+      src="https://website-assets-fd.freshworks.com/attachments/clncwmc3z01hg5zfnu6o6bn3t-cl16bca7901j29tfnmum03ah0-unify-all-queries-in-a-single-screen-full.one-sixth.png"
+      srcset="https://website-assets-fd.freshworks.com/attachments/clncwmc3z01hg5zfnu6o6bn3t-cl16bca7901j29tfnmum03ah0-unify-all-queries-in-a-single-screen-full.one-sixth.png 2x"
+      alt="Free help desk software - Freshdesk"
+    />
+  <img class="original-image fadeIn   " alt="Free help desk software - Freshdesk" title="" src="" srcset=""
+  />
+    
+</div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  FW.onLoad(function () {
+    const $featureContent = FW.$('#feature-content-73728205816542');
+    const $featureHeading =  $featureContent.find('.feature-heading');
+    const heading = $featureHeading.length > 1 ? $featureHeading[1].textContent : $featureHeading[0].textContent;
+    const $link = $featureContent.find('p.forward--link a');
+    const ariaLabel = heading + " - " + $link.text();
+    if($link.length && ariaLabel){
+      $link.attr('aria-label',ariaLabel);
+    }
+  });
+</script>
+
+
+</section>
+
+      
+<section id="features" class="section-content-grid l-section section-light-bg  " data-scroll-target="features">  
+  <div class="l-page container l-grid">
+      <div class="l-section-heading">
+        
+      
+  <h2>Quelles sont les fonctionnalités d'un logiciel d'assistance en ligne gratuit ?</h2>
+
+
+
+      </div> <div class="row">
+        <div class="l-col-widget col-sm-4">
+        
+      
+    <div class="icon-big " style="margin: 0 auto; background-image: url(https://website-assets-fd.freshworks.com/attachments/ckrz6tfhg0087gpg0o4cw5pjr-omniroute.full.png);" role="img" aria-label=""></div>
+  <div class="align-center  ">
+
+      
+  <h3>Support multicanal</h3>
+
+<p>Un logiciel d'assistance gratuit doit vous permettre de répondre aux demandes des clients des canaux d'assistance de base tels que les e-mails, les réseaux sociaux, les widgets d'aide ou encore votre site web, et ce, à partir d'une seule fenêtre. Vous n'avez pas besoin de constamment vérifier les différents canaux de communication dédiés aux demandes des clients.</p>
+
+
+ </div>
+
+
+
+        </div>
+        <div class="l-col-widget col-sm-4">
+        
+      
+    <div class="icon-big " style="margin: 0 auto; background-image: url(https://website-assets-fd.freshworks.com/attachments/ckryyuexw000yfwg0zlxvd04e-streamline-support.full.png);" role="img" aria-label=""></div>
+  <div class="align-center  ">
+
+      
+  <h3>Gestion des tickets</h3>
+
+<p>Le logiciel de helpdesk choisie doit servir de système de ticketing puissant avec des fonctionnalités permettant de créer, de catégoriser et d'assigner facilement des tickets au bon membre de l'équipe. Vos agents du service client doivent pouvoir visualiser les tickets qui leur sont attribués. Des informations telles que la priorité et le statut du ticket peut simplifier la résolution du problème et permettre de se concentrer sur le suivant.</p>
+
+
+ </div>
+
+
+
+        </div>
+        <div class="l-col-widget col-sm-4">
+        
+      
+    <div class="icon-big " style="margin: 0 auto; background-image: url(https://website-assets-fd.freshworks.com/attachments/clncwv3ct01nh5zfn2kk6btt1-easy-to-use-svg.full.png);" role="img" aria-label=""></div>
+  <div class="align-center  ">
+
+      
+  <h3>Facilité d'utilisation</h3>
+
+<p>En raison d’un budget restreint, il n’est peut-être pas possible de consacrer beaucoup d'argent à la formation et au perfectionnement de vos agents à l'utilisation d'un logiciel d’assistance. Il est donc important que le logiciel de help desk que vous choisissez soit doté d'une interface simple et conviviale. Vos agents du service client trouveront ainsi le logiciel extrêmement facile à utiliser et s’adapteront sans avoir besoin d'aide ou de séances de formation élaborées.</p>
+
+
+ </div>
+
+
+
+        </div> </div> <div class="row">
+        <div class="l-col-widget col-sm-4 col-sm-offset-2">
+        
+      
+    <div class="icon-big " style="margin: 0 auto; background-image: url(https://website-assets-fd.freshworks.com/attachments/ckryva74x0942glg02hogo6w4-knowledge-base.full.png);" role="img" aria-label=""></div>
+  <div class="align-center  ">
+
+      
+  <h3>Possibilité du libre-accès</h3>
+
+<p>88 % des clients attendent des entreprises qu'elles disposent d'un portail en libre-accès en ligne. Cela révèle l'intention des clients de résoudre leurs questions rapidement et par eux-mêmes. Étant donné que votre service client reçoit un grand nombre de questions de la part des clients, la possibilité d'héberger une base de connaissances sur votre logiciel de support d'assistance gratuit en ligne est une fonctionnalité pratique.</p>
+
+
+ </div>
+
+
+
+        </div>
+        <div class="l-col-widget col-sm-4">
+        
+      
+    <div class="icon-big " style="margin: 0 auto; background-image: url(https://website-assets-fd.freshworks.com/attachments/cjibm8d3x010dhzfzaq3qfzxn-trends-in-your-tickets.svg);" role="img" aria-label=""></div>
+  <div class="align-center  ">
+
+      
+  <h3>Rapports et analyse</h3>
+
+<p>Certains outils d’helpdesk gratuits négligent totalement les fonctions de reporting. Pourtant, les rapports d’assistance vous permettent de valider les performances de votre équipe, les tendances des tickets et la satisfaction des clients. Ces données vous permettront de prendre les décisions les plus adaptées à vos clients et, en fin de compte, à votre entreprise.</p>
+
+
+ </div>
+
+
+
+        </div> </div>
+  </div>
+</section>
+
+
+      
+ <section class="pt-xl   " data-scroll-target="why freshdesk" id ="why freshdesk">
+  <div class="l-page container ">
+
+    
+      
+  <h2 class="mt-sm">Les fonctionnalités du logiciel d'assistance gratuit Freshdesk</h2>
+
+<p class="mt-sm">Connaissant les éléments fondamentaux nécessaires pour fournir un bon support d’assistance à la clientèle, Freshdesk offre un plan gratuit et sans durée limitée - jusqu'à 10 agents - qui aidera les petites entreprises et les startups à partir du bon pied lorsqu'il s'agit de fournir une expérience-client sans contraintes. Voici la liste des fonctionnalités dont vous bénéficierez en vous inscrivant à l’abonnement gratuit Freshdesk.</p>
+
+
+
+  </div>
+ </section>
+
+      
+
+<section id="37721407627156" class="section-bucket section-text-media pt-xl  ">
+  
+      
+<div class="feature-screenshot-right ">
+  <div class="l-page container">
+    <div class="row ">
+      <div id="feature-content-133739536132722" class=" feature-screenshot-right__content col-md-6">
+        
+      
+  <h3 class="feature-heading">1. Organiser et gérer les tickets efficacement sur l'ensemble des plateformes</h3>
+
+<p>Avec Freshdesk, vous pouvez travailler sur des demandes de clients provenant de courriels, de Facebook, de Twitter, de votre formulaire de contact web ou d'un widget d'aide à partir d'une seule fenêtre. Organisez toutes les demandes de vos clients. Visualisez-les comme des tickets de support d’assistance avec des champs détaillés dans notre système de ticketing.</p>
+
+
+      
+
+<div class="row">
+    <div class="col-md-12">
+      <ul class="list-fdesk list-checkmarks list-checkmarks-img">
+          <li>
+              Boîte de réception par équipe permettant aux agents d&#39;avoir une visibilité sur le statut des demandes des clients.
+          </li>
+          <li>
+              Suivre les demandes des clients et les mentions de la marque sur Twitter et Facebook.
+          </li>
+          <li>
+              Accédez à l&#39;historique de l’activité des tickets pour chaque requête de client.
+          </li>
+          <li>
+              Catégoriser automatiquement les problèmes des clients à l&#39;aide d&#39;étiquettes de tickets.
+          </li>
+          <li>
+              Exporter et fusionner les tickets pour accélérer la résolution des problèmes.
+          </li>
+          <li>
+              Envoyez des emails aux clients pour leur annoncer des temps de maintenance importants ou leur apporter une aide proactive.
+          </li>
+      </ul>
+    </div>
+</div>
+
+
+      
+  <p><br /></p>
+
+
+      </div>
+
+      <div class="feature-screenshot-right__media feature-screenshot__media-container col-md-6">
+          
+      
+
+<div class="lazy-image-wrapper    " style="">
+    <img
+      class="lazy-image "
+      data-src="https://website-assets-fd.freshworks.com/attachments/cjj0heh25007h2qfznvkgvk00-ticketing-screen.one-half.png"
+      data-srcset="https://website-assets-fd.freshworks.com/attachments/cjj0heh25007h2qfznvkgvk00-ticketing-screen.full.png 2x"
+      src="https://website-assets-fd.freshworks.com/attachments/cjj0heh25007h2qfznvkgvk00-ticketing-screen.one-sixth.png"
+      srcset="https://website-assets-fd.freshworks.com/attachments/cjj0heh25007h2qfznvkgvk00-ticketing-screen.one-sixth.png 2x"
+      alt="multi channel support in free helpdesk software"
+    />
+  <img class="original-image fadeIn   " alt="multi channel support in free helpdesk software" title="" src="" srcset=""
+  />
+    
+</div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  FW.onLoad(function () {
+    const $featureContent = FW.$('#feature-content-133739536132722');
+    const $featureHeading =  $featureContent.find('.feature-heading');
+    const heading = $featureHeading.length > 1 ? $featureHeading[1].textContent : $featureHeading[0].textContent;
+    const $link = $featureContent.find('p.forward--link a');
+    const ariaLabel = heading + " - " + $link.text();
+    if($link.length && ariaLabel){
+      $link.attr('aria-label',ariaLabel);
+    }
+  });
+</script>
+
+      
+<div class="feature-screenshot-left ">
+  <div class="l-page container">
+    <div class="row ">
+      <div id="feature-content-111449613444000" class=" feature-screenshot-left__content col-md-6">
+        
+      
+  <h3 class="feature-heading">2. Aidez votre équipe à en faire plus grâce aux automatisations</h3>
+
+<p>Gagnez du temps et de l'énergie en automatisant les tâches répétitives et en organisant les conversations avec les clients selon vos besoins. Dans le logiciel d’assistance gratuit de Freshdesk, l'automatisation hiérarchise les demandes en fonction de ce que les clients rédigent et attribue les requêtes à la bonne personne au sein de votre équipe.</p>
+
+
+      
+
+<div class="row">
+    <div class="col-md-12">
+      <ul class="list-fdesk list-checkmarks list-checkmarks-img">
+          <li>
+              Implémentez des workflows simples pour automatiser l&#39;ensemble du processus de création de tickets, depuis la hiérarchisation et la catégorisation des demandes jusqu&#39;à l&#39;acheminement optimal des tickets.
+          </li>
+          <li>
+              Déclenchez automatiquement des notifications personnalisées par email aux agents et aux clients en cas de mise à jour des tickets.
+          </li>
+          <li>
+              Afficher les informations essentielles du client dans l&#39;interface de la boîte de réception des tickets pour simplifier l&#39;aide contextuelle.
+          </li>
+          <li>
+              Insérer des réponses personnalisées en un seul clic.
+          </li>
+          <li>
+              Évitez de répéter les détails des tickets au sein de l&#39;équipe en collaborant de manière contextuelle.
+          </li>
+          <li>
+              Évitez de répéter les détails des tickets au sein de l&#39;équipe en collaborant de manière contextuelle.
+          </li>
+      </ul>
+    </div>
+</div>
+
+
+      
+  <p><br /></p>
+
+
+      </div>
+
+      <div class="feature-screenshot-left__media feature-screenshot__media-container col-md-6">
+          
+      
+
+<div class="lazy-image-wrapper    " style="">
+    <img
+      class="lazy-image "
+      data-src="https://website-assets-fd.freshworks.com/attachments/cjj0hj28400em22fzstx6czlk-facebook-ticket-dispatchr-3x.one-half.png"
+      data-srcset="https://website-assets-fd.freshworks.com/attachments/cjj0hj28400em22fzstx6czlk-facebook-ticket-dispatchr-3x.full.png 2x"
+      src="https://website-assets-fd.freshworks.com/attachments/cjj0hj28400em22fzstx6czlk-facebook-ticket-dispatchr-3x.one-sixth.png"
+      srcset="https://website-assets-fd.freshworks.com/attachments/cjj0hj28400em22fzstx6czlk-facebook-ticket-dispatchr-3x.one-sixth.png 2x"
+      alt="Automated ticket assignment in free helpdesk system"
+    />
+  <img class="original-image fadeIn   " alt="Automated ticket assignment in free helpdesk system" title="" src="" srcset=""
+  />
+    
+</div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  FW.onLoad(function () {
+    const $featureContent = FW.$('#feature-content-111449613444000');
+    const $featureHeading =  $featureContent.find('.feature-heading');
+    const heading = $featureHeading.length > 1 ? $featureHeading[1].textContent : $featureHeading[0].textContent;
+    const $link = $featureContent.find('p.forward--link a');
+    const ariaLabel = heading + " - " + $link.text();
+    if($link.length && ariaLabel){
+      $link.attr('aria-label',ariaLabel);
+    }
+  });
+</script>
+
+      
+<div class="feature-screenshot-right ">
+  <div class="l-page container">
+    <div class="row ">
+      <div id="feature-content-164602506009792" class=" feature-screenshot-right__content col-md-6">
+        
+      
+  <h3 class="feature-heading">3. Offrir des options de libre-accès utiles aux clients</h3>
+
+<p>Aidez vos clients à obtenir des réponses à leurs questions instantanément tout en réduisant votre volume de tickets en détournant les demandes simples et répétitives. Grâce au libre-accès, le logiciel d’assistance gratuit de Freshdesk permet de construire une base de connaissances qui laissera la possibilité aux clients de trouver des réponses par eux-mêmes.</p>
+
+
+      
+
+<div class="row">
+    <div class="col-md-12">
+      <ul class="list-fdesk list-checkmarks list-checkmarks-img">
+          <li>
+              Créez une base de connaissances contenant des FAQ et des guides pour les questions répétitives.
+          </li>
+          <li>
+              Maintenez votre base de connaissances à jour. Il suffit de transformer directement les réponses de vos agents aux nouveaux problèmes des clients en articles de résolution de problèmes.
+          </li>
+          <li>
+              Basculer les documents du centre d&#39;aide vers le privé et créer une base de connaissances en libre-accès interne pour aider les agents.
+          </li>
+          <li>
+              Intégrez des articles comportant les solutions adaptées et des formulaires de contact dans les widgets d&#39;aide de votre site web afin d&#39;offrir un support proactif à vos clients.
+          </li>
+      </ul>
+    </div>
+</div>
+
+
+      
+  <p><br /></p>
+
+
+      </div>
+
+      <div class="feature-screenshot-right__media feature-screenshot__media-container col-md-6">
+          
+      
+
+<div class="lazy-image-wrapper    " style="">
+    <img
+      class="lazy-image "
+      data-src="https://website-assets-fd.freshworks.com/attachments/cjj0hiu9000cz27fziss6vk7l-can-cloud-help-desk-software-do-all-that.one-half.png"
+      data-srcset="https://website-assets-fd.freshworks.com/attachments/cjj0hiu9000cz27fziss6vk7l-can-cloud-help-desk-software-do-all-that.full.png 2x"
+      src="https://website-assets-fd.freshworks.com/attachments/cjj0hiu9000cz27fziss6vk7l-can-cloud-help-desk-software-do-all-that.one-sixth.png"
+      srcset="https://website-assets-fd.freshworks.com/attachments/cjj0hiu9000cz27fziss6vk7l-can-cloud-help-desk-software-do-all-that.one-sixth.png 2x"
+      alt="Self service in Free help desk software"
+    />
+  <img class="original-image fadeIn   " alt="Self service in Free help desk software" title="" src="" srcset=""
+  />
+    
+</div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  FW.onLoad(function () {
+    const $featureContent = FW.$('#feature-content-164602506009792');
+    const $featureHeading =  $featureContent.find('.feature-heading');
+    const heading = $featureHeading.length > 1 ? $featureHeading[1].textContent : $featureHeading[0].textContent;
+    const $link = $featureContent.find('p.forward--link a');
+    const ariaLabel = heading + " - " + $link.text();
+    if($link.length && ariaLabel){
+      $link.attr('aria-label',ariaLabel);
+    }
+  });
+</script>
+
+      
+<div class="feature-screenshot-left ">
+  <div class="l-page container">
+    <div class="row ">
+      <div id="feature-content-78872034129738" class=" feature-screenshot-left__content col-md-6">
+        
+      
+  <h3 class="feature-heading">4. Suivre, optimiser et améliorer les performances de votre service client</h3>
+
+<p>Keep a tab on what’s going on in your customer support team and ensure Gardez un œil sur ce qui se passe au sein de votre équipe d’assistance et assurez-vous que les problèmes des clients soient résolus rapidement grâce au tableau de bord de ticketing par défaut et aux rapports disponibles dans la version gratuite.</p>
+
+
+      
+
+<div class="row">
+    <div class="col-md-12">
+      <ul class="list-fdesk list-checkmarks list-checkmarks-img">
+          <li>
+              Visualisez les données sur le volume de tickets au fil du temps grâce à des tableaux de bord intuitifs.
+          </li>
+          <li>
+              Contrôlez en temps réel le nombre de tickets reçus, résolus et rouverts.
+          </li>
+          <li>
+              Définissez et organisez votre capacité en consultant le rapport sur les tendances du volume de ticket sur une base quotidienne, mensuelle ou trimestrielle.
+          </li>
+          <li>
+              Identifiez les pics de productivité ou les périodes à charge de travail intense pour les agents au cours d&#39;une semaine ou d&#39;une journée.
+          </li>
+      </ul>
+    </div>
+</div>
+
+
+
+      </div>
+
+      <div class="feature-screenshot-left__media feature-screenshot__media-container col-md-6">
+          
+      
+
+<div class="lazy-image-wrapper    " style="">
+    <img
+      class="lazy-image "
+      data-src="https://website-assets-fd.freshworks.com/attachments/clncygod501s55afnlfbe0tdv-helpdesk-analytics-full.one-half.png"
+      data-srcset="https://website-assets-fd.freshworks.com/attachments/clncygod501s55afnlfbe0tdv-helpdesk-analytics-full.full.png 2x"
+      src="https://website-assets-fd.freshworks.com/attachments/clncygod501s55afnlfbe0tdv-helpdesk-analytics-full.one-sixth.png"
+      srcset="https://website-assets-fd.freshworks.com/attachments/clncygod501s55afnlfbe0tdv-helpdesk-analytics-full.one-sixth.png 2x"
+      alt="free help desk software reporting"
+    />
+  <img class="original-image fadeIn   " alt="free help desk software reporting" title="" src="" srcset=""
+  />
+    
+</div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  FW.onLoad(function () {
+    const $featureContent = FW.$('#feature-content-78872034129738');
+    const $featureHeading =  $featureContent.find('.feature-heading');
+    const heading = $featureHeading.length > 1 ? $featureHeading[1].textContent : $featureHeading[0].textContent;
+    const $link = $featureContent.find('p.forward--link a');
+    const ariaLabel = heading + " - " + $link.text();
+    if($link.length && ariaLabel){
+      $link.attr('aria-label',ariaLabel);
+    }
+  });
+</script>
+
+
+</section>
+
+      <section class=" l-section   " data-scroll-target="" id ="">
+    <div class=' 
+                banner-badges   l-page   
+                banner-badges-light 
+                stack' id="stripe-135454145570716">
+            <div class="align-center pt-sm pb-sm ">
+                
+      
+  <h3>Vous avez des besoins complexes en matière de support d'assistance ?</h3>
+
+<p>Toutes les entreprises n'ont pas les mêmes objectifs et exigences en matière de service client. Si vous faites partie d'une entreprise ou d'un secteur d'activité dont les besoins en matière d’assistance sont plus complexes et nécessitent une solution de help desk gratuite, alors Freshdesk assure vos arrières.</p>
+
+
+      <div class="pt-xs">
+  <a title="" class="button button--solid " rel="" role="button" target="_self" href="https://www.freshworks.com/fr/freshdesk/helpdesk-features/"> Comparer les tarifs et fonctionnalités du logiciel d&#39;assistance</a>
+</div>
+
+
+           </div>
+        </div>
+</section>
+
+
+      
+ <section class="l-section section-light-bg  " data-scroll-target="best free help desk software" id ="best free help desk software">
+  <div class="l-page container ">
+
+    
+      
+  <h2 class="mt-sm">Comparaison avec le meilleur logiciel d'helpdesk gratuit</h2>
+
+<p class="mt-sm">Voici une liste des meilleurs outils helpdesk gratuits qui s'accompagnent d'un plan gratuit à vie pour répondre aux besoins fondamentaux des entreprises en matière de service-client.</p>
+
+<p class="mt-sm">Veuillez noter que nous n'avons pas pris en compte les services d'assistance qui proposent uniquement un essai gratuit pour une période limitée et qui incitent ensuite les utilisateurs à mettre à niveau leur produit pour pouvoir continuer à l'utiliser.</p>
+
+
+      <div class="mt-md">
+<table class="plain-table ">
+      <col style="width:200px" />
+      <col style="width:200px" />
+      <col style="width:200px" />
+      <col style="width:200px" />
+      <col style="width:250px" />
+      <col style="width:200px" />
+      <col style="width:150px" />
+      <col style="width:200px" />
+  <thead>
+    <tr>
+        <th class="caps-heading-12-bold" scope="col"><strong>Support d'assistance</strong>
+</th>
+        <th class="caps-heading-12-bold" scope="col"><strong>BOÎTE DE RÉCÉPTION PARTAGÉE</strong>
+</th>
+        <th class="caps-heading-12-bold" scope="col"><strong>ASSISTANCE SUR LES RÉSEAUX SOCIAUX</strong>
+</th>
+        <th class="caps-heading-12-bold" scope="col"><strong>ASSIGNEMENT AUTOMATIQUE DES TICKETS</strong>
+</th>
+        <th class="caps-heading-12-bold" scope="col"><strong>COLLABORATION EN TEMPS RÉEL</strong>
+</th>
+        <th class="caps-heading-12-bold" scope="col"><strong>BASE DE CONNAISSANCES PUBLIQUE</strong>
+</th>
+        <th class="caps-heading-12-bold" scope="col"><strong>APPLICATION MOBILE</strong>
+</th>
+        <th class="caps-heading-12-bold" scope="col"><strong>RAPPORTS</strong>
+</th>
+    </tr>
+  </thead>
+  <tbody class="">
+      <tr>
+            <td>Freshdesk
+</td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+      </tr>
+      <tr>
+            <td>LiveAgent
+</td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+            <td>
+                <div class="circled-cross no-bg-circled-cross"></div>
+            </td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+            <td>
+                <div class="circled-cross no-bg-circled-cross"></div>
+            </td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+      </tr>
+      <tr>
+            <td>Hubspot
+</td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+            <td>
+                <div class="circled-cross no-bg-circled-cross"></div>
+            </td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+            <td>
+                <div class="circled-cross no-bg-circled-cross"></div>
+            </td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+      </tr>
+      <tr>
+            <td>Zoho Desk
+</td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+            <td>
+                <div class="circled-cross no-bg-circled-cross"></div>
+            </td>
+            <td>
+                <div class="circled-cross no-bg-circled-cross"></div>
+            </td>
+            <td>
+                <div class="circled-cross no-bg-circled-cross"></div>
+            </td>
+            <td>
+                <div class="circled-cross no-bg-circled-cross"></div>
+            </td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+            <td>
+                <div class="circled-cross no-bg-circled-cross"></div>
+            </td>
+      </tr>
+      <tr>
+            <td>Solarwinds
+</td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+            <td>
+                <div class="circled-cross no-bg-circled-cross"></div>
+            </td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+            <td>
+                <div class="circled-cross no-bg-circled-cross"></div>
+            </td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+      </tr>
+      <tr>
+            <td>Spiceworks
+</td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+            <td>
+                <div class="circled-cross no-bg-circled-cross"></div>
+            </td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+            <td>
+                <div class="circled-check no-bg-circled-check"></div>
+            </td>
+      </tr>
+  </tbody>
+</table></div>
+
+
+  </div>
+ </section>
+
+      
+ <section class="pt-xl   " data-scroll-target="why" id ="why">
+  <div class="l-page container ">
+
+    
+      
+  <h2 class="align-center">Pourquoi plus de 50 000 entreprises de toutes tailles ont choisi Freshdesk ?</h2>
+
+
+
+  </div>
+ </section>
+
+      
+<section id="" class="section-content-grid l-section   " data-scroll-target="">  
+  <div class="l-page container l-grid"> <div class="row">
+        <div class="l-col-widget col-sm-4">
+        
+      
+    <div class="icon-small feature-description-icon-d" style=" background-image: url(https://website-assets-fd.freshworks.com/attachments/cjibm8bux00gpiifz4h64n5ap-custom-apps.svg);" role="img" aria-label=""></div>
+  <div class="  feature-description-text-d">
+
+      
+  <h5>Plus de 1000 intégrations</h5>
+
+<p>Connectez-vous sans effort aux outils que vous utilisez au quotidien, y compris les logiciels de CRM et de comptabilité, les outils d'automatisation des e-mails, les outils de productivité et de collaboration tels que <a href="https://www.freshworks.com/fr/freshdesk/integration/slack/">Slack</a>, <a href="https://www.freshworks.com/apps/freshdesk/microsoft_teams/">MS teams</a>, <a href="https://www.freshworks.com/freshdesk/google-apps-integration-signup/">GSuite</a>. En savoir plus en vous rendant sur notre vaste <a href="https://www.freshworks.com/apps/">marché des applications</a> contenant plus de 1 000 applications.</p>
+
+
+ </div>
+
+
+
+        </div>
+        <div class="l-col-widget col-sm-4">
+        
+      
+    <div class="icon-small feature-description-icon-d" style=" background-image: url(https://website-assets-fd.freshworks.com/attachments/clncygnrr01s25afnh4kryaow-robust-secure-your-data-67-svg.full.png);" role="img" aria-label=""></div>
+  <div class="  feature-description-text-d">
+
+      
+  <h5>Sécurité renforcée</h5>
+
+<p>Lorsque vous optez pour Freshdesk, vous utilisez un système d'assistance sécurisé qui prend au sérieux la confidentialité et la sécurité des données. Les comptes Freshdesk sont délivré par défaut avec un certificat SSL. Vous pouvez également choisir l'emplacement du centre de données. Freshdesk est conforme au RGPD et adhère aux normes de sécurité courantes telles que ISO 27001 et SOC 2.</p>
+
+
+ </div>
+
+
+
+        </div>
+        <div class="l-col-widget col-sm-4">
+        
+      
+    <div class="icon-small feature-description-icon-d" style=" background-image: url(https://website-assets-fd.freshworks.com/attachments/clncygns001wa5zfnc3fzq4rw-reliable-support-svg.full.png);" role="img" aria-label=""></div>
+  <div class="  feature-description-text-d">
+
+      
+  <h5>Un support fiable</h5>
+
+<p>Notre forum communautaire animé et notre base de connaissances exhaustive contenant des guides approfondis en anglais et en français, des tutoriels vidéo et des FAQ sont conçus pour vous aider à réussir avec l’helpdesk. Les utilisateurs de l'offre gratuite peuvent également bénéficier de l'assistance proposée par e-mail par Freshdesk, 24 heures sur 24 et 7 jours sur 7.</p>
+
+
+ </div>
+
+
+
+        </div> </div>
+  </div>
+</section>
+
+
+      
+<section class="l-section  ">
+     <div class="l-page container align-center">
+      <div class="l-section-heading align-center">
+        
+      
+  <h2>Apprenez-le de nos clients</h2>
+
+
+
+      </div>
+    
+      
+      
+<div id="78872034129968" data-interval="false" class="carousel testimonial-all-center slide carousel-fade mt-lg" data-ride="carousel">
+  <div class="carousel-inner">
+      <div class="carousel-item item active" role="tabpanel" 
+        aria-hidden=false 
+        tabindex="0" id="panel-788720341299681"
+        aria-label="Testimonial 1 of 3">
+        <div class="row testimonial-card all-center">
+          <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 testimonial-content">
+            <i class="icon-quote-open testimonial-quote-icon"></i>
+            <div class="testimonial-logo align-center">
+              
+      
+
+<div class="lazy-image-wrapper    " style="">
+    <img
+      class="lazy-image "
+      data-src="https://website-assets-fd.freshworks.com/attachments/cjia1ds7x0025dgfzbv07tx21-logo-hamleys.one-half.png"
+      data-srcset="https://website-assets-fd.freshworks.com/attachments/cjia1ds7x0025dgfzbv07tx21-logo-hamleys.full.png 2x"
+      src="https://website-assets-fd.freshworks.com/attachments/cjia1ds7x0025dgfzbv07tx21-logo-hamleys.one-sixth.png"
+      srcset="https://website-assets-fd.freshworks.com/attachments/cjia1ds7x0025dgfzbv07tx21-logo-hamleys.one-sixth.png 2x"
+      alt="logo hamleys"
+    />
+  <img class="original-image fadeIn   " alt="logo hamleys" title="" src="" srcset=""
+  />
+    
+</div>
+
+
+
+            </div>
+            <p class="testimonial-quote">“Nous avons commencé à chercher un nouvel outil en automne, et nous voulions vraiment l&#39;avoir mis en place et optimisé avant la période chargée de Noël. Freshdesk a fait en sorte que le processus d&#39;implémentation soit le plus transparent possible, et l&#39;équipe était prête en 48 heures.”</p>
+            <div class="col-md-10 col-md-offset-1 author-bio">
+                <div class="image-small">
+                  
+      
+
+<div class="lazy-image-wrapper    " style="">
+    <img
+      class="lazy-image "
+      data-src="https://website-assets-fd.freshworks.com/attachments/cjia1br1s000we4fz7u6nxe37-vaughan-potter-2x.one-half.png"
+      data-srcset="https://website-assets-fd.freshworks.com/attachments/cjia1br1s000we4fz7u6nxe37-vaughan-potter-2x.full.png 2x"
+      src="https://website-assets-fd.freshworks.com/attachments/cjia1br1s000we4fz7u6nxe37-vaughan-potter-2x.one-sixth.png"
+      srcset="https://website-assets-fd.freshworks.com/attachments/cjia1br1s000we4fz7u6nxe37-vaughan-potter-2x.one-sixth.png 2x"
+      alt="vaughan potter 2x"
+    />
+  <img class="original-image fadeIn   " alt="vaughan potter 2x" title="" src="" srcset=""
+  />
+    
+</div>
+
+
+
+                </div>
+              <div class="author-bio-details">
+                <h6 class="author-name">Vaughan Potter</h6>
+                <div class="author-designation">Responsable des services clients</div>
+                <div class="author-company">Hamleys</div>
+              </div>
+            </div>
+            <i class="icon-quote-close testimonial-quote-icon"></i>
+          </div>
+            <div class="testimonial-band hide-in-mobile-and-tablet">
+              <div class="testimonial-band-inner">
+                      <span class="forward--link link"><a href="https://www.freshworks.com/freshdesk/resources/case-study/hamleys/">Lisez l'étude de cas complète</a></span>
+
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="carousel-item item " role="tabpanel" 
+        aria-hidden=true 
+        tabindex="0" id="panel-788720341299682"
+        aria-label="Testimonial 2 of 3">
+        <div class="row testimonial-card all-center">
+          <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 testimonial-content">
+            <i class="icon-quote-open testimonial-quote-icon"></i>
+            <div class="testimonial-logo align-center">
+              
+      
+
+<div class="lazy-image-wrapper    " style="">
+    <img
+      class="lazy-image "
+      data-src="https://website-assets-fd.freshworks.com/attachments/cjia1ds0i001wdbfzjkwbrmcf-logo-lesley.one-half.png"
+      data-srcset="https://website-assets-fd.freshworks.com/attachments/cjia1ds0i001wdbfzjkwbrmcf-logo-lesley.full.png 2x"
+      src="https://website-assets-fd.freshworks.com/attachments/cjia1ds0i001wdbfzjkwbrmcf-logo-lesley.one-sixth.png"
+      srcset="https://website-assets-fd.freshworks.com/attachments/cjia1ds0i001wdbfzjkwbrmcf-logo-lesley.one-sixth.png 2x"
+      alt="logo lesley"
+    />
+  <img class="original-image fadeIn   " alt="logo lesley" title="" src="" srcset=""
+  />
+    
+</div>
+
+
+
+            </div>
+            <p class="testimonial-quote">“Nous avons été épatés quand nous avons vu Freshdesk. Ce mélange de réseaux sociaux, messagerie, base de connaissances, mobilité et ludification qui fonctionnent tous ensemble, c&#39;est ce qui nous a décidé.”</p>
+            <div class="col-md-10 col-md-offset-1 author-bio">
+                <div class="image-small">
+                  
+      
+
+<div class="lazy-image-wrapper    " style="">
+    <img
+      class="lazy-image "
+      data-src="https://website-assets-fd.freshworks.com/attachments/cjia1bql6000xdbfzscn80ase-charles-cooper-2x.one-half.png"
+      data-srcset="https://website-assets-fd.freshworks.com/attachments/cjia1bql6000xdbfzscn80ase-charles-cooper-2x.full.png 2x"
+      src="https://website-assets-fd.freshworks.com/attachments/cjia1bql6000xdbfzscn80ase-charles-cooper-2x.one-sixth.png"
+      srcset="https://website-assets-fd.freshworks.com/attachments/cjia1bql6000xdbfzscn80ase-charles-cooper-2x.one-sixth.png 2x"
+      alt="charles cooper 2x"
+    />
+  <img class="original-image fadeIn   " alt="charles cooper 2x" title="" src="" srcset=""
+  />
+    
+</div>
+
+
+
+                </div>
+              <div class="author-bio-details">
+                <h6 class="author-name">Charles Cooper</h6>
+                <div class="author-designation">Directeur, Service de support technologique</div>
+                <div class="author-company">Lesley University</div>
+              </div>
+            </div>
+            <i class="icon-quote-close testimonial-quote-icon"></i>
+          </div>
+            <div class="testimonial-band hide-in-mobile-and-tablet">
+              <div class="testimonial-band-inner">
+                      <span class="forward--link link"><a href="https://www.freshworks.com/freshdesk/resources/case-study/lesley-university-customer-support/">Lisez l'étude de cas complète</a></span>
+
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="carousel-item item " role="tabpanel" 
+        aria-hidden=true 
+        tabindex="0" id="panel-788720341299683"
+        aria-label="Testimonial 3 of 3">
+        <div class="row testimonial-card all-center">
+          <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 testimonial-content">
+            <i class="icon-quote-open testimonial-quote-icon"></i>
+            <div class="testimonial-logo align-center">
+              
+      
+
+<div class="lazy-image-wrapper    " style="">
+    <img
+      class="lazy-image "
+      data-src="https://website-assets-fd.freshworks.com/attachments/cjiwqsga3004lvafzcqhvhscy-logo-pearson.one-half.png"
+      data-srcset="https://website-assets-fd.freshworks.com/attachments/cjiwqsga3004lvafzcqhvhscy-logo-pearson.full.png 2x"
+      src="https://website-assets-fd.freshworks.com/attachments/cjiwqsga3004lvafzcqhvhscy-logo-pearson.one-sixth.png"
+      srcset="https://website-assets-fd.freshworks.com/attachments/cjiwqsga3004lvafzcqhvhscy-logo-pearson.one-sixth.png 2x"
+      alt="logo pearson"
+    />
+  <img class="original-image fadeIn   " alt="logo pearson" title="" src="" srcset=""
+  />
+    
+</div>
+
+
+
+            </div>
+            <p class="testimonial-quote">“Nous recommandons Freshdesk parce que c’est super et ses agents sont déterminés à faire leur possible pour que le système s&#39;adapte aux besoins des clients.”</p>
+            <div class="col-md-10 col-md-offset-1 author-bio">
+                <div class="image-small">
+                  
+      
+
+<div class="lazy-image-wrapper    " style="">
+    <img
+      class="lazy-image "
+      data-src="https://website-assets-fd.freshworks.com/attachments/cjj8pkcpz005ck2fzct6l4uhm-matthijs-lok.one-half.jpg"
+      data-srcset="https://website-assets-fd.freshworks.com/attachments/cjj8pkcpz005ck2fzct6l4uhm-matthijs-lok.full.jpg 2x"
+      src="https://website-assets-fd.freshworks.com/attachments/cjj8pkcpz005ck2fzct6l4uhm-matthijs-lok.one-sixth.jpg"
+      srcset="https://website-assets-fd.freshworks.com/attachments/cjj8pkcpz005ck2fzct6l4uhm-matthijs-lok.one-sixth.jpg 2x"
+      alt="matthijs lok"
+    />
+  <img class="original-image fadeIn   " alt="matthijs lok" title="" src="" srcset=""
+  />
+    
+</div>
+
+
+
+                </div>
+              <div class="author-bio-details">
+                <h6 class="author-name">Matthijs Lok</h6>
+                <div class="author-designation">Responsable du Marketing en ligne</div>
+                <div class="author-company">Pearson</div>
+              </div>
+            </div>
+            <i class="icon-quote-close testimonial-quote-icon"></i>
+          </div>
+            <div class="testimonial-band hide-in-mobile-and-tablet">
+              <div class="testimonial-band-inner">
+                      <span class="forward--link link"><a href="https://www.freshworks.com/freshdesk/resources/case-study/pearson-boosts-email-support-with-freshdesk/">Lisez l'étude de cas complète</a></span>
+
+              </div>
+            </div>
+        </div>
+      </div>
+  </div>
+    <div class="carousel-controls-wrapper  mt-md">
+      <div class="carousel-indicators-wrapper">
+        <a class="left carousel-control" href="#78872034129968" role="button" 
+          data-slide="prev" tabindex="0" aria-label="Go to Previous Slide">
+          <span class="icon-arrow-button-left" aria-hidden="true"></span>
+        </a>
+        <a class="right carousel-control" href="#78872034129968" role="button" 
+          data-slide="next" tabindex="0" aria-label="Go to Next Slide">
+          <span class="icon-arrow-button-right" aria-hidden="true"></span>
+        </a>
+        <ol class="carousel-indicators" role="tablist">
+            <li data-target="#78872034129968" data-slide-to="0" 
+              class="active"
+              tabindex="0" role="tab" 
+              aria-controls="panel-788720341299681"
+              aria-label="Go to slide 1" aria-selected=true>
+            </li>
+            <li data-target="#78872034129968" data-slide-to="1" 
+              class=""
+              tabindex="0" role="tab" 
+              aria-controls="panel-788720341299682"
+              aria-label="Go to slide 2" aria-selected=false>
+            </li>
+            <li data-target="#78872034129968" data-slide-to="2" 
+              class=""
+              tabindex="0" role="tab" 
+              aria-controls="panel-788720341299683"
+              aria-label="Go to slide 3" aria-selected=false>
+            </li>
+        </ol>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+     </div>
+</section>
+
+      
+  <section class="pt-xl badges-logos" data-scroll-target="recognition">
+    <div class="l-page container align-center">
+      <div class="l-section-heading">
+        
+      
+  <h2>Les experts du secteur recommandent Freshdesk</h2>
+
+
+
+      </div>
+        <div class="badge-logo">
+          
+      
+
+<div class="lazy-image-wrapper    " style="">
+    <img
+      class="lazy-image "
+      data-src="https://website-assets-fd.freshworks.com/attachments/cknpnh49u034xmog1x5n8dsak-gartner-1.one-half.png"
+      data-srcset="https://website-assets-fd.freshworks.com/attachments/cknpnh49u034xmog1x5n8dsak-gartner-1.full.png 2x"
+      src="https://website-assets-fd.freshworks.com/attachments/cknpnh49u034xmog1x5n8dsak-gartner-1.one-sixth.png"
+      srcset="https://website-assets-fd.freshworks.com/attachments/cknpnh49u034xmog1x5n8dsak-gartner-1.one-sixth.png 2x"
+      alt="Gartner Magic Quadrant"
+    />
+  <img class="original-image fadeIn   " alt="Gartner Magic Quadrant" title="" src="" srcset=""
+  />
+    <p>Magic Quadrant de Gartner 2021</p>
+
+</div>
+
+
+
+          <p class="sailec-medium-14"></p>
+        </div>
+        <div class="badge-logo">
+          
+      
+
+<div class="lazy-image-wrapper    " style="">
+    <img
+      class="lazy-image "
+      data-src="https://website-assets-fd.freshworks.com/attachments/cl1m4pg0k01pli3fnrzjhr7q1-output-onlinepngtools-17.one-half.png"
+      data-srcset="https://website-assets-fd.freshworks.com/attachments/cl1m4pg0k01pli3fnrzjhr7q1-output-onlinepngtools-17.full.png 2x"
+      src="https://website-assets-fd.freshworks.com/attachments/cl1m4pg0k01pli3fnrzjhr7q1-output-onlinepngtools-17.one-sixth.png"
+      srcset="https://website-assets-fd.freshworks.com/attachments/cl1m4pg0k01pli3fnrzjhr7q1-output-onlinepngtools-17.one-sixth.png 2x"
+      alt="output onlinepngtools 17"
+    />
+  <img class="original-image fadeIn   " alt="output onlinepngtools 17" title="" src="" srcset=""
+  />
+    <p>Momentum Leader de G2</p>
+
+</div>
+
+
+
+          <p class="sailec-medium-14"></p>
+        </div>
+        <div class="badge-logo">
+          
+      
+
+<div class="lazy-image-wrapper    " style="">
+    <img
+      class="lazy-image "
+      data-src="https://website-assets-fd.freshworks.com/attachments/cl1m50q7e01wri3fnk0p5rea5-finances-online-2022.one-half.png"
+      data-srcset="https://website-assets-fd.freshworks.com/attachments/cl1m50q7e01wri3fnk0p5rea5-finances-online-2022.full.png 2x"
+      src="https://website-assets-fd.freshworks.com/attachments/cl1m50q7e01wri3fnk0p5rea5-finances-online-2022.one-sixth.png"
+      srcset="https://website-assets-fd.freshworks.com/attachments/cl1m50q7e01wri3fnk0p5rea5-finances-online-2022.one-sixth.png 2x"
+      alt="finances online 2022"
+    />
+  <img class="original-image fadeIn   " alt="finances online 2022" title="" src="" srcset=""
+  />
+    <p>Prix Finances Online 2022 T1</p>
+
+</div>
+
+
+
+          <p class="sailec-medium-14"></p>
+        </div>
+        <div class="badge-logo">
+          
+      
+
+<div class="lazy-image-wrapper    " style="">
+    <img
+      class="lazy-image "
+      data-src="https://website-assets-fd.freshworks.com/attachments/cl0e220xm03qc3wfnrb5nyg1a-ca-badge-shortlist-2022-fullcolor-positive.one-half.png"
+      data-srcset="https://website-assets-fd.freshworks.com/attachments/cl0e220xm03qc3wfnrb5nyg1a-ca-badge-shortlist-2022-fullcolor-positive.full.png 2x"
+      src="https://website-assets-fd.freshworks.com/attachments/cl0e220xm03qc3wfnrb5nyg1a-ca-badge-shortlist-2022-fullcolor-positive.one-sixth.png"
+      srcset="https://website-assets-fd.freshworks.com/attachments/cl0e220xm03qc3wfnrb5nyg1a-ca-badge-shortlist-2022-fullcolor-positive.one-sixth.png 2x"
+      alt="Capterra 2022 Shortlist"
+    />
+  <img class="original-image fadeIn   " alt="Capterra 2022 Shortlist" title="" src="" srcset=""
+  />
+    <p>Sélection Capterra 2022</p>
+
+</div>
+
+
+
+          <p class="sailec-medium-14"></p>
+        </div>
+    </div>
+  </section>
+
+      
+<section id="" data-text-list="[]" data-scroll-target="#" class=" align-center pattern-light     " >
+  <div class="container  banner-content l-banner " data-scroll-target="">
+    
+      
+  <h2>Essayez notre logiciel d'assistance gratuit</h2>
+
+<p class="sub-text">Chez Freshdesk, nous ne fonctionnons pas aux frais cachés et facturés en douce. Vous bénéficiez de toutes les fonctionnalités ci-dessus et de bien d'autres encore, et ce gratuitement. Vous payez pour ce que vous constatez dans nos tarifs, c'est aussi simple que cela !</p>
+
+
+      <div class="align-center pt-md pb-xs">
+
+      
+  <a title="" class="button button--solid " rel="" role="button" target="_self" href="https://www.freshworks.com/fr/freshdesk/signup/"> S&#39;INSCRIRE GRATUITEMENT</a>
+
+
+</div>
+
+
+  </div>
+</section>
+
+
+
+      
+
+<section class="l-section section-light-bg  faq-section" data-scroll-target="" id ="">
+  <div class="l-page container">
+    <div class="l-section-heading">
+      
+      
+  <h2>Frequently asked questions about free help desk software</h2>
+
+<p> </p>
+
+
+
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        
+      
+    <div class="accordion-wrapper accordion-85">
+      <div class="accordion-float-wrapper" id="accordion-header-87445081318212" role="button" tabindex="0" aria-expanded="false" aria-controls="accordion-content-87445081318212">  
+        <h3 class="accordion-heading fs-l">Freshdesk est-il vraiment gratuit ?</h3>
+        <div class="accordion-expand" aria-hidden="true"></div>
+      </div>
+      <div class="accordion-content" id="accordion-content-87445081318212" role="region" aria-hidden="true" aria-labelledby="accordion-header-87445081318212">
+        <div class="accordion-text  ">
+          
+      
+  <p>Oui ! Nous voulons que les entreprises de toutes tailles puissent profiter des avantages d'un service client de qualité. C'est exactement la raison pour laquelle l’outil Freshdesk sans limitation temporelle existe. Retrouvez des fonctionnalités de base de helpdesk disponibles gratuitement pour un maximum de 10 agents.</p>
+
+
+ 
+        </div>
+      </div>   
+    </div>
+    <div class="accordion-wrapper accordion-85">
+      <div class="accordion-float-wrapper" id="accordion-header-111449613444780" role="button" tabindex="0" aria-expanded="false" aria-controls="accordion-content-111449613444780">  
+        <h3 class="accordion-heading fs-l">Freshdesk propose-t-il une version d&#39;essai gratuite ?</h3>
+        <div class="accordion-expand" aria-hidden="true"></div>
+      </div>
+      <div class="accordion-content" id="accordion-content-111449613444780" role="region" aria-hidden="true" aria-labelledby="accordion-header-111449613444780">
+        <div class="accordion-text  ">
+          
+      
+  <p>Oui, nous offrons une période d'essai gratuite de 21 jours pour le type de plan - gratuit ou payant - que vous choisissez. <a href="https://www.freshworks.com/fr/freshcaller-cloud-pbx/inscription/">Inscrivez-vous pour un essai gratuit</a>.</p>
+
+
+ 
+        </div>
+      </div>   
+    </div>
+    <div class="accordion-wrapper accordion-85">
+      <div class="accordion-float-wrapper" id="accordion-header-8573047188060" role="button" tabindex="0" aria-expanded="false" aria-controls="accordion-content-8573047188060">  
+        <h3 class="accordion-heading fs-l">Comment passer son abonnement au niveau supérieur ?</h3>
+        <div class="accordion-expand" aria-hidden="true"></div>
+      </div>
+      <div class="accordion-content" id="accordion-content-8573047188060" role="region" aria-hidden="true" aria-labelledby="accordion-header-8573047188060">
+        <div class="accordion-text  ">
+          
+      
+  <p>En tant qu'entreprise en pleine croissance, si vous n'êtes pas certain de pouvoir investir immédiatement dans un logiciel d’helpdesk complet, l'inscription à un logiciel d’helpdesk gratuit vous permet d'évaluer et de garantir la nécessité d'un outil de helpdesk.</p>
+
+
+ 
+        </div>
+      </div>   
+    </div>
+    <div class="accordion-wrapper accordion-85">
+      <div class="accordion-float-wrapper" id="accordion-header-65155158629256" role="button" tabindex="0" aria-expanded="false" aria-controls="accordion-content-65155158629256">  
+        <h3 class="accordion-heading fs-l">Un logiciel d&#39;assistance gratuit est-il simple d&#39;utilisation ?</h3>
+        <div class="accordion-expand" aria-hidden="true"></div>
+      </div>
+      <div class="accordion-content" id="accordion-content-65155158629256" role="region" aria-hidden="true" aria-labelledby="accordion-header-65155158629256">
+        <div class="accordion-text  ">
+          
+      
+  <p>En tant qu'entreprise en pleine croissance, si vous n'êtes pas certain de pouvoir investir immédiatement dans un logiciel d’helpdesk complet, l'inscription à un logiciel d’helpdesk gratuit vous permet d'évaluer et de garantir la nécessité d'un outil helpdesk.</p>
+
+
+ 
+        </div>
+      </div>   
+    </div>
+
+
+      </div>
+      <div class="col-md-6">
+        
+      
+    <div class="accordion-wrapper accordion-85">
+      <div class="accordion-float-wrapper" id="accordion-header-149171021072331" role="button" tabindex="0" aria-expanded="false" aria-controls="accordion-content-149171021072331">  
+        <h3 class="accordion-heading fs-l">Quel est le meilleur logiciel de help desk gratuit à essayer en 2023 ?</h3>
+        <div class="accordion-expand" aria-hidden="true"></div>
+      </div>
+      <div class="accordion-content" id="accordion-content-149171021072331" role="region" aria-hidden="true" aria-labelledby="accordion-header-149171021072331">
+        <div class="accordion-text  ">
+          
+      
+  <p>Freshdesk est l'un des meilleurs logiciels de helpdesk gratuits à essayer en 2023. Vous pouvez améliorer la relation client en satisfaction du client. Vous pourrez gérer les demandes plus rapidement et en personnalisant les conversations à l’aide support intuitif et collaboratif. Pour en savoir plus, <a href="https://www.freshworks.com/fr/freshdesk/">cliquez ici</a>.</p>
+
+
+ 
+        </div>
+      </div>   
+    </div>
+    <div class="accordion-wrapper accordion-85">
+      <div class="accordion-float-wrapper" id="accordion-header-113164222882458" role="button" tabindex="0" aria-expanded="false" aria-controls="accordion-content-113164222882458">  
+        <h3 class="accordion-heading fs-l">Comment installer gratuitement un logiciel de help desk ?</h3>
+        <div class="accordion-expand" aria-hidden="true"></div>
+      </div>
+      <div class="accordion-content" id="accordion-content-113164222882458" role="region" aria-hidden="true" aria-labelledby="accordion-header-113164222882458">
+        <div class="accordion-text  ">
+          
+      
+  <p>Avec le plan Freshdesk gratuit sans durée limitée, vous pouvez configurer le logiciel de help desk gratuitement et bénéficier des fonctionnalités de base du help desk pour un maximum de 10 agents. Vous pouvez obtenir un outil de ticketing intégré à travers les courriels et les réseaux sociaux, une base de connaissances, un rapport sur les tendances des tickets, des analyses et des rapports prêts à l'emploi etc.</p>
+
+
+ 
+        </div>
+      </div>   
+    </div>
+    <div class="accordion-wrapper accordion-85">
+      <div class="accordion-float-wrapper" id="accordion-header-111449613444845" role="button" tabindex="0" aria-expanded="false" aria-controls="accordion-content-111449613444845">  
+        <h3 class="accordion-heading fs-l">Combien de temps faut-il pour mettre en place un logiciel de help desk gratuit ?</h3>
+        <div class="accordion-expand" aria-hidden="true"></div>
+      </div>
+      <div class="accordion-content" id="accordion-content-111449613444845" role="region" aria-hidden="true" aria-labelledby="accordion-header-111449613444845">
+        <div class="accordion-text  ">
+          
+      
+  <p>Un logiciel de service d'assistance gratuit comme Freshdesk peut être mis en place instantanément sans code extrême. Vous disposez également d'agents qui vous guideront tout au long du processus et vous aideront à démarrer.</p>
+
+
+ 
+        </div>
+      </div>   
+    </div>
+    <div class="accordion-wrapper accordion-85">
+      <div class="accordion-float-wrapper" id="accordion-header-85730471880650" role="button" tabindex="0" aria-expanded="false" aria-controls="accordion-content-85730471880650">  
+        <h3 class="accordion-heading fs-l">Quelle est la différence entre un logiciel de help desk gratuit et un logiciel de service desk gratuit ?</h3>
+        <div class="accordion-expand" aria-hidden="true"></div>
+      </div>
+      <div class="accordion-content" id="accordion-content-85730471880650" role="region" aria-hidden="true" aria-labelledby="accordion-header-85730471880650">
+        <div class="accordion-text  ">
+          
+      
+  <p>Un logiciel de service desk gratuit comme Freshservice vous aidera à calibrer votre gestion des services informatiques, de l'ITSM à l'ITAM. Parallèlement, un logiciel de help desk gratuit comme Freshdesk peut vous aider à la résolution rapide des petits problèmes et à répartir les résolutions de problèmes complexes au sein de différentes équipes.</p>
+
+
+ 
+        </div>
+      </div>   
+    </div>
+
+
+      </div>
+    </div> <!-- End row -->
+  </div>
+</section>
+
+
+
+      
+ <section class="pt-xl   " data-scroll-target="" id ="">
+  <div class="l-page container ">
+
+    
+      
+  <h2 class="mt-sm">En savoir plus sur notre logiciel</h2>
+
+
+
+  </div>
+ </section>
+
+      
+<section id="" class="section-content-grid pb-xl   " data-scroll-target="">  
+  <div class="l-page container l-grid"> <div class="row">
+        <div class="l-col-widget col-sm-4">
+        
+      
+    <div class="icon-small feature-description-icon-d" style=" background-image: url();" role="img" aria-label=""></div>
+  <div class="  feature-description-text-d">
+
+      
+  <p><a href="https://www.freshworks.com/fr/freshdesk/meilleur-centre-support/logiciel-centre-support-cloud/">Cloud helpdesk : guide complet</a><a href="https://www.freshworks.com/freshdesk/best-help-desk/cloud-help-desk-software/" target="_blank"> </a></p>
+
+<p><a href="https://www.freshworks.com/freshdesk/best-help-desk/web-based-helpdesk/">Logiciel de ticketing en ligne</a></p>
+
+<p><a href="https://www.freshworks.com/fr/freshdesk/best-help-desk/saas-help-desk-software/">Logiciel de helpdesk SaaS</a></p>
+
+<p><a href="https://www.freshworks.com/freshdesk/best-help-desk/hosted-help-desk/" target="_blank">Logiciel d'assistance hébergé</a></p>
+
+<p><a href="https://www.freshworks.com/fr/freshdesk/industries/helpdesk-software-education/">Le centre de support pour écoles et universités</a></p>
+
+
+ </div>
+
+
+
+        </div>
+        <div class="l-col-widget col-sm-4">
+        
+      
+    <div class="icon-small feature-description-icon-d" style=" background-image: url();" role="img" aria-label=""></div>
+  <div class="  feature-description-text-d">
+
+      
+  <p><a href="https://www.freshworks.com/fr/freshdesk/industries/help-desk-software-small-business/">Logiciel Helpdesk pour les PME</a></p>
+
+<p><a href="https://www.freshworks.com/fr/freshdesk/helpdesk-management/outil-de-ticketing/">Outil de ticketing</a></p>
+
+<p><a href="https://www.freshworks.com/fr/freshdesk/gestion-des-connaissances">Tout savoir sur les outils de gestion des connaissances</a></p>
+
+<p><a href="https://www.freshworks.com/fr/freshdesk/logiciel-base-de-connaissance/">Logiciel de base de connaissances : le guide complet</a></p>
+
+
+ </div>
+
+
+
+        </div> </div>
+  </div>
+</section>
+
+
+      
+
+<section id="" class="l-section section-light-bg  casestudy-resource-section " data-scroll-target="" >
+  <div id="" class="l-page container  ">
+      
+      
+  <h2>Articles connexes sur les helpdesk</h2>
+
+<h2> </h2>
+
+
+
+
+    <div class="row" id="resource-card-row-99447347381670">
+          
+      
+  <div class="card-box col-sm-4 col-md-4 ">
+    <div class="resource-box">
+      <div class="resource-box-left">
+          
+      
+
+<div class="lazy-image-wrapper    " style="">
+    <img
+      class="lazy-image resources-box-image"
+      data-src="https://website-assets-fd.freshworks.com/attachments/clnczjgvj026p5zfnco2rwo67-support-agents-thumbnail-full.one-half.png"
+      data-srcset="https://website-assets-fd.freshworks.com/attachments/clnczjgvj026p5zfnco2rwo67-support-agents-thumbnail-full.full.png 2x"
+      src="https://website-assets-fd.freshworks.com/attachments/clnczjgvj026p5zfnco2rwo67-support-agents-thumbnail-full.one-sixth.png"
+      srcset="https://website-assets-fd.freshworks.com/attachments/clnczjgvj026p5zfnco2rwo67-support-agents-thumbnail-full.one-sixth.png 2x"
+      alt="support"
+    />
+  <img class="original-image fadeIn resources-box-image  " alt="support" title="" src="" srcset=""
+  />
+    
+</div>
+
+
+
+      </div>
+      <div class="resource-box-right ">
+        
+      
+  <p><a href="https://www.freshworks.com/fr/freshdesk/logiciel-helpdesk/">Un "logiciel helpdesk" : qu'est-ce que c'est ?</a></p>
+
+
+
+      </div>
+    </div>
+  </div>
+
+      
+  <div class="card-box col-sm-4 col-md-4 ">
+    <div class="resource-box">
+      <div class="resource-box-left">
+          
+      
+
+<div class="lazy-image-wrapper    " style="">
+    <img
+      class="lazy-image resources-box-image"
+      data-src="https://website-assets-fd.freshworks.com/attachments/clnczjgpl02dh5afnos8kpwm7-canned-response-example-freshdesk-thumbnail-full.one-half.png"
+      data-srcset="https://website-assets-fd.freshworks.com/attachments/clnczjgpl02dh5afnos8kpwm7-canned-response-example-freshdesk-thumbnail-full.full.png 2x"
+      src="https://website-assets-fd.freshworks.com/attachments/clnczjgpl02dh5afnos8kpwm7-canned-response-example-freshdesk-thumbnail-full.one-sixth.png"
+      srcset="https://website-assets-fd.freshworks.com/attachments/clnczjgpl02dh5afnos8kpwm7-canned-response-example-freshdesk-thumbnail-full.one-sixth.png 2x"
+      alt="switching to a free helpdesk software"
+    />
+  <img class="original-image fadeIn resources-box-image  " alt="switching to a free helpdesk software" title="" src="" srcset=""
+  />
+    
+</div>
+
+
+
+      </div>
+      <div class="resource-box-right ">
+        
+      
+  <p><a href="https://www.freshworks.com/freshdesk/general/best-time-to-switch-helpdesk-blog/" target="_blank">Comment savoir s'il est temps de passer à un logiciel de help desk ?</a></p>
+
+
+
+      </div>
+    </div>
+  </div>
+
+      
+  <a class="card-item  " href="https://www.freshworks.com/freshdesk/helpdesk-management/helpdesk-best-practices-blog/" 
+  rel="  "
+  data-filter="card-item"
+  aria-label="">
+  <div class="card-box col-sm-4 col-md-4 ">
+    <div class="resource-box">
+      <div class="resource-box-left">
+          
+      
+
+<div class="lazy-image-wrapper    " style="">
+    <img
+      class="lazy-image resources-box-image"
+      data-src="https://website-assets-fd.freshworks.com/attachments/clnczjhr302di5afn7h3s50gk-help-desk-best-practices-full.one-half.png"
+      data-srcset="https://website-assets-fd.freshworks.com/attachments/clnczjhr302di5afn7h3s50gk-help-desk-best-practices-full.full.png 2x"
+      src="https://website-assets-fd.freshworks.com/attachments/clnczjhr302di5afn7h3s50gk-help-desk-best-practices-full.one-sixth.png"
+      srcset="https://website-assets-fd.freshworks.com/attachments/clnczjhr302di5afn7h3s50gk-help-desk-best-practices-full.one-sixth.png 2x"
+      alt="help desk best practices"
+    />
+  <img class="original-image fadeIn resources-box-image  " alt="help desk best practices" title="" src="" srcset=""
+  />
+    
+</div>
+
+
+
+      </div>
+      <div class="resource-box-right ">
+        
+      
+  <p><a href="https://www.freshworks.com/freshdesk/helpdesk-management/helpdesk-best-practices-blog/" target="_blank">11 bonnes pratiques pour une gestion efficace du help desk</a></p>
+
+
+
+      </div>
+    </div>
+  </div>
+  </a>
+
+
+	  </div>
+  </div>
+</section>
+
+
+  
+
+  
+
+    <script type="text/javascript" defer>
+      window.socTrack = {
+          siteid: "www.freshworks.com",
+          isFormTrackingEnabled: false,
+          isApiModeEnabled: true
+      };
+      (function(i, s, o, g) {
+          var a = s.createElement(o);
+          a.src = g;
+          var m = s.getElementsByTagName('head')[0];
+          m.appendChild(a);
+      })(window, document, 'script', (/^http:/.test(document.location) ? 'http' : 'https') + '://cdn-public.sociabble.com/blob/js/leadgen/track.min.js?v=1.7')
+    </script>
+      <footer >
+          
+      
+  <div class="footer-main">
+    <div class="footer-navs l-page clearfix-lg">
+      <div class="row">
+        <div class="col-md-4 footer-left-section">
+          <div class="row">
+            
+
+    <div class="col-sm-6">
+          <div class="footer-nav-title footer-nav-title-logo">
+            <a href="https://www.freshworks.com/fr/">
+              
+    <img 
+        class="logo logo-fworks footer-logo"
+        src="/static-assets/images/common/company/logos/logo-fworks-black.svg"
+        alt="Freshworks"
+    />
+            </a>
+            <i class="icon-arrow-down" aria-hidden="true"></i>
+          </div>
+          <ul class="footer-nav">
+                <li><a href="https://www.freshworks.com/fr/customer-service-suite/?source=fdesk&amp;medium=referral&amp;campaign=fdesk_footer_main" rel="" class="">Customer Service Suite</a></li>
+                <li><a href="https://www.freshworks.com/fr/freshdesk/" rel="" class="">Freshdesk</a></li>
+                <li><a href="https://www.freshworks.com/fr/live-chat-software/?source=fdesk&amp;medium=referral&amp;campaign=fdesk_footer_main" rel="" class="">Freshchat</a></li>
+                <li><a href="https://www.freshworks.com/fr/freshservice/?source=fdesk&amp;medium=referral&amp;campaign=fdesk_footer_main" rel="" class="">Freshservice</a></li>
+                <li><a href="https://www.freshworks.com/fr/crm/sales/?source=fdesk&amp;medium=referral&amp;campaign=fdesk_footer_main" rel="" class="">Freshsales</a></li>
+                <li><a href="https://www.freshworks.com/fr/crm/suite/?source=fdesk&amp;medium=referral&amp;campaign=fdesk_footer_main" rel="" class="">Freshsales Suite</a></li>
+                <li><a href="https://www.freshworks.com/fr/crm/marketing/?source=fdesk&amp;medium=referral&amp;campaign=fdesk_footer_main" rel="" class="">Freshmarketer</a></li>
+                <li><a href="https://www.freshworks.com/fr/hrms/?source=fdesk&amp;medium=referral&amp;campaign=fdesk_footer_main" rel="" class="">Freshteam</a></li>
+          </ul>
+    </div>
+
+    <div class="col-sm-6">
+         <h2 class="footer-nav-title caps-heading-12 no-text-transform hide-in-mobile">
+          SOCIÉTÉ
+        </h2>
+        <button class="footer-nav-title caps-heading-12 no-text-transform hide-in-tablet-and-desktop" aria-expanded="false" aria-haspopup="true">
+          SOCIÉTÉ
+          <i class="icon-arrow-down" aria-hidden="true"></i>
+        </button>
+          <ul class="footer-nav">
+                <li><a href="https://www.freshworks.com/fr/entreprise/apropos/" rel="" class="">À propos</a></li>
+                <li><a href="https://www.freshworks.com/fr/entreprise/leadership/" rel="" class="">Comité de direction</a></li>
+                <li><a href="https://www.freshworks.com/fr/entreprise/comite/" rel="" class="">Conseil d&#39;administration</a></li>
+                <li><a href="https://www.freshworks.com/fr/entreprise/investisseurs/" rel="" class="">Investisseurs</a></li>
+                <li><a href="https://www.freshworks.com/fr/company/affiliate-partner/" rel="" class="">Affiliés</a></li>
+                <li><a href="https://www.freshworks.com/fr/company/partners/" rel="" class="">Partenaires</a></li>
+                <li><a href="https://www.freshworks.com/fr/company/careers/" rel="" class="">Carrières</a></li>
+                <li><a href="https://www.freshworks.com/fr/newsroom/press-releases/" rel="" class="">Presse</a></li>
+                <li><a href="https://www.freshworks.com/fr/contact/" rel="" class="">Contactez-nous</a></li>
+                <li><a href="https://www.freshworks.com/fr/freshdesk/gdpr/" rel="" class="">RGPD</a></li>
+                <li><a href="https://www.freshworks.com/fr/imprint/" rel="" class="">Imprint</a></li>
+          </ul>
+    </div>
+          </div>
+        </div>
+        <div class="col-md-8 footer-right-section">
+          <div class="row">
+            
+
+    <div class="col-sm-3">
+         <h2 class="footer-nav-title caps-heading-12 no-text-transform hide-in-mobile">
+          FRESHDESK
+        </h2>
+        <button class="footer-nav-title caps-heading-12 no-text-transform hide-in-tablet-and-desktop" aria-expanded="false" aria-haspopup="true">
+          FRESHDESK
+          <i class="icon-arrow-down" aria-hidden="true"></i>
+        </button>
+          <ul class="footer-nav">
+                <li><a href="https://www.freshworks.com/fr/freshdesk/fonctionnalites/" rel="" class="">Fonctionnalités</a></li>
+                <li><a href="https://www.freshworks.com/fr/freshdesk/pricing/" rel="" class="">Tarifs</a></li>
+                <li><a href="https://www.freshworks.com/apps/freshdesk/" rel="" class="">Applications</a></li>
+                <li><a href="https://www.freshworks.com/fr/freshdesk/customers/" rel="" class="">Clients</a></li>
+                <li><a href="https://www.freshworks.com/fr/freshdesk/academy/" rel="" class="">Formation</a></li>
+                <li><a href="https://developers.freshdesk.com/api/" rel="nofollow" class="">API &amp; Développeurs</a></li>
+                <li><a href="https://www.freshworks.com/fr/freshdesk/resources/" rel="" class="">Ressources</a></li>
+                <li><a href="https://www.freshworks.com/fr/freshdesk/blog/articles/" rel="" class="">Blog</a></li>
+                <li><a href="https://www.freshworks.com/fr/freshdesk/tarification/logiciel-helpdesk-gratuit/" rel="" class="">Logiciel helpdesk gratuit</a></li>
+                <li><a href="https://www.freshworks.com/fr/freshdesk/tarifs/outil-de-ticketing-gratuit/" rel="" class="">Système gratuit de gestion des tickets</a></li>
+                <li><a href="https://www.freshworks.com/fr/freshdesk/logiciel-portail-client/" rel="" class="">Logiciel de portail client</a></li>
+                <li><a href="https://www.freshworks.com/fr/freshdesk/logiciel-sav/" rel="" class="">Logiciel de gestion du service après-vente</a></li>
+          </ul>
+    </div>
+
+    <div class="col-sm-3">
+         <h2 class="footer-nav-title caps-heading-12 no-text-transform hide-in-mobile">
+          FONCTIONNALITÉS PRINCIPALES
+        </h2>
+        <button class="footer-nav-title caps-heading-12 no-text-transform hide-in-tablet-and-desktop" aria-expanded="false" aria-haspopup="true">
+          FONCTIONNALITÉS PRINCIPALES
+          <i class="icon-arrow-down" aria-hidden="true"></i>
+        </button>
+          <ul class="footer-nav">
+                <li><a href="https://www.freshworks.com/fr/freshdesk/systeme-de-ticketing/" rel="" class="">Gestion des tickets</a></li>
+                <li><a href="https://www.freshworks.com/fr/freshdesk/collaboration/" rel="" class="">Collaboration</a></li>
+                <li><a href="https://www.freshworks.com/fr/freshdesk/omnichannel-helpdesk/" rel="" class="">Helpdesk omnicanal</a></li>
+                <li><a href="https://www.freshworks.com/fr/freshdesk/automations/" rel="" class="">Automatisations</a></li>
+                <li><a href="https://www.freshworks.com/fr/freshdesk/self-service/" rel="" class="">Libre-Service</a></li>
+                <li><a href="https://www.freshworks.com/fr/freshdesk/fsm/" rel="" class="">Gestion du service après-vente</a></li>
+                <li><a href="https://www.freshworks.com/fr/freshdesk/reporting-analytics/" rel="" class="">Reporting &amp; Analyses</a></li>
+                <li><a href="https://www.freshworks.com/fr/freshdesk/customizable-helpdesk/" rel="" class="">Personnalisations</a></li>
+                <li><a href="https://www.freshworks.com/fr/freshdesk/secure-helpdesk/" rel="" class="">Sécurité du helpdesk</a></li>
+                <li><a href="https://www.freshworks.com/fr/freshdesk/compare-helpdesks/" rel="" class="">Comparez les helpdesks</a></li>
+                <li><a href="https://www.freshworks.com/fr/freshdesk/logiciel-helpdesk/" rel="" class="">Logiciel helpdesk</a></li>
+                <li><a href="https://www.freshworks.com/fr/freshdesk/scaling-support/remote-customer-support/" rel="" class="">Support à distance</a></li>
+          </ul>
+    </div>
+
+    <div class="col-sm-3">
+         <h2 class="footer-nav-title caps-heading-12 no-text-transform hide-in-mobile">
+          SOLUTIONS
+        </h2>
+        <button class="footer-nav-title caps-heading-12 no-text-transform hide-in-tablet-and-desktop" aria-expanded="false" aria-haspopup="true">
+          SOLUTIONS
+          <i class="icon-arrow-down" aria-hidden="true"></i>
+        </button>
+          <ul class="footer-nav">
+                <li><a href="https://www.freshworks.com/fr/freshdesk/entreprise/" rel="" class="">Entreprise</a></li>
+                <li><a href="https://www.freshworks.com/fr/freshdesk/smb/" rel="" class="">PME</a></li>
+                <li><a href="https://www.freshworks.com/fr/freshdesk/industries/help-desk-software-retail-ecommerce/" rel="" class="">E-commerce</a></li>
+                <li><a href="https://www.freshworks.com/fr/freshdesk/industries/helpdesk-software-healthcare/" rel="" class="">Santé</a></li>
+                <li><a href="https://www.freshworks.com/fr/freshdesk/industries/helpdesk-software-education/" rel="" class="">Éducation</a></li>
+          </ul>
+    </div>
+
+    <div class="col-sm-3">
+          <div class="hide-in-mobile">
+         <h2 class="footer-nav-title caps-heading-12 no-text-transform hide-in-mobile">
+          UTILISATEURS EXISTANTS
+        </h2>
+        <button class="footer-nav-title caps-heading-12 no-text-transform hide-in-tablet-and-desktop" aria-expanded="false" aria-haspopup="true">
+          UTILISATEURS EXISTANTS
+          <i class="icon-arrow-down" aria-hidden="true"></i>
+        </button>
+          <div class="mb-sm">
+            
+      
+  <a title="" class="button button--white button--small " rel="" id="login" role="button" target="_self" href="https://www.freshworks.com/fr/freshdesk/login/"> CONNEXION</a>
+
+
+
+          </div>
+          </div>
+         <h2 class="footer-nav-title caps-heading-12 no-text-transform hide-in-mobile">
+          APPLICATIONS MOBILES
+        </h2>
+        <button class="footer-nav-title caps-heading-12 no-text-transform hide-in-tablet-and-desktop" aria-expanded="false" aria-haspopup="true">
+          APPLICATIONS MOBILES
+          <i class="icon-arrow-down" aria-hidden="true"></i>
+        </button>
+          <ul class="footer-nav app-stores">
+              <li>
+                <a href="http://ad.apps.fm/ozXtEc5ZI9HQ_q2ra73VL15KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYffAIOoczw-YGfIaoZYt7xO4LNOZ4hHcXlOAoj_MgX7b8gZe2OOIvCAxOQtZGmw1KoF6ewiom4sKC4xZyurG0g7Q" rel="nofollow">
+                  <img src="/static-assets/images/common/icons/img-google-play.png" alt="Google play link" class="app-store-img" />
+                </a>
+              </li>
+              <li>
+                <a href="https://itunes.apple.com/ca/app/freshdesk/id849713306?mt=8" rel="nofollow">
+                  <img src="/static-assets/images/common/icons/img-apple-store.png" alt="Apple store link" class="app-store-img" />
+                </a>
+              </li>
+          </ul>
+         <h2 class="footer-nav-title caps-heading-12 no-text-transform hide-in-mobile">
+          COMMUNIQUEZ AVEC NOUS
+        </h2>
+        <button class="footer-nav-title caps-heading-12 no-text-transform hide-in-tablet-and-desktop" aria-expanded="false" aria-haspopup="true">
+          COMMUNIQUEZ AVEC NOUS
+          <i class="icon-arrow-down" aria-hidden="true"></i>
+        </button>
+          <ul class="footer-nav social-connect-nav">
+                <li><a href="https://www.facebook.com/freshdesk/" aria-label="facebook" rel="nofollow noopener" target="_blank"><i class="icon-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/freshdesk" aria-label="twitter" rel="nofollow noopener" target="_blank"><i class="icon-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="http://www.youtube.com/freshdesk" aria-label="youtube" rel="nofollow noopener" target="_blank"><i class="icon-youtube" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/showcase/freshdesk/" aria-label="linkedin" rel="nofollow noopener" target="_blank"><i class="icon-linkedin" aria-hidden="true"></i></a></li>
+          </ul>
+    </div>
+          </div>
+          <div class="footer-salessupport clearfix-lg">
+            <div class="row">
+              <div class="col-md-12 seperator-line">
+                <h2 class="footer-nav-title caps-heading-12 hide-in-mobile">
+                  VENTES ET SUPPORT
+                </h2>
+                <button class="footer-nav-title caps-heading-12 hide-in-tablet-and-desktop" aria-expanded="false" aria-haspopup="true">
+                  VENTES ET SUPPORT
+                  <i class="icon-arrow-down" aria-hidden="true"></i>
+                </button>
+                <ul class="footer-nav support-nav">
+                    <li>
+                      <a href="tel:+33175850312">
+                        <i class="icon-phone" aria-hidden="true"></i><span>+33 17 585 0312</span>
+                      </a>
+                    </li>
+                  <li>
+                    <a href="mailto:support@freshdesk.com">
+                      <i class="icon-mail" aria-hidden="true"></i><span>support@freshdesk.com</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyrights">
+    <div class="l-page clearfix-lg">
+      <div class="footer-nav copyrights-nav hide-in-mobile">
+          <a target=&quot;_blank&quot; href="https://www.freshworks.com/fr/terms/" rel=" noopener">Conditions d&#39;utilisations</a>
+          <a target=&quot;_blank&quot; href="https://www.freshworks.com/fr/privacy/" rel=" noopener">Avis de confidentialité</a>
+          <a target=&quot;_blank&quot; href="https://www.freshworks.com/take-down/" rel=" noopener">Politique de retrait</a>
+          <a  href="https://www.freshworks.com/fr/freshdesk/gdpr/" rel=" ">RGPD</a>
+          <a target=&quot;_blank&quot; href="https://www.freshworks.com/fr/security/" rel=" noopener">Sécurité</a>
+      </div>
+      <p class="footer-copyrights-text">© 2024 Freshworks Inc. Tous droits réservés</p>
+    </div>
+  </div>
+
+<script type="text/javascript">
+  FW.onLoad(function () {
+    if (!FW.Utils.ResponsiveUtilities.isDesktop()) {
+      FW.$('.footer-nav a').attr('tabindex', -1);
+      FW.$('.hide-in-mobile a').attr('tabindex', -1);
+    };
+  });
+</script>
+
+
+      </footer>
+
+    <script type="text/javascript">
+      FW.onLoad(function() {
+        FW.footer();
+      });
+    </script><div role="button" aria-label="Open chat widget" tabindex="0" id="fchat-custom-icon" onClick="fciWidgetOpen();" style="display: none;">
+      <div id="fci-image" style="display: block;"></div>
+      <div id="fci-loading" style="display: none;">
+        <div class="fci-flex">
+          <div class="fci-dot-loader"></div>
+          <div class="fci-dot-loader"></div>
+          <div class="fci-dot-loader"></div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      FW.onLoad(function() {
+        FW.legal.init();
+      });
+    </script>
+    <div id="modal-backdrop"></div>
+    <div id="form-modal-holder"></div>
+    <div id="eu-cookie-policy-popup">
+      <div class="l-page">
+        <div class="popup-container">
+          <div class="text col-md-9"><p>Nous utilisons des cookies pour vous offrir une meilleure expérience de navigation, analyser le trafic sur ce site, personnaliser le contenu, et vous proposer des publicités ciblées. Voyez comment nous utilisons les cookies dans notre Politique de Confidentialité. Notre Politique sur les <a href="https://www.freshworks.com/list-of-cookies/?domain=freshdesk.com">Cookies</a> vous explique comment gérer vos paramètres de cookies.</p>
+</div>
+          <div class="options col-md-3">
+            <div class="button button--solid button--small button--black accept-cookies">
+              Accepter les cookies
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-search">
+      <div class="modal-wrapper">
+        <i class="icon-close" tabindex="0" aria-label="Close site search"></i>
+        <div id="searchbox"></div>
+        <div id="infinite-hits" aria-live="polite"></div>
+        <div id="pagination"></div>
+        <div class="no-results">
+          <img src="/static-assets/images/fservice/no-results-illustration.svg" alt="no results" />
+          <p>Sorry, our deep-dive didn’t help. Please try a different search term.</p>
+        </div>
+      </div>
+    </div>
+      <!-- Data Layer Initialization -->
+<script type="text/javascript">
+  window.addEventListener('load', function () {
+      window.dataLayer = window.dataLayer || [];
+      dataLayer.push({
+          'event': 'tvc_pageDomain',
+          'pageDomain': 'FDesk'
+      });
+  });
+</script>
+
+<!-- Google Tag Manager -->
+<script type='text/plain' class='optanon-category-C0001'>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KH9KHM');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KH9KHM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Render Google Tag Manager Scripts  for different locales -->
+
+  <!-- Google Tag Manager -->
+  <script type='text/plain' class='optanon-category-C0001'>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MVZB85');</script>
+  <!-- End Google Tag Manager -->
+
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MVZB85" height=0 width=0 style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- End Google Tag Manager Rendering -->
+
+<!-- Freshsales Snippet -->
+<script type='text/plain' class='optanon-category-C0004' defer>
+  function createTempFunction(function_name) { (window.freshsales)[function_name]=function() { (window.freshsales).push([function_name].concat(Array.prototype.slice.call(arguments,0))) }; } (function(url, app_token) { window.assets_url='//d952cmcgwqsjf.cloudfront.net'; window.freshsales = window.freshsales || []; functions_list='init identify trackPageView trackEvent set'.split(' '); for(var i=0; i < functions_list.length; i++) { var function_name = functions_list[i]; createTempFunction(function_name); } var script_tag = document.createElement('script'); script_tag.async=1; script_tag.src= window.assets_url +'/assets/analytics.js'; var first_script_tag = document.getElementsByTagName('script')[0]; first_script_tag.parentNode.insertBefore(script_tag,first_script_tag); freshsales.init(url, app_token); })('//freshdesk.freshsales.io','b378480c7346207c720ef22b32b399f6');
+</script>
+<!-- End Freshsales Snippet -->
+
+<!-- Google Tag Manager -->
+<script type='text/plain' class='optanon-category-C0001'>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WQKBJ88');</script>
+<!-- End Google Tag Manager -->
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQKBJ88" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script type="text/javascript">
+      _linkedin_partner_id = "508419";
+      window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+      window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+      </script><script type="text/javascript">
+      (function(l) {
+      if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+      window.lintrk.q=[]}
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript";b.async = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);})(window.lintrk);
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=508419&fmt=gif" />
+    </noscript>
+  </body>
+</html>
+[�pf��      f2�f2�"Fַf@   |    O^partitionKey=%28https%2Cfreshworks.com%29,:https://www.freshworks.com/fr/freshdesk/tarification/logiciel-helpdesk-gratuit/ necko:classified 1 strongly-framed 1 security-info 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 request-method GET request-Accept-Encoding gzip, deflate, br response-head HTTP/2 200 OK
+content-type: text/html; charset=utf-8
+date: Thu, 02 May 2024 00:23:57 GMT
+x-frame-options: allow-from https://www.freshworks.com
+content-security-policy: frame-ancestors 'self' *.freshworks.com *.freshdesk.com *.freshservice.com *.myfreshworks.com *.freshcaller.com *.freshteam.com *.freshchat.com *.freshping.io *.freshrelease.com *.freshstatus.io *.freshsuccess.com *.freshsuccess.io views.paperflite.com app.paperflite.com web.paperflite.com canvas.paperflite.com
+cache-control: max-age=864000
+x-rpcache: MISS
+x-powered-by: Freshworks Inc.
+accept-ranges: bytes
+vary: Accept-Encoding,cloudfront-is-mobile-viewer,cloudfront-is-tablet-viewer
+x-cache: Miss from cloudfront
+via: 1.1 a9cd237416fb828127279373bfd596ca.cloudfront.net (CloudFront)
+x-amz-cf-pop: CDG50-P2
+x-amz-cf-id: GKftmE5X48-TIsSRKfMdJa4uBWF0dm9d6XkRuGKYGZOLik3rT1rTCQ==
+age: 0
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000; includeSubDomains
+X-Firefox-Spdy: h2
+ original-response-headers content-type: text/html; charset=utf-8
+date: Thu, 02 May 2024 00:23:57 GMT
+x-frame-options: allow-from https://www.freshworks.com
+content-security-policy: frame-ancestors 'self' *.freshworks.com *.freshdesk.com *.freshservice.com *.myfreshworks.com *.freshcaller.com *.freshteam.com *.freshchat.com *.freshping.io *.freshrelease.com *.freshstatus.io *.freshsuccess.com *.freshsuccess.io views.paperflite.com app.paperflite.com web.paperflite.com canvas.paperflite.com
+cache-control: max-age=864000
+x-rpcache: MISS
+x-powered-by: Freshworks Inc.
+accept-ranges: bytes
+vary: Accept-Encoding,cloudfront-is-mobile-viewer,cloudfront-is-tablet-viewer
+x-cache: Miss from cloudfront
+via: 1.1 a9cd237416fb828127279373bfd596ca.cloudfront.net (CloudFront)
+x-amz-cf-pop: CDG50-P2
+x-amz-cf-id: GKftmE5X48-TIsSRKfMdJa4uBWF0dm9d6XkRuGKYGZOLik3rT1rTCQ==
+age: 0
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000; includeSubDomains
+X-Firefox-Spdy: h2
+ ctid 1 uncompressed-len 0 net-response-time-onstart 1086 net-response-time-onstop 1484  i�

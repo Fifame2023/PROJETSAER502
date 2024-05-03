@@ -1,0 +1,982 @@
+/**
+ * session.js 0.4.1
+ * (c) 2012 Iain, CodeJoust
+ * session.js is freely distributable under the MIT license.
+ * Portions of session.js are inspired or borrowed from Underscore.js, and quirksmode.org demo javascript.
+ * This version uses google's jsapi library for location services.
+ * For details, see: https://github.com/codejoust/session.js
+ */
+(function(win, doc, nav){
+  // Changing the API Version invalidates olde cookies with previous api version tags.
+  var API_VERSION = 0.4;
+  
+  // Settings: defaults
+  var options = {
+    // Use the HTML5 Geolocation API
+    // this ONLY returns lat & long, no city/address
+    use_html5_location: false,
+    // Attempts to use IPInfoDB if provided a valid key
+    // Get a key at http://ipinfodb.com/register.php
+    ipinfodb_key: false,
+    // Leaving true allows for fallback for both
+    // the HTML5 location and the IPInfoDB
+    gapi_location: true,
+    // Name of the location cookie (set blank to disable cookie)
+    //   - WARNING: different providers use the same cookie
+    //   - if switching providers, remember to use another cookie or provide checks for old cookies
+    location_cookie: "location",
+    // Location cookie expiration in hours
+    location_cookie_timeout: 5,
+    // Session expiration in days
+    session_timeout: 32,
+    // Session cookie name (set blank to disable cookie)
+    session_cookie: "first_session"
+  };
+  
+  // Session object
+  var SessionRunner = function(){
+    // Helper for querying.
+    // Usage: session.current_session.referrer_info.hostname.contains(['github.com','news.ycombinator.com'])
+    String.prototype.contains = function(other_str){
+      if (typeof(other_str) === 'string'){
+        return (this.indexOf(other_str) !== -1); }
+      for (var i = 0; i < other_str.length; i++){
+        if (this.indexOf(other_str[i]) !== -1){ return true; } }
+      return false; }
+    // Merge options
+    if (win.session && win.session.options) {
+      for (option in win.session.options){
+        options[option] = win.session.options[option]; }
+    }
+    // Modules to run
+    // If the module has arguments,
+    //   it _needs_ to return a callback function.
+    var unloaded_modules = {
+      api_version: API_VERSION,
+      locale: modules.locale(),
+      current_session: modules.session(),
+      original_session: modules.session(
+        options.session_cookie,
+        options.session_timeout * 24 * 60 * 60 * 1000),
+      browser: modules.browser(),
+      plugins: modules.plugins(),
+      time: modules.time(),
+      device: modules.device()
+    };
+    // Location switch
+    if (options.use_html5_location){
+      unloaded_modules.location = modules.html5_location();
+    } else if (options.ipinfodb_key){
+      unloaded_modules.location = modules.ipinfodb_location(options.ipinfodb_key);
+    } else if (options.gapi_location){
+      unloaded_modules.location = modules.gapi_location();
+    }
+    // Cache win.session.start
+    if (win.session && win.session.start){
+      var start = win.session.start;
+    }
+    // Set up checking, if all modules are ready
+    var asynchs = 0, module, result,
+    check_asynch = function(){
+      if (asynchs === 0){
+        // Run start calback
+        if (start){ start(win.session); }
+      }
+    };
+    win.session = {};
+    // Run asynchronous methods
+    for (var name in unloaded_modules){
+      module = unloaded_modules[name];
+      if (typeof module === "function"){
+        try {
+          module(function(data){
+            win.session[name] = data;
+            asynchs--;
+            check_asynch();
+          });
+          asynchs++;
+        } catch(err){
+          if (win.console && typeof(console.log) === "function"){
+            console.log(err); }
+        }
+      } else {
+        win.session[name] = module;
+      } }
+    check_asynch();
+  };
+  
+  
+  // Browser (and OS) detection
+  var browser = {
+    detect: function(){
+      return {
+        browser: this.search(this.data.browser),
+        version: this.search(nav.userAgent) || this.search(nav.appVersion),
+        os: this.search(this.data.os)
+    } },
+    search: function(data) {
+      if (typeof data === "object"){
+        // search for string match
+        for(var i = 0; i < data.length; i++) {
+          var dataString = data[i].string,
+              dataProp   = data[i].prop;
+          this.version_string = data[i].versionSearch || data[i].identity;
+          if (dataString){
+            if (dataString.indexOf(data[i].subString) != -1){
+              return data[i].identity;
+            }
+          } else if (dataProp){
+            return data[i].identity;
+          }
+        }
+      } else {
+        // search for version number
+        var index = data.indexOf(this.version_string);
+        if (index == -1) return;
+        return parseFloat(data.substr(index + this.version_string.length + 1));
+      }
+    },
+    data: {
+      browser: [
+        { string: nav.userAgent, subString: "Chrome", identity: "Chrome" },
+        { string: nav.userAgent, subString: "OmniWeb", versionSearch: "OmniWeb/", identity: "OmniWeb" },
+        { string: nav.vendor, subString: "Apple", identity: "Safari", versionSearch: "Version" },
+        { prop:   win.opera, identity: "Opera", versionSearch: "Version" },
+        { string: nav.vendor, subString: "iCab",identity: "iCab" },
+        { string: nav.vendor, subString: "KDE", identity: "Konqueror" },
+        { string: nav.userAgent, subString: "Firefox", identity: "Firefox" },
+        { string: nav.vendor, subString: "Camino", identity: "Camino" },
+        { string: nav.userAgent, subString: "Netscape", identity: "Netscape" },
+        { string: nav.userAgent, subString: "MSIE", identity: "Explorer", versionSearch: "MSIE" },
+        { string: nav.userAgent, subString: "Gecko", identity: "Mozilla", versionSearch: "rv" },
+        { string: nav.userAgent, subString: "Mozilla", identity: "Netscape", versionSearch: "Mozilla" }
+      ],
+      os: [
+        { string: nav.platform, subString: "Win", identity: "Windows" },
+        { string: nav.platform, subString: "Mac", identity: "Mac" },
+        { string: nav.userAgent, subString: "iPhone", identity: "iPhone/iPod" },
+        { string: nav.userAgent, subString: "iPad", identitiy: "iPad" },
+        { string: nav.platform, subString: "Linux", identity: "Linux" },
+        { string: nav.userAgent, subString: "Android", identity: "Android" }
+      ]}
+  };
+  
+  var modules = {
+    browser: function(){
+      return browser.detect();
+    },
+    time: function(){
+      // split date and grab timezone estimation.
+      // timezone estimation: http://www.onlineaspect.com/2007/06/08/auto-detect-a-time-zone-with-javascript/
+      var d1 = new Date(), d2 = new Date();
+      d1.setMonth(0); d1.setDate(1); d2.setMonth(6); d2.setDate(1);
+      return({tz_offset: -(new Date().getTimezoneOffset()) / 60, observes_dst: (d1.getTimezoneOffset() !== d2.getTimezoneOffset()) });
+      // Gives a browser estimation, not guaranteed to be correct.
+    },
+    locale: function() {
+      var lang = (
+        nav.language        ||
+        nav.browserLanguage ||
+        nav.systemLanguage  ||
+        nav.userLanguage
+      ).split("-");
+      if (lang.length == 2){
+        return { country: lang[1].toLowerCase(), lang: lang[0].toLowerCase() };
+      } else if (lang) {
+        return {lang: lang[0].toLowerCase(), country: null };
+      } else { return{lang: null, country: null }; }
+    },
+    device: function() {
+      var device = {
+        screen: {
+          width: screen.width,
+          height: screen.height
+        }
+      };
+      var html = doc.documentElement,
+          body = doc.getElementsByTagName("body")[0];
+      device.viewport = {
+        width: win.innerWidth || doc.documentElement.clientWidth || doc.body.clientWidth,
+        height: win.innerHeight || doc.documentElement.clientHeight || doc.body.clientHeight 
+      };
+      device.is_tablet = !!nav.userAgent.match(/(iPad|SCH-I800|xoom|kindle)/i);
+      device.is_phone = !device.isTablet && !!nav.userAgent.match(/(iPhone|iPod|blackberry|android 0.5|htc|lg|midp|mmp|mobile|nokia|opera mini|palm|pocket|psp|sgh|smartphone|symbian|treo mini|Playstation Portable|SonyEricsson|Samsung|MobileExplorer|PalmSource|Benq|Windows Phone|Windows Mobile|IEMobile|Windows CE|Nintendo Wii)/i);
+      device.is_mobile = (device.is_tablet || device.is_phone);
+      return device;
+    },
+    plugins: function(){
+      var check_plugin = function(name){
+        if (nav.plugins){
+          var plugin, i = 0, length = nav.plugins.length;
+          for (; i < length; i++ ){
+            plugin = nav.plugins[i];
+            if (plugin && plugin.name && plugin.name.toLowerCase().indexOf(name) !== -1){
+              return true;
+            } }
+          return false;
+        } return false;
+      }
+      return {
+        flash:       check_plugin("flash"),
+        silverlight: check_plugin("silverlight"),
+        java:        check_plugin("java"),
+        quicktime:   check_plugin("quicktime")
+      }; 
+    },
+    session: function (cookie, expires){
+      var session = util.get_obj(cookie);
+      if (session == null){
+        session = {
+          visits: 1,
+          start: new Date().getTime(), last_visit: new Date().getTime(),
+          url: win.location.href, path: win.location.pathname,
+          referrer: doc.referrer, referrer_info: util.parse_url(doc.referrer),
+          search: { engine: null, query: null }
+        };
+        var search_engines = [
+          { name: "Google", host: "google", query: "q" },
+          { name: "Bing", host: "bing.com", query: "q" },
+          { name: "Yahoo", host: "search.yahoo", query: "p" },
+          { name: "AOL", host: "search.aol", query: "q" },
+          { name: "Ask", host: "ask.com", query: "q" },
+          { name: "Baidu", host: "baidu.com", query: "wd" }
+        ], length = search_engines.length,
+           engine, match, i = 0,
+           fallbacks = 'q query term p wd query text'.split(' ');
+        for (i = 0; i < length; i++){
+          engine = search_engines[i];
+          if (session.referrer_info.host.indexOf(engine.host) !== -1){
+            session.search.engine = engine.name;
+            session.search.query  = session.referrer_info.query[engine.query];
+            session.search.terms  = session.search.query ? session.search.query.split(" ") : null;
+            break;
+          }
+        }
+        if (session.search.engine === null && session.referrer_info.search.length > 1){
+          for (i = 0; i < fallbacks.length; i++){
+            var terms = session.referrer_info.query[fallbacks[i]];
+            if (terms){
+              session.search.engine = "Unknown";
+              session.search.query  = terms; session.search.terms  = terms.split(" ");
+              break;
+            }
+          } 
+        }
+      } else {
+        session.last_visit = new Date().getTime();
+        session.visits++;
+      }
+      util.set_cookie(cookie, util.package_obj(session), expires);
+      return session;
+    },
+    html5_location: function(){
+      return function(callback){
+        nav.geolocation.getCurrentPosition(function(pos){
+          pos.source = 'html5';
+          callback(pos);
+        }, function(err) {
+          if (options.gapi_location){
+            modules.gapi_location()(callback);
+          } else {
+            callback({error: true, source: 'html5'}); }
+        });
+      };
+    },
+    gapi_location: function(){
+      return function(callback){
+        var location = util.get_obj(options.location_cookie);
+        if (!location || location.source !== 'google'){
+          win.gloader_ready = function() {
+            if ("google" in win){
+              if (win.google.loader.ClientLocation){
+                win.google.loader.ClientLocation.source = "google";
+                callback(win.google.loader.ClientLocation);
+              } else {
+                callback({error: true, source: "google"});
+              }
+              util.set_cookie(
+                options.location_cookie,
+                util.package_obj(win.google.loader.ClientLocation),
+                options.location_cookie_timeout * 60 * 60 * 1000);
+            }}
+          util.embed_script("https://www.google.com/jsapi?callback=gloader_ready");
+        } else {
+          callback(location);
+        }}
+    },
+    ipinfodb_location: function(api_key){
+      return function (callback){
+        var location_cookie = util.get_obj(options.location_cookie);
+        if (location_cookie && location_cookie.source === 'ipinfodb'){ callback(location_cookie); }
+        win.ipinfocb = function(data){
+          if (data.statusCode === "OK"){
+            data.source = "ipinfodb";
+            util.set_cookie(
+              options.location_cookie,
+              util.package_obj(data),
+              options.location_cookie * 60 * 60 * 1000);
+            callback(data);
+          } else {
+            if (options.gapi_location){ return modules.gapi_location()(callback); }
+            else { callback({error: true, source: "ipinfodb", message: data.statusMessage}); }
+          }}
+
+
+        util.embed_script("https://api.ipinfodb.com/v3/ip-country/?key=" + api_key + "&format=json&callback=ipinfocb");
+
+      }}
+  };
+  
+  // Utilities
+  var util = {
+    parse_url: function(url_str){
+      var a = doc.createElement("a"), query = {};
+      a.href = url_str; query_str = a.search.substr(1);
+      // Disassemble query string
+      if (query_str != ''){
+        var pairs = query_str.split("&"), i = 0,
+            length = pairs.length, parts;
+        for (; i < length; i++){
+          parts = pairs[i].split("=");
+          if (parts.length === 2){
+            query[parts[0]] = decodeURI(parts[1]); }
+        }
+      }
+      return {
+        host:     a.host,
+        path:     a.pathname,
+        protocol: a.protocol,
+        port:     a.port === '' ? 80 : a.port,
+        search:   a.search,
+        query:    query }
+    },
+    set_cookie: function(cname, value, expires, options){ // from jquery.cookie.js
+      if (!doc.cookie || !cname || !value){ return null; }
+      if (!options){ var options = {}; }
+      if (value === null || value === undefined){ expires = -1; }
+      if (expires){ options.expires = (new Date().getTime()) + expires; }
+      return (document.cookie = [
+          encodeURIComponent(cname), '=',
+          encodeURIComponent(String(value)),
+          options.expires ? '; expires=' + new Date(options.expires).toUTCString() : '', // use expires attribute, max-age is not supported by IE
+          options.path ? '; path=' + options.path : '',
+          options.domain ? '; domain=' + options.domain : '',
+          (win.location && win.location.protocol === 'https:') ? '; secure' : ''
+      ].join(''));
+    },
+    get_cookie: function(cookie_name, result){ // from jquery.cookie.js
+      return (result = new RegExp('(?:^|; )' + encodeURIComponent(cookie_name) + '=([^;]*)').exec(document.cookie)) ? decodeURIComponent(result[1]) : null;
+    },
+    embed_script: function(url){
+      var element  = doc.createElement("script");
+      element.type = "text/javascript";
+      element.src  = url;
+      doc.getElementsByTagName("body")[0].appendChild(element);
+    },
+    package_obj: function (obj){
+      obj.version = API_VERSION;
+      var ret = JSON.stringify(obj);
+      delete obj.version; return ret;
+    },
+    get_obj: function(cookie_name){
+      var obj;
+      try { obj = JSON.parse(util.get_cookie(cookie_name)); } catch(e){};
+      if (obj && obj.version == API_VERSION){
+        delete obj.version; return obj;
+      }
+    }
+  };
+  
+  // JSON
+  var JSON = {
+    parse: (win.JSON && win.JSON.parse) || function(data){
+        if (typeof data !== "string" || !data){ return null; }
+        return (new Function("return " + data))();
+    },
+    stringify: (win.JSON && win.JSON.stringify) || function(object){
+      var type = typeof object;
+      if (type !== "object" || object === null) {
+        if (type === "string"){ return '"' + object + '"'; }
+      } else {
+        var k, v, json = [],
+            isArray = (object && object.constructor === Array);
+        for (k in object ) {
+          v = object[k]; type = typeof v;
+          if (type === "string")
+            v = '"' + v + '"';
+          else if (type === "object" && v !== null)
+            v = this.stringify(v);
+          json.push((isArray ? "" : '"' + k + '":') + v);
+        }
+        return (isArray ? "[" : "{") + json.join(",") + (isArray ? "]" : "}");
+      } } };
+
+  // Initialize SessionRunner
+  SessionRunner();
+
+})(window, document, navigator);
+           20210415204500-8l0§@  /**
+ * session.js 0.4.1
+ * (c) 2012 Iain, CodeJoust
+ * session.js is freely distributable under the MIT license.
+ * Portions of session.js are inspired or borrowed from Underscore.js, and quirksmode.org demo javascript.
+ * This version uses google's jsapi library for location services.
+ * For details, see: https://github.com/codejoust/session.js
+ */
+(function(win, doc, nav){
+  // Changing the API Version invalidates olde cookies with previous api version tags.
+  var API_VERSION = 0.4;
+  
+  // Settings: defaults
+  var options = {
+    // Use the HTML5 Geolocation API
+    // this ONLY returns lat & long, no city/address
+    use_html5_location: false,
+    // Attempts to use IPInfoDB if provided a valid key
+    // Get a key at http://ipinfodb.com/register.php
+    ipinfodb_key: false,
+    // Leaving true allows for fallback for both
+    // the HTML5 location and the IPInfoDB
+    gapi_location: true,
+    // Name of the location cookie (set blank to disable cookie)
+    //   - WARNING: different providers use the same cookie
+    //   - if switching providers, remember to use another cookie or provide checks for old cookies
+    location_cookie: "location",
+    // Location cookie expiration in hours
+    location_cookie_timeout: 5,
+    // Session expiration in days
+    session_timeout: 32,
+    // Session cookie name (set blank to disable cookie)
+    session_cookie: "first_session"
+  };
+  
+  // Session object
+  var SessionRunner = function(){
+    // Helper for querying.
+    // Usage: session.current_session.referrer_info.hostname.contains(['github.com','news.ycombinator.com'])
+    String.prototype.contains = function(other_str){
+      if (typeof(other_str) === 'string'){
+        return (this.indexOf(other_str) !== -1); }
+      for (var i = 0; i < other_str.length; i++){
+        if (this.indexOf(other_str[i]) !== -1){ return true; } }
+      return false; }
+    // Merge options
+    if (win.session && win.session.options) {
+      for (option in win.session.options){
+        options[option] = win.session.options[option]; }
+    }
+    // Modules to run
+    // If the module has arguments,
+    //   it _needs_ to return a callback function.
+    var unloaded_modules = {
+      api_version: API_VERSION,
+      locale: modules.locale(),
+      current_session: modules.session(),
+      original_session: modules.session(
+        options.session_cookie,
+        options.session_timeout * 24 * 60 * 60 * 1000),
+      browser: modules.browser(),
+      plugins: modules.plugins(),
+      time: modules.time(),
+      device: modules.device()
+    };
+    // Location switch
+    if (options.use_html5_location){
+      unloaded_modules.location = modules.html5_location();
+    } else if (options.ipinfodb_key){
+      unloaded_modules.location = modules.ipinfodb_location(options.ipinfodb_key);
+    } else if (options.gapi_location){
+      unloaded_modules.location = modules.gapi_location();
+    }
+    // Cache win.session.start
+    if (win.session && win.session.start){
+      var start = win.session.start;
+    }
+    // Set up checking, if all modules are ready
+    var asynchs = 0, module, result,
+    check_asynch = function(){
+      if (asynchs === 0){
+        // Run start calback
+        if (start){ start(win.session); }
+      }
+    };
+    win.session = {};
+    // Run asynchronous methods
+    for (var name in unloaded_modules){
+      module = unloaded_modules[name];
+      if (typeof module === "function"){
+        try {
+          module(function(data){
+            win.session[name] = data;
+            asynchs--;
+            check_asynch();
+          });
+          asynchs++;
+        } catch(err){
+          if (win.console && typeof(console.log) === "function"){
+            console.log(err); }
+        }
+      } else {
+        win.session[name] = module;
+      } }
+    check_asynch();
+  };
+  
+  
+  // Browser (and OS) detection
+  var browser = {
+    detect: function(){
+      return {
+        browser: this.search(this.data.browser),
+        version: this.search(nav.userAgent) || this.search(nav.appVersion),
+        os: this.search(this.data.os)
+    } },
+    search: function(data) {
+      if (typeof data === "object"){
+        // search for string match
+        for(var i = 0; i < data.length; i++) {
+          var dataString = data[i].string,
+              dataProp   = data[i].prop;
+          this.version_string = data[i].versionSearch || data[i].identity;
+          if (dataString){
+            if (dataString.indexOf(data[i].subString) != -1){
+              return data[i].identity;
+            }
+          } else if (dataProp){
+            return data[i].identity;
+          }
+        }
+      } else {
+        // search for version number
+        var index = data.indexOf(this.version_string);
+        if (index == -1) return;
+        return parseFloat(data.substr(index + this.version_string.length + 1));
+      }
+    },
+    data: {
+      browser: [
+        { string: nav.userAgent, subString: "Chrome", identity: "Chrome" },
+        { string: nav.userAgent, subString: "OmniWeb", versionSearch: "OmniWeb/", identity: "OmniWeb" },
+        { string: nav.vendor, subString: "Apple", identity: "Safari", versionSearch: "Version" },
+        { prop:   win.opera, identity: "Opera", versionSearch: "Version" },
+        { string: nav.vendor, subString: "iCab",identity: "iCab" },
+        { string: nav.vendor, subString: "KDE", identity: "Konqueror" },
+        { string: nav.userAgent, subString: "Firefox", identity: "Firefox" },
+        { string: nav.vendor, subString: "Camino", identity: "Camino" },
+        { string: nav.userAgent, subString: "Netscape", identity: "Netscape" },
+        { string: nav.userAgent, subString: "MSIE", identity: "Explorer", versionSearch: "MSIE" },
+        { string: nav.userAgent, subString: "Gecko", identity: "Mozilla", versionSearch: "rv" },
+        { string: nav.userAgent, subString: "Mozilla", identity: "Netscape", versionSearch: "Mozilla" }
+      ],
+      os: [
+        { string: nav.platform, subString: "Win", identity: "Windows" },
+        { string: nav.platform, subString: "Mac", identity: "Mac" },
+        { string: nav.userAgent, subString: "iPhone", identity: "iPhone/iPod" },
+        { string: nav.userAgent, subString: "iPad", identitiy: "iPad" },
+        { string: nav.platform, subString: "Linux", identity: "Linux" },
+        { string: nav.userAgent, subString: "Android", identity: "Android" }
+      ]}
+  };
+  
+  var modules = {
+    browser: function(){
+      return browser.detect();
+    },
+    time: function(){
+      // split date and grab timezone estimation.
+      // timezone estimation: http://www.onlineaspect.com/2007/06/08/auto-detect-a-time-zone-with-javascript/
+      var d1 = new Date(), d2 = new Date();
+      d1.setMonth(0); d1.setDate(1); d2.setMonth(6); d2.setDate(1);
+      return({tz_offset: -(new Date().getTimezoneOffset()) / 60, observes_dst: (d1.getTimezoneOffset() !== d2.getTimezoneOffset()) });
+      // Gives a browser estimation, not guaranteed to be correct.
+    },
+    locale: function() {
+      var lang = (
+        nav.language        ||
+        nav.browserLanguage ||
+        nav.systemLanguage  ||
+        nav.userLanguage
+      ).split("-");
+      if (lang.length == 2){
+        return { country: lang[1].toLowerCase(), lang: lang[0].toLowerCase() };
+      } else if (lang) {
+        return {lang: lang[0].toLowerCase(), country: null };
+      } else { return{lang: null, country: null }; }
+    },
+    device: function() {
+      var device = {
+        screen: {
+          width: screen.width,
+          height: screen.height
+        }
+      };
+      var html = doc.documentElement,
+          body = doc.getElementsByTagName("body")[0];
+      device.viewport = {
+        width: win.innerWidth || doc.documentElement.clientWidth || doc.body.clientWidth,
+        height: win.innerHeight || doc.documentElement.clientHeight || doc.body.clientHeight 
+      };
+      device.is_tablet = !!nav.userAgent.match(/(iPad|SCH-I800|xoom|kindle)/i);
+      device.is_phone = !device.isTablet && !!nav.userAgent.match(/(iPhone|iPod|blackberry|android 0.5|htc|lg|midp|mmp|mobile|nokia|opera mini|palm|pocket|psp|sgh|smartphone|symbian|treo mini|Playstation Portable|SonyEricsson|Samsung|MobileExplorer|PalmSource|Benq|Windows Phone|Windows Mobile|IEMobile|Windows CE|Nintendo Wii)/i);
+      device.is_mobile = (device.is_tablet || device.is_phone);
+      return device;
+    },
+    plugins: function(){
+      var check_plugin = function(name){
+        if (nav.plugins){
+          var plugin, i = 0, length = nav.plugins.length;
+          for (; i < length; i++ ){
+            plugin = nav.plugins[i];
+            if (plugin && plugin.name && plugin.name.toLowerCase().indexOf(name) !== -1){
+              return true;
+            } }
+          return false;
+        } return false;
+      }
+      return {
+        flash:       check_plugin("flash"),
+        silverlight: check_plugin("silverlight"),
+        java:        check_plugin("java"),
+        quicktime:   check_plugin("quicktime")
+      }; 
+    },
+    session: function (cookie, expires){
+      var session = util.get_obj(cookie);
+      if (session == null){
+        session = {
+          visits: 1,
+          start: new Date().getTime(), last_visit: new Date().getTime(),
+          url: win.location.href, path: win.location.pathname,
+          referrer: doc.referrer, referrer_info: util.parse_url(doc.referrer),
+          search: { engine: null, query: null }
+        };
+        var search_engines = [
+          { name: "Google", host: "google", query: "q" },
+          { name: "Bing", host: "bing.com", query: "q" },
+          { name: "Yahoo", host: "search.yahoo", query: "p" },
+          { name: "AOL", host: "search.aol", query: "q" },
+          { name: "Ask", host: "ask.com", query: "q" },
+          { name: "Baidu", host: "baidu.com", query: "wd" }
+        ], length = search_engines.length,
+           engine, match, i = 0,
+           fallbacks = 'q query term p wd query text'.split(' ');
+        for (i = 0; i < length; i++){
+          engine = search_engines[i];
+          if (session.referrer_info.host.indexOf(engine.host) !== -1){
+            session.search.engine = engine.name;
+            session.search.query  = session.referrer_info.query[engine.query];
+            session.search.terms  = session.search.query ? session.search.query.split(" ") : null;
+            break;
+          }
+        }
+        if (session.search.engine === null && session.referrer_info.search.length > 1){
+          for (i = 0; i < fallbacks.length; i++){
+            var terms = session.referrer_info.query[fallbacks[i]];
+            if (terms){
+              session.search.engine = "Unknown";
+              session.search.query  = terms; session.search.terms  = terms.split(" ");
+              break;
+            }
+          } 
+        }
+      } else {
+        session.last_visit = new Date().getTime();
+        session.visits++;
+      }
+      util.set_cookie(cookie, util.package_obj(session), expires);
+      return session;
+    },
+    html5_location: function(){
+      return function(callback){
+        nav.geolocation.getCurrentPosition(function(pos){
+          pos.source = 'html5';
+          callback(pos);
+        }, function(err) {
+          if (options.gapi_location){
+            modules.gapi_location()(callback);
+          } else {
+            callback({error: true, source: 'html5'}); }
+        });
+      };
+    },
+    gapi_location: function(){
+      return function(callback){
+        var location = util.get_obj(options.location_cookie);
+        if (!location || location.source !== 'google'){
+          win.gloader_ready = function() {
+            if ("google" in win){
+              if (win.google.loader.ClientLocation){
+                win.google.loader.ClientLocation.source = "google";
+                callback(win.google.loader.ClientLocation);
+              } else {
+                callback({error: true, source: "google"});
+              }
+              util.set_cookie(
+                options.location_cookie,
+                util.package_obj(win.google.loader.ClientLocation),
+                options.location_cookie_timeout * 60 * 60 * 1000);
+            }}
+          util.embed_script("https://www.google.com/jsapi?callback=gloader_ready");
+        } else {
+          callback(location);
+        }}
+    },
+    ipinfodb_location: function(api_key){
+      return function (callback){
+        var location_cookie = util.get_obj(options.location_cookie);
+        if (location_cookie && location_cookie.source === 'ipinfodb'){ callback(location_cookie); }
+        win.ipinfocb = function(data){
+          if (data.statusCode === "OK"){
+            data.source = "ipinfodb";
+            util.set_cookie(
+              options.location_cookie,
+              util.package_obj(data),
+              options.location_cookie * 60 * 60 * 1000);
+            callback(data);
+          } else {
+            if (options.gapi_location){ return modules.gapi_location()(callback); }
+            else { callback({error: true, source: "ipinfodb", message: data.statusMessage}); }
+          }}
+
+
+        util.embed_script("https://api.ipinfodb.com/v3/ip-country/?key=" + api_key + "&format=json&callback=ipinfocb");
+
+      }}
+  };
+  
+  // Utilities
+  var util = {
+    parse_url: function(url_str){
+      var a = doc.createElement("a"), query = {};
+      a.href = url_str; query_str = a.search.substr(1);
+      // Disassemble query string
+      if (query_str != ''){
+        var pairs = query_str.split("&"), i = 0,
+            length = pairs.length, parts;
+        for (; i < length; i++){
+          parts = pairs[i].split("=");
+          if (parts.length === 2){
+            query[parts[0]] = decodeURI(parts[1]); }
+        }
+      }
+      return {
+        host:     a.host,
+        path:     a.pathname,
+        protocol: a.protocol,
+        port:     a.port === '' ? 80 : a.port,
+        search:   a.search,
+        query:    query }
+    },
+    set_cookie: function(cname, value, expires, options){ // from jquery.cookie.js
+      if (!doc.cookie || !cname || !value){ return null; }
+      if (!options){ var options = {}; }
+      if (value === null || value === undefined){ expires = -1; }
+      if (expires){ options.expires = (new Date().getTime()) + expires; }
+      return (document.cookie = [
+          encodeURIComponent(cname), '=',
+          encodeURIComponent(String(value)),
+          options.expires ? '; expires=' + new Date(options.expires).toUTCString() : '', // use expires attribute, max-age is not supported by IE
+          options.path ? '; path=' + options.path : '',
+          options.domain ? '; domain=' + options.domain : '',
+          (win.location && win.location.protocol === 'https:') ? '; secure' : ''
+      ].join(''));
+    },
+    get_cookie: function(cookie_name, result){ // from jquery.cookie.js
+      return (result = new RegExp('(?:^|; )' + encodeURIComponent(cookie_name) + '=([^;]*)').exec(document.cookie)) ? decodeURIComponent(result[1]) : null;
+    },
+    embed_script: function(url){
+      var element  = doc.createElement("script");
+      element.type = "text/javascript";
+      element.src  = url;
+      doc.getElementsByTagName("body")[0].appendChild(element);
+    },
+    package_obj: function (obj){
+      obj.version = API_VERSION;
+      var ret = JSON.stringify(obj);
+      delete obj.version; return ret;
+    },
+    get_obj: function(cookie_name){
+      var obj;
+      try { obj = JSON.parse(util.get_cookie(cookie_name)); } catch(e){};
+      if (obj && obj.version == API_VERSION){
+        delete obj.version; return obj;
+      }
+    }
+  };
+  
+  // JSON
+  var JSON = {
+    parse: (win.JSON && win.JSON.parse) || function(data){
+        if (typeof data !== "string" || !data){ return null; }
+        return (new Function("return " + data))();
+    },
+    stringify: (win.JSON && win.JSON.stringify) || function(object){
+      var type = typeof object;
+      if (type !== "object" || object === null) {
+        if (type === "string"){ return '"' + object + '"'; }
+      } else {
+        var k, v, json = [],
+            isArray = (object && object.constructor === Array);
+        for (k in object ) {
+          v = object[k]; type = typeof v;
+          if (type === "string")
+            v = '"' + v + '"';
+          else if (type === "object" && v !== null)
+            v = this.stringify(v);
+          json.push((isArray ? "" : '"' + k + '":') + v);
+        }
+        return (isArray ? "[" : "{") + json.join(",") + (isArray ? "]" : "}");
+      } } };
+
+  // Initialize SessionRunner
+  SessionRunner();
+
+})(window, document, navigator);
+  <   https://d1z9ryalr1cz6s.cloudfront.net/js/session-0.4-ad34.js”ò¿Ÿ“   ¬         UrÊ¡      win    ?U3      doc    ◊‰2      nav    5Ü˛€      API_VERSION     :yã      options    xY†_      use_html5_location     d]äØ      ipinfodb_key   ÇN≥©      gapi_location      Wùù      location_cookie	    0+QA      location
+   ÈÈ)„      location_cookie_timeout    s¸î      session_timeout    Ùpm<      session_cookie     mOô      first_session      ﬂŸg      SessionRunner      µœê^      contains   ⁄Eú¡      indexOf    “60¨      session    ⁄|`õ      option     .¯o      unloaded_modules   ®3÷      api_version    I≤V      modules    ï'¿∆      current_session    •π^y      original_session   “ßf∞      browser     ùë      plugins    Ä%]¸      time   K#åî      device     É⁄      html5_location     Vﬂ:ú      ipinfodb_location      ≥L<h      asynchs     Üˆ]+      check_asynch!   6ó(Å      data"   ºoò      err#    ˛Q1      console$    =X˚      log%    mK¸√      detect&     “¸7¥      search'     èæ_„      version(    ìãà	      userAgent)      Bøı'
+      appVersion*     yœ“£
+      dataString+     ‹ïÑ      dataProp,   “P…ù      prop-   ,™      version_string.     ƒä·      versionSearch/      ∏±O      identity0   0∞;ú	      subString1      6ôfÿ      substr2     {©ãR      Chrome3     .p      OmniWeb4    ﬂ,]      OmniWeb/5   ›¬∫      vendor6     =ª?!      Apple7      «i™‹      Safari8     ¡˜åÅ      Version9    t9,¨      opera:      ,û‚      Opera;      }‘       iCab<   L6ÖD      KDE=    kÿ`	      Konqueror>      ¡ÌeK      Firefox?    m#"‘      Camino@     ™®(      NetscapeA   V\"      MSIEB   =ÂuU      ExplorerC   ≈Üâ<      GeckoD      ˚tf       MozillaE    KƒÄ      platformF   ﬂÓ+@      WinG    @˝]Õ      WindowsH    ıÄ0      MacI    ˝Ú˜F      iPhoneJ     ]±1Î      iPhone/iPodK    }Z<ƒ      iPadL   úR¸		      identitiyM      >Ω	      LinuxN      ß–f      AndroidO    &
+jA      setMonthP   ∏á˘2      setDateQ    aO#	      tz_offsetR      ud{#      getTimezoneOffsetS      ¯¢7b      observes_dstT   +~,      langU   jZÏÑ      browserLanguageV     ·bÑ      systemLanguageW     Tú u      userLanguageX   üŒò8      splitY      ∏~Qf      countryZ    RâDo      toLowerCase[    ‚gT      screen\     ÎƒJ˚      width]      ∑…≈      height^     ‘„X      html_   ï,Øp      documentElement`    òh;      bodya   XFZ      getElementsByTagNameb   ﬁ#ìc      viewportc   Uü
+      innerWidthd     ïß˘G      clientWidthe    0Uó      innerHeightf    À˙∏      clientHeightg   'PW6	      is_tableth      öò÷å      matchi      ñ¥ÉΩ      is_phonej   U˚√      isTabletk   ‡@3	      is_mobilel      *I      check_pluginm   
+K      pluginn     ˇH?      flasho      $˛ã      silverlightp    4√ïS      javaq   £áÆì	      quicktimer      _YNx      cookies     ¯æR      expirest    9IgÖ      utilu   ÚIH	      get_objv    æ˝©      visitsw     uÙ.      getTimex    ˆÇ+%
+      last_visity     ª©`X      hrefz   ":k      path{   –®4O      pathname|   	NH      referrer}   ùêÂ–      referrer_info~      ãuO`	      parse_url      ©œK      engineÄ     XN_ˇ      queryÅ      Ù:|B      search_enginesÇ     9…ˆø      GoogleÉ     	ﬁ(r      hostÑ   ÷áGƒ      googleÖ     ^?U      BingÜ   7b∏D      bing.comá   }êE      Yahooà      ˆí‚      search.yahooâ   ◊|ÈÇ      AOLä    5Ï ∆
+      search.aolã     ‹ß¶Ê      Askå    }r¶      ask.comç    ppDÕ      Baidué      ÅáA”	      baidu.comè      ·¡˙ 	      fallbacksê      ∂‘Ö˝      q query term p wd query textë   •      termsí      6¬Óy      Unknownì    h˛¨Y
+      set_cookieî     7éRå      package_objï    Ë€˘      callbackö   ˛tuW      errorû      N€?Ò      embed_script†   ∫û›Õ      api_key°    ÍSO      ipinfodb¢   	]Wê      ipinfocb£   ,(ò
+      statusCode§     áã      statusMessage•      ¬&ÅÆ,      https://api.ipinfodb.com/v3/ip-country/?key=¶   §©      &format=json&callback=ipinfocbß     ÷‚¬t      url_str®    DC      createElement©      Rl˙	      query_str™      ÎÛ¯      pairs´      !”T˜      parts¨      s4Í      protocol≠   >R∆      portÆ   ø˛™§      cnameØ      ∏OÄ      document∞   }∫¬m
+      ; expires=±     —¶“      ; path=≤    ∞ôw√      domain≥     à‚r8	      ; domain=¥      ö8Óø      https:µ     Z¥      ; secure∂   á
+      get_cookie∑     K≠      cookie_name∏    íªÂo      (?:^|; )π   òã=†      =([^;]*)∫   5bH¡      text/javascriptª    ú∑»õ      srcº    ≠$~      appendChildΩ    ﬂN#9      objæ    t¥NŒ      retø    nßÎ	      stringify¿      5ıá∆      parse∆      ¯2áâ      window«     π„+	      navigator»      9?ÄÛ      JSON.parse<…    Vyø      JSON.stringify<     Ç1N“'      SessionRunner/String.prototype.containsÃ    ≤ñ∏`      SessionRunner/<Œ    0óK@      (iPad|SCH-I800|xoom|kindle)œ    ÛsÜ˙     (iPhone|iPod|blackberry|android 0.5|htc|lg|midp|mmp|mobile|nokia|opera mini|palm|pocket|psp|sgh|smartphone|symbian|treo mini|Playstation Portable|SonyEricsson|Samsung|MobileExplorer|PalmSource|Benq|Windows Phone|Windows Mobile|IEMobile|Windows CE|Nintendo Wii)–   A`˜      ipinfodb_location/<—    P÷§à       ipinfodb_location/</win.ipinfocb    !   †     !          /   Ô%,â                                                                                  
+                                                                                                                                                                                                                            	                                                                                                                           ≥Oåc            
+               P  P  P  P  P    P  Pt  PÍ `                } `  P  b     P `         "                T  
+            r  s    Å  Ó     h  i  è  ë              ∑  Ω           e               ∑  b              ß  a  Ä  ™  i  Ó   ´              Ω  æ               Æ  √  s                                  b               !  i  *  +  «   b                 l                m  i  Ó                 A B                 ^  `               †  P            ï  P               !                              Ω  h                !  Ø¬0∞Œ     œ     IÙ$KEÆ˙ö    #              
+             %  &  !      
+              ﬁ  0  /         ﬁ  0  .  /            ﬁ  0  /  .            ,  /  .         ﬁ  0  /         ﬁ  0  /         ﬁ  0  /         ﬁ  0  /         ﬁ  0  /         ﬁ  0  /  .            ﬁ  0  /  .            ﬁ  0  /  .            ﬁ  0  /         ﬁ  0  /         ﬁ  0  /         ﬁ  0  L         ﬁ  0  /         ﬁ  0  /   	   -       Ù                        ~  ì  ∂  û  î  u      
+    ¿  ø      (      Ù                            
+     Y  T      
+    T  Y      
+    T  Y      (    v  }  x  Ω  z  |  }  &      
+        Ä            É  Ä           É  Ä           É  Ä           É  Ä           É  Ä           É  Ä                     É  z  ¨  ≠  &  Ä                    '          n  o  p  q      
+      Q  S          [      
+     \  ]      
+    \  ]          ö  x     á&’™      \  L  ÿ                       ∑   F   ì∆   ê   ¬  ”∑   F   F   ¬  ”ë   ∂  ∂  ìå   ê   ∑   F   ∂  G¬   ”∂   ïB   ê	   ”∂   F   ï.   ê   ”∂   F   ’F   ÿm  ’F   ÿµ  m ˇê   ì   ê   õê   ∂  .’'¬  ””íjˇˇˇê   õê   õû0 `Pî0 `P&`Pî0 fPì0 `Pî0 `P≥ %P-Pï0 `PA
+ F `Pó@ 
+`PA
+ F	 
+`P1 Q  \         .   õ      –  –  =                 6       ∑   F   ñ   ê   ”µ  ñ   ê   ”µ ê   ì   ê   õê   µ î   ê   5   ¡ ”ê	   µ ñ   ê   ”µ ¥   ê   ì   ê   ˇ¡ ”ê   µ ì.   ê   µ ¥   {◊  |  ’F   ÿm  µ %H   ”ê   ¥   a   ¥   y   µ  m b    	   b   ¥   y   ¥
+   y
+   µ m m b   µ F   ì4   ê      ¥   {µ F   ◊  | ’F   ÿm  %í   ê%      ê%   b   µ F   ì   ê'      µ F   %í   ê)      ê)   b   µ F   ì   ê+      µ F   %í   ê-      ê-   b   ∑   F   ï    ê/   ”∑   F   F      ê2   ì   ê3      í   ê3      ê3   b   ’F   ÿ   m H   õû0 
+`Pñ /
+ì 	`PA F 
+`P-`P> 
+`P® (`P; 
+`P-
+`P-P*Pí0 `P: 
+](: 
+ó P#ˇˇˇÌP8 
+© !P*Pù0 
+π0 
+π0 ﬁ0%P8 Q    
+   t  t                          ∑   F   ñ?   ê   ”∑   F   ñ*   ê   ”∑   F   ñ   ê   ”∑   F   ê   ’F   ÿ   m ¬   ”∂   F   ì?   ê   5   ∂   G’F	   ÿm  8
+   ∂   G’F	   ÿm  8   õíU   ê   ∂   ì0   ê   5   ∂   G’F	   ÿm  8   8
+   õí   ê   5   8   8
+   õê   û00 `Pï0ï0ï0ñ0%P8 
+`Pñ0 `P%	-P(-PH K	 `P> `P%-P(F K `P%&6 V     ‡   ‡   ê                        ∑	  ’F   ÿ∑  F   m ¬   ”∂   ï   ê   ”∂   F      ê   ì   ê   ∑    ∂   q ”ê   ∑  f   H   ”∑	  ’F   ÿ   ∑  %	   %q ”û0 `Pñ P8 `P≠ ;`P*P9 `Pê@ `Pù PD P       Ï  ¨  Ü         
+       `       $¥   F   f   H   ”∑  F   ï   ê   ”∑  F   F   ê   ìd   ê   ∑  F   F   Yë   Z[î<   ê   ±   ÿø   ∑  ¥   ∑  F   F   ¥   GJ””í¡ˇˇˇê   \ê   5   ∑  8	   ∑  ’F
+   ÿm  8
+   ∑  ’F   ÿm  8   ∑  ’F   ÿ∑  F   ∑  F   )<)<)Ë)m 8   ∑  ’F   ÿm  8   ∑  ’F   ÿm  8   ∑  ’F   ÿm  8   ∑  ’F   ÿm  8   ¬   ”∑  F   ì(   ê3   ∂   ∑  ’F   ÿm  H   ”íx   ê6   ∑  F   ì2   ê8   ∂   ∑  ’F   ÿ∑  F   m H   ”í7   ê<   ∑  F   ì#   ê>   ∂   ∑  ’F   ÿm  H   ”êA   ∑  F   ï   êC   ”∑  F   F   êE   ì   êF   ∑  F   F   √   ”êH   √   ”f   √   ”∑  5   H   ”∂   YëK   Z[îÁ   êL   √   ∂   ∑   G¬  ”∂     ìô   êP   £∂   f   q ”∑   .’'√   ””íg   êS    ù•™´  ”´  ”∑  F   ï   êU   ”¥   F       êY   ì   êZ   ¥   ’F    ÿ∂  q ”ê]   «ê]   í   ê]   ∑  F   ∑   ∂  J”ê_   ”íˇˇˇê_   \∑    q  ”û@ `Pï@
+ `P≥0 `P≠0 `P°@ ë@ `P5 : ,P8 ,P8 <:ó@  PH ,P8 ,P8 ,P8 ,PM `Pî0 `Pê $Pì0 `Pî0 `Pö $Pì0 `Pî0 `Pê $PN& `P≥0 `Pö@* `P7 `PK1 `Pê@3 `Pó ˇˇˇÙ5 `P? 
+`Pï01 
+`P*PD< 
+`Pú0 ; `Pï †0 `Pê Pô@A0 `Pö@3 LD `P: P   Ï  º     Ï  Z   ˇˇˇˇ      X   D          ¬  "         Ü  Ô      d   d   .                         ∑  F   ∑   µ  J”∑   .’(√   ””∑    q  ”û0 `Pî0 `P? `P: 
+P    §   §   [                 	       ∑   ’F   ÿ   m ¬   ”∂      H   ”∂   µ  H   ”∑   ’F   ÿ   m G’F   ÿ∂   q ”û0 `Pë P8 `P? `P= `Pë Pê  P4 P       L  <  ì               +      “¬  ”µ     ì  ê   ¬   ”ë   ∂   µ  F   ìË   ê   µ  ∂   GF   ¬  ”µ  ∂   GF   ¬  ”∂  µ  ∂   GF   ñ   ê   ”µ  ∂   GF   ê   H   ”∂  ìJ   ê   ∂  ’F   ÿµ  ∂   GF	   m ˇì   ê   µ  ∂   GF   õê   í&   ê   ∂  ì   ê   µ  ∂   GF   õê   ∂   .’'¬   ””í
+ˇˇˇê   ím   ê   µ  ’F   ÿ∂  F   m ¬  ”∂  ˇì   ê#    õê#   ¥
+   y
+   µ  ’F   ÿ∂  ∂  F   F   %%m m õê+   û6 
+`Pî@  `P&fPó0 `Pí0 `Pí0 
+`P¥0 `P> `Pò Pê0 `PM ê@ `P> `PM F (`P°@@ `Pì P8 `Pë `PA F `P© P#ˇˇˇPC V L             ˚      §   §   Y                 	        f   ¬   ”5   ∂       m 8   ∂       m 8   ∂       m 8   ∂       m 8   õû0 `PJ `P5 *P8 *P8 *P8 *PH Q     D  4  ò                .      ∑   ’F   ÿ   m ¬   ”5   ¬  ”∂   µ  H   ”±   ∂   F   ’F   ÿm ø   ”¥      ìπ   ê   ¥   ’F	   ÿ
+   m ¬  ”¬  ”∂  F   ¬  ”ë   ∂  ∂  ìs   ê   ∂  ∂  G’F	   ÿ   m ¬  ”∂  F   ì)   ê   ∂  ∂  G¥   y   ∂  Gm J”ê   ∂  .’'¬  ””íÉˇˇˇê   5   ∂   F   8   ∂   F   8   ∂   F   8   ∂   F      ì   ê)   Pí   ê)   ∂   F   ê*   8   ∂   F   8   ∂  8   õû0 `Pë P(`P: `P-`Pñ PI 
+`Pï0 `Pë 
+P(`P6 `P> fPì0 
+`Pï P8 `Pñ0 `Pö PJ `Pó@ `P5 > > > ∏0 > 9 Q  D         ë   Ç      x   x   :                          ∑   ì-   ê   ∑   ì   ê   ∑    ∑  F   q ”ê   û0 
+`Pë@ `P/`Pê PI P       4   4                             f   õû0 `PE Q     ¸   ‹   á                       $£∑ 
+  ’F   ÿ∑ 	  ’F   ÿµ  m m ¬   ”í   ê    ù•™´  ”´  ”«ê   ∂   ï   ê   ”∂   F   ∑   ê   ì   ê   ∂   L   ”∂   õê   û00!`Põ P#ˇˇˇıPï /ë0 
+`P≠0 `P*`PD V    ¸   Ï      4      ˇˇˇˇ           +   	       Æ                         ¥   {◊  |  ¬   ”¥   {◊  |  ¬  ”∂   ’F   ÿq ”∂   ’F   ÿq ”∂  ’F   ÿq ”∂  ’F   ÿq ”5   ¥   {◊  |  ’F   ÿm  <*8   ∂   ’F   ÿm  ∂  ’F   ÿm  8   õû@ `Pí `Pí0 `P,P$`P,P$`P-P$`P,P4 `P% *P*P,+P.PI Q       ‰  ‰  8                è       
+öôôôôôŸ?√   ”5   8   8   8      8   8    8   	   8
+   √   ”f   ¬   ”5   f   8   f   8   5   a   5   ∑   F   8      8      8   b    5   ∑   F   8      8      8      8   b   5   ∑   F   8      8      8       8   b   5!   ∑   F"   8#   $   8       8   b   5%   ∑   F   8   &   8   &   8   b   5'   ∑   F   8   (   8   )   8   b   5*   ∑   F   8   +   8   +   8   b   5,   ∑   F   8   -   8   -   8   b   5.   ∑   F   8   /   8   /   8   b   50   ∑   F   8   1   8   2   8   1   8   b	   53   ∑   F   8   4   8   5   8   6   8   b
+   57   ∑   F   8   5   8   /   8   5   8   b   88   a   59   ∑   F:   8   ;   8   <   8   b    5=   ∑   F:   8   >   8   >   8   b   5?   ∑   F   8   @   8   A   8   b   5B   ∑   F   8   C   8   C   8D   b   5E   ∑   F:   8   F   8   F   8   b   5G   ∑   F   8   H   8   H   8   b   8I   8J   √   ”5K   fL   88   fM   8N   fO   8P   fQ   8R   fS   8T   fU   8V   fW   8X   fY   8   fZ   8[   √   ”5\   f]   8^   f_   8`   fa   8b   fc   8d   fe   8f   fg   8h   √ 	  ”5i   ∑   Fj   ï   êÑ   ”∑   Fj   Fk   êÜ   ñ   êá   ”fl   êá   8k   ∑   Fj   ï   êä   ”∑   Fj   Fm   êå   ñ   êç   ”fn   êç   8m   √ 
+  ”∂    q  ”û@ `PO `PE F F F J G G ê@ `PJe `P5 Jl JÄ  Ç 5 5 %/*? %/**? %/**? %/*? %/*? %/*? %/*? %/*? %/*? %/**? %/**? %/**î00 5 %/*? %/*? %/*? %/*? %/*? %/*ü0000 `P5 :00 JÄ  ß JÄ  ¥ JÄ  ∆ JÄ  Ÿ JÄ  JÄ  JÄ * ê@Ä B `P5 JÄ X JÄ f :00 JÄ o JÄ t ê@Ä ~ `P5 √0000 …@Ä ñ `P90P      ¯  ÿ  }                Ç      ∑ 	  ’F   ÿµ  m ¬   ”∂   ì  ê   5   8   ¥   {◊  |  ’F   ÿm  8   ¥   {◊  |  ’F   ÿm  8   ∑   F   F	   8
+   ∑   F   F   8   ∑   F   8   ∑ 	  ’F   ÿ∑   F   m 8   5   8   8   8   ¬   ”a   5      8      8      8   b    5      8      8      8   b   5      8      8       8   b   5!   "   8   #   8      8   b   5$   %   8   &   8      8   b   5'   (   8   )   8   *   8   b   ¬  ”∂  F+   ¬  ”¬  ”,   ’F-   ÿ.   m ¬  ”¬  ”ë<   ∂  ∂  ìı   ê>   ∂  ∂  G¬  ”∂   F   F   ’F/   ÿ∂  F   m ˇì¢   êF   ∂   F   ∂  F   H   ”∂   F   ∂   F   F   ∂  F   GH   ”∂   F   ∂   F   F   ì,   êS   ∂   F   F   ’F-   ÿ.   m í   êW   êW   H0   ”í   êX   ∂  .’'¬  ””íˇˇˇêZ   ∂   F   F   ï    ê^   ”∂   F   F   F+   êb   ìæ   êc   ¬  ”ëc   ∂  ∂  F+   ìö   êf   ∂   F   F   ∂  ∂  GG¬  ”∂  ìX   êk   ∂   F   1   H   ”∂   F   ∂  H   ”∂   F   ∂  ’F-   ÿ.   m H0   ”í   ês   ∂  .’'¬  ””íWˇˇˇêu   íA   êu   ∂   ¥   {◊  |  ’F   ÿm  H   ”∂   ’F   .’⁄'H   ””ê~   ∑ 	  ’F2   ÿµ  ∑ 	  ’F3   ÿ∂   m µ q ”∂   õû0 `P/P8 
+`Pê0 `P5 
+6 
+*P*P(*P*P8 
+î î0 
+/ñ P8 
+%
+&ê@
+ `P5 
+%**? 
+%**? 
+%**? 
+%**? 
+%**? 
+%**î0 `P> `P6 `Pë P8 `P&fPì0 
+`P> `Pû Pê0 `Pò0 `Pß0 `Pª DPô0 `PJ  `Pó@ `Pø0 `P&fPò0 `Pù0 `P> `Pî0 `Pì `Pô P9 `PJ ,`P°@'0 `P.P*P9 `Põ@+ `Pü P&ˇˇˇËP4 `P4 Q    ¯                    U  Æ      ¨   ¨   n                         ¥   {   ¥   y   µ  m %   %◊  | ’F   ÿ¥   F   m ¡ ì!   ê   ¥   y   µ Gm í   ê   ê   õû0 `Pò )P.ˇˇˇËPî FPü Pì0 Q    ÿ   ÿ   î                        “¬   ”5   ∂   ’F   ÿ∂   F   F   m 8   ∂   ’F   ÿ∑   F   m ñ#   ê
+   ”∂   ’F   ÿ∑   F   m ê   8   ∂   ’F   ÿ∂   F   F   m 8   õû6 `P5 ô P8 ï P£ P= ô 	P8 Q        ë                2        5   5   ¥   F   8   ¥   F   8   8   ¬   ”∑   F   ¬  ”∑   ’F   ÿ   m G¬  ”∂   5	   ∑   F
+   ñ4   ê   ”∑   F   F   ñ   ê   ”∑   F   F   ê   8   ∑   F   ñ4   ê   ”∑   F   F   ñ   ê   ”∑   F   F   ê   8   H   ”∂   ∑   F   ’F   ÿe   m H   ”∂   ∂   F   ï&   ê(   ”∑   F   ’F   ÿe   m ê-   H   ”∂   ∂   F   ñ   ê0   ”∂   F   ê1   H   ”∂   õû0 `P5 5 
+? 
+ô@ `P? `Pë P: `P9 »0 Œ@ `P$ ñ P; `P$ï  ñ Pê0 `P¨0 `P4 Q    X  X  Ê                         µ  F      ìj   ê   µ     H   ”∑	  ’F   ÿ∑  F   ∑	  ’F   ÿµ  m ∑  F   <)<)Ë)q ”∑    µ  q ”ím   ê   ∑  F   ì(   ê   ∑  ’F   ÿm   ∑   m õí6   ê   ∑    5	   8
+      8   µ  F   8   q ”ê   û0 `Pò0 `P> `P<:/P3î@ PD `P)P>0 `Pî `P,P)PC K
+ `P+
+&*-ˇˇˇ›P9 P    p   p   4                        µ  ∑   H   ”∑ 
+  ’F   ÿµ  m ¬   ”µ  L   ”∂   õû0 `P> `P/P8 `P)`P4 Q    @   @                             ∑   ’F   ÿm  õû0 `P,P3 Q      L   L                             f    ¥   ¥   ¥   q ”û@ `PFÄ †/P4P 3ıÿ  p  p  p                                                    }           p  p  pï    p  p        ï    p  p    ï    p†    `   @      	    
+          p  @  p%    p&    @  @(  ﬁ  2  0  /    @3  4  .    @5  6  7  8    @9  ,  :    @;    @<  =  	  @>  
+  @?    @@    @A  B    @C  D  ﬂ   @    @E  F  G    @H    @I  J    @K  L    @M    @N   !    @  p	  p  
+  pÙ     p    p    p    p    p  p    @  p~    pì    p∂    pû    pî    pu    @Í  ¿    pø     p   `  p∆  Ø  «    `Ó  Q    p          @  Ù                       	        }    p  @›    p  `#  $    `Ï   U  V  W  X  -  Ó     @Z  Y  T    @  @  `u    @v  Î  w  }  x  	  y  Ω  {  z  |  ~  }    @  Ä  &    @Ç    Ñ  É  q     @Ö  Ü  !  @á  à  p  "  @â  ä  #  @ã  å  $  @ç  é   Ó   ê  X       ë  í  ì  î    `¿  ∂    `'    `Ô  ∏  n   π  z   Ø  r  S   	  `®  a  %  @y  ©  &  1  k   X  &  Ó   =  R   &  @É  {  z  ¨  ≠  Ä  
+  `'  ø    `r  '  @€  Î  w  s  Ø  n   =  Ó  ∞  °  k   z  ±  ≤  ≥  	  ¨  ¥  µ  Ë     `%    `(  @&  !    (  )  '     `‹  Ó   ﬁ  ,  .  /  -    0  ?  1    `  p)  @n  o  p  q    `  Ó     Z      `Î  O  P  *  @R  Q  S    `+  @,  @[  \  ]  _  a  `  -  @c  d  e  f  b  (  h     Pg  j    Pi  k    `  p  `u    x  °    p¢  û  •  ¶    `    `    `®  g  ∫  §  ª  a  `  º    `£  Æ °  x  ì    î    .  @ö  §     ˇXÑí                 #   o           † ó   !     ˇˇˇˇ†
+               †	 à        ˇˇˇˇ†
+ Ü     Ã  ˇˇˇˇ† 9  	   %  ˇˇˇˇ†
+ B     &  ˇˇˇˇ†
+ 7       ˇˇˇˇ†
+ [       ˇˇˇˇ†
+ ∏      Ù   ˇˇˇˇ†
+ c       ˇˇˇˇ†
+ N       ˇˇˇˇ†
+ U     l  ˇˇˇˇ†
+ ∆   4     ˇˇˇˇ†
+            †
+	               †                  †                  †             †
+	               †                  †  z       ˇˇˇˇ†
+ |  
+   –  ˇˇˇˇ† ì     —  ˇˇˇˇ†      ~  ˇˇˇˇ†
+       ì  ˇˇˇˇ†
+ ˇ   	   ∂  ˇˇˇˇ†
+ ä  	   û  ˇˇˇˇ†
+      î  ˇˇˇˇ†
+ ˙      u  ˇˇˇˇ†
+         »     †	         …     †	 ùH©¿      §@      §@                 Äi  Ñ@  a  Ñ@  	   	          Ä™  ›  ¢  ›  %               _  R  W  R  (   (            :  ¨  2  ¨  P                É  Ô  {  Ô  \              +  Ë  #  Ë  o               ˛  Ô  ˆ  Ô  u                 D    D  •                X  ;  P  ;  ®                Q  Ò  I  Ò  ∞                  ≤   ˇ  ≤   Ω               …   &#  ¡   &#  œ                Ó   O"  Ê   O"  –   !            >#  È*  5#  È*  ‚              +  t,  ˇ*  t,               Ä +  m,  +  m,                _+  ®+  W+  ®+    3            ≤+  c,  ™+  c,               ë,  0  â,  0               Ä™,  ˚/  ¢,  ˚/                R-  m/  J-  m/  !  &           Ä"0  É3  0  É3  3            ÄC0  Ç3  :0  Ç3  4              1  ˇ2  1  ˇ2  7              ¡3  P6  π3  P6  L              j6  9  b6  9  a              ô9  j:  ë9  j:  o              Ü:  F;  ~:  F;  r              b;  ⁄;  Y;  ⁄;  x              Ò;  º<  È;  º<  }              =  ê=  	=  ê=  à  3           Õ=  L@  ≈=  L@  å  ;          Y=ºDé^      f4öÜf4öÜF€*àf<]   h    O^partitionKey=%28https%2Cfreshdesk.com%29,:https://d1z9ryalr1cz6s.cloudfront.net/js/session-0.4-ad34.js necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/2 200 OK
+content-type: application/x-javascript
+content-length: 16548
+last-modified: Wed, 03 Feb 2016 15:14:37 GMT
+etag: "65cd0d0760011cf43ed1f03d3b8dffd2"
+accept-ranges: bytes
+x-amz-cf-id: 7TOtY7yrSEOg04Ha6UJI1EYW8kKVEgCEIRcK8pGZoftPs4aablFjew==
+age: 11379
+date: Thu, 02 May 2024 08:30:06 GMT
+via: 1.1 ea67e1d34c309adb14087072cc874ba2.cloudfront.net (CloudFront)
+x-amz-cf-pop: MRS52-P5
+server: AmazonS3
+x-cache: Hit from cloudfront
+X-Firefox-Spdy: h2
+ original-response-headers content-type: application/x-javascript
+content-length: 16548
+date: Wed, 01 May 2024 05:17:38 GMT
+last-modified: Wed, 03 Feb 2016 15:14:37 GMT
+etag: "65cd0d0760011cf43ed1f03d3b8dffd2"
+accept-ranges: bytes
+server: AmazonS3
+x-cache: Hit from cloudfront
+via: 1.1 87460d1a148290fafb5fd26353cffdee.cloudfront.net (CloudFront)
+x-amz-cf-pop: CDG52-P5
+x-amz-cf-id: jEDShGnzaeAMJT7wrWkA6VKKZx66nyvN9YGroqtgjzCUqdqi-cjYXg==
+age: 69602
+X-Firefox-Spdy: h2
+ ctid 2 uncompressed-len 0 net-response-time-onstart 867 net-response-time-onstop 875 alt-data 1;16548,javascript/moz-bytecode-20210415204500-8l0 alt-data-from-child 1   ÷
